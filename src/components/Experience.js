@@ -1,5 +1,5 @@
 import React from 'react';
-import ExperienceIndi from './Experienceindi';
+import ExperienceIndi from './ExperienceIndi';
 import experienceData from '../Data/ExperienceData';
 
 class Experience extends React.Component {

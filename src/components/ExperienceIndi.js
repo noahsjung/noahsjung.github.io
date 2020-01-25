@@ -1,8 +1,8 @@
 import React from 'react';
 
 // import BulletDescription from './BulletDescription';
-import circle from '../images/circle.png';
-import line from '../images/timeline.png';
+// import circle from '../images/circle.png';
+// import line from '../images/timeline.png';
 
 const ExperienceIndi = props => {
   return (
