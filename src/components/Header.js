@@ -1,5 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+
+import HeaderLogo from './HeaderLogo';
+
+// function useHover() {
+//   const [hovered, setHovered] = useState('#888');
+//   return [hovered];
+// }
 
 function Header() {
   return (
@@ -15,12 +22,15 @@ function Header() {
               smooth={true}
               offset={-200}
               duration={500}
-              // onSetActive={this.handleSetActive}
             >
-              <h3>Noah Jung</h3>
+              <HeaderLogo
+                // onMouseEnter={() => setHovered('#0171e3')}
+                // onMouseLeave={() => setHovered('#888')}
+                color={'#888'}
+              />
             </Link>
           </div>
-          <nav className="header-right">
+          <nav className="header-center">
             <Link
               activeClass="active"
               to="about"
@@ -28,7 +38,6 @@ function Header() {
               smooth={true}
               offset={-80}
               duration={500}
-              // onSetActive={this.handleSetActive}
             >
               About
             </Link>
@@ -39,7 +48,6 @@ function Header() {
               smooth={true}
               offset={-80}
               duration={500}
-              // onSetActive={this.handleSetActive}
             >
               Work
             </Link>
@@ -50,22 +58,21 @@ function Header() {
               smooth={true}
               offset={-80}
               duration={500}
-              // onSetActive={this.handleSetActive}
             >
               Experience
             </Link>
-            <Link
+            {/* <Link
               activeClass="active"
               to="contact"
               spy={true}
               smooth={true}
               offset={-60}
               duration={500}
-              // onSetActive={this.handleSetActive}
             >
               Contact
-            </Link>
+            </Link> */}
           </nav>
+          <div className="header-right"></div>
         </div>
       </div>
     </header>

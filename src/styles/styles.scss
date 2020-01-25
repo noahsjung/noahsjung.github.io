@@ -64,7 +64,7 @@ header {
   top: 0px;
   background-color: $white;
   border-bottom: 0.5px $lightGray solid;
-  z-index: 10;
+  z-index: 100;
   .inner-header {
     padding: 0px 40px 0px 40px;
     display: flex;
@@ -81,13 +81,27 @@ header {
     .header-left {
       flex: 1;
       a {
-        text-decoration: none;
-        color: $blue;
+        .color {
+          color: $blue;
+        }
+        .no-color {
+          color: $gray;
+        }
+      }
+      .logo {
+        svg {
+          cursor: pointer;
+          margin-left: 10px;
+          &:hover {
+            fill: $blue;
+          }
+        }
       }
     }
-    .header-right {
-      flex: 2;
-      cursor: pointer;
+    .header-center {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
       .active {
         border-bottom-color: transparent;
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
@@ -99,13 +113,16 @@ header {
         color: $blue;
       }
       a {
-        margin: 0 25px;
+        cursor: pointer;
         text-transform: uppercase;
         text-decoration: none;
         color: $lightGray;
-        &:first-child {
-          margin-left: 0px;
-        }
+        // &:first-child {
+        //   margin-left: 0px;
+        // }
+        // &:last-child {
+        //   margin-right: 0px;
+        // }
         &:hover {
           // color: $blue;
           // border-bottom: 1px $blue solid;
@@ -119,6 +136,9 @@ header {
           color: $blue;
         }
       }
+    }
+    .header-right {
+      flex: 1;
     }
   }
 }
@@ -412,7 +432,7 @@ header {
 
 .experience {
   padding-top: 50px;
-  padding-bottom: 125px;
+  padding-bottom: 50px;
   margin-top: 125px;
   margin: 0 auto;
   max-width: 1200px;
@@ -432,52 +452,116 @@ header {
         text-transform: uppercase;
       }
     }
-    .experience-content {
-      .experience-indi {
+    .content {
+      .left-right {
         display: flex;
         margin-bottom: 100px;
-        .left {
+        .left-container {
           flex: 1;
           display: flex;
-          .left-container {
-            margin-right: 20px;
-            width: 200px;
-            .logo {
-              width: 150px;
-              height: 150px;
-              border-radius: 10px;
+          align-items: center;
+          position: relative;
+          .dates {
+            display: flex;
+            h3 {
+              margin-top: 20px;
+              margin-bottom: 20px;
+            }
+            h4 {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              color: $gray;
             }
           }
-          .left-content {
-            .company {
-              margin-top: 10px;
-              margin-bottom: 10px;
-            }
-            .location {
-              color: $gray;
-              margin: 0;
-            }
-            .date {
-              color: $gray;
-              margin-top: 5px;
-              margin-bottom: 0px;
+          .circle {
+            position: absolute;
+            right: 100px;
+          }
+          .line {
+            width: 1.5px;
+            height: 100%;
+            position: abolute;
+            right: 100px;
+          }
+          @media only screen and (max-width: 1130px) {
+            .dates {
+              display: inline-block;
+              h3 {
+                margin-bottom: 5px;
+              }
+              h4 {
+                margin-top: 0;
+              }
             }
           }
         }
-        .right {
+        .right-container {
+          overflow: hidden;
+          z-index: 1;
           flex: 2;
-          margin-bottom: 10px;
-          .title {
-            margin-top: 0px;
-          }
-          .description {
-            ul {
-              list-style-position: outside;
-              padding-left: 20px;
-              li {
-                margin-bottom: 0.5em;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 1px 2px 5px 3px #eeedea;
+          .right {
+            display: flex;
+            align-items: center;
+            .logo {
+              margin-left: 20px;
+            }
+            .content {
+              display: flex;
+              margin-left: 75px;
+              .company {
+                color: $gray;
               }
             }
+          }
+          &:hover {
+            cursor: pointer;
+            position: relative;
+            top: -10px;
+            box-shadow: 1px 2px 7px 5px #e4e3e0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #eeedea;
+  .footer-container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    max-width: 1200px;
+    .container {
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      .copyright {
+        flex: 1;
+        margin-top: 0;
+        p {
+          text-align: start;
+        }
+      }
+      .links {
+        flex: 2;
+        text-align: start;
+        a {
+          text-decoration: none;
+          color: $blue;
+          margin-right: 20px;
+          &:hover {
+            border-bottom-color: transparent;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+            background-position: 0 1.2em;
+            background-size: auto 5px;
+            background-repeat: repeat-x;
+            padding-bottom: 10px;
+            text-decoration: none;
           }
         }
       }

@@ -7,7 +7,8 @@ const experienceData = [
   {
     id: 1,
     company: 'Weddell Co.',
-    date: '07.2019 - 10.2019',
+    year: '2019',
+    months: 'July - October',
     location: 'Pangyo, Korea',
     role: 'Product Designer',
     descriptions: [
@@ -22,7 +23,8 @@ const experienceData = [
   {
     id: 2,
     company: 'Giant Shoulders',
-    date: '06.2018 - 08.2018',
+    year: '2018',
+    months: 'June - Septmeber',
     location: 'Providence, RI',
     role: 'Design Intern',
     descriptions: [
@@ -34,7 +36,8 @@ const experienceData = [
   {
     id: 3,
     company: 'Luxrobo',
-    date: '06.2017 - 08.2017',
+    year: '2017',
+    months: 'June - September',
     location: 'Seoul, Korea',
     role: 'Design Intern',
     descriptions: [
@@ -46,8 +49,9 @@ const experienceData = [
   },
   {
     id: 4,
-    company: 'Rhode Island School of Design',
-    date: '02.2017 - 05.2018',
+    company: 'RISD ISE Office',
+    year: '2017 - 2018',
+    months: 'Febuary - May',
     location: 'Providence, RI',
     role: 'Project Assistant',
     descriptions: [

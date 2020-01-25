@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../files/resume 01.18.20.pdf';
 
 function About(props) {
   return (
@@ -46,14 +47,10 @@ function About(props) {
                   <i className="fab fa-linkedin"></i>
                   LinkedIn
                 </a>
-                <Link
-                  className="resume"
-                  to="../files/resume 01.18.20.pdf"
-                  target="blank"
-                >
+                <a className="resume" href={resume} target="blank">
                   <i className="far fa-file"></i>
                   Resume
-                </Link>
+                </a>
               </div>
 
               <div className="learn-more">
