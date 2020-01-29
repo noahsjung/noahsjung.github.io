@@ -1,0 +1,37 @@
+//Entire Header Section
+.home-header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 999;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-column-gap: $column-gap;
+  }
+}
+
+//left
+.home-header .header-left {
+  grid-column: 1/2;
+  justify-self: start;
+  margin: auto 2rem;
+}
+
+//center
+.home-header .header-center {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+}
+
+//right
+.home-header .header-right {
+  grid-column: 3/4;
+  justify-self: end;
+}
+
+//active

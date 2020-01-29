@@ -1,0 +1,35 @@
+//Entire Header Section
+.project-header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-column-gap: $column-gap;
+  }
+}
+
+//left
+.project-header .header-left {
+  grid-column: 1/2;
+  justify-self: start;
+  margin: auto 2rem;
+}
+
+//center
+.project-header .header-center {
+  grid-column: 2/3;
+  justify-content: space-between;
+}
+
+//right
+.project-header .header-right {
+  grid-column: 3/4;
+  justify-self: end;
+}
+
+//active

@@ -1,0 +1,53 @@
+//Entire Experience Section
+.experience {
+  .container {
+    .experience-word {
+      color: $lightGray;
+      border-bottom: 1px $lightGray solid;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//Experience Content
+
+//Experience Individual Left (Dates)
+.experience .left {
+  h4 {
+    color: $gray;
+    margin-top: 5px;
+  }
+}
+
+//Experience Individual Right
+.experience .right {
+  background-color: $white;
+  overflow: hidden;
+  border-radius: $border-radius;
+  box-shadow: 1px 2px 5px 3px $shadow-initial;
+  z-index: 1;
+  .text .company {
+    color: $gray;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 7px 5px $shadow-after;
+    .text {
+      color: $blue;
+    }
+  }
+}
+
+//Description
+.experience .description {
+  margin-right: 1.5rem;
+  ol {
+    color: $gray;
+    list-style-type: decimal-leading-zero;
+    span {
+      position: relative;
+      left: 1rem;
+    }
+  }
+}

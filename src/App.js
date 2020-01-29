@@ -1,25 +1,29 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import '../src/styles/styles.scss';
 
-import Header from './components/Header';
-import RightFixed from './components/RightFixed';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Home from './pages/Home';
+import Weddell from './pages/projects/Weddell';
+import FoodTruck from './pages/projects/FoodTruck.js';
+import Retriever from './pages/projects/Retriever';
+import AmazingPlanter from './pages/projects/AmazingPlanter';
+import Waymo from './pages/projects/Waymo';
+import PageNotFound from './components/01_sections/404/PageNotFound';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <RightFixed />
-      <About />
-      <Portfolio />
-      <Experience />
-      {/* <Contact /> */}
-      <Footer />
+      <Switch>
+        <Route exact path="/" render={() => <Home />} />
+        <Route path="/weddell" render={() => <Weddell />} />
+        <Route path="/food-truck-finder" render={() => <FoodTruck />} />
+        <Route path="/retriever-app" render={() => <Retriever />} />
+        <Route path="/amazing-planter" render={() => <AmazingPlanter />} />
+        <Route path="/waymo" render={() => <Waymo />} />
+        <Route path="/" render={() => <PageNotFound />} />
+        {/* <Route path="/amen" render={() => <Amen />} /> */}
+      </Switch>
     </div>
   );
 }

@@ -1,0 +1,59 @@
+//Entire Work Section
+.work {
+  text-align: start;
+  .container {
+    .work-word {
+      display: inline-block;
+      color: $lightGray;
+      border-bottom: 1px $lightGray solid;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//Work Content
+.work .content {
+  border-radius: $border-radius;
+}
+
+//Individual Box(not hovered)
+.work .work-box {
+  // background: $white;
+  a {
+    background: none;
+  }
+  .image {
+    border-radius: $border-radius;
+    box-shadow: 1px 2px 5px 3px $shadow-initial;
+  }
+  .text {
+    .title {
+      color: $black;
+    }
+    .description {
+      color: $gray;
+    }
+  }
+}
+
+//Individual Box( hovered)
+.work .work-box-hovered {
+  // background: $white;
+  a {
+    background: none;
+  }
+
+  .image {
+    border-radius: $border-radius;
+    cursor: pointer;
+    box-shadow: 1px 2px 7px 5px $shadow-after;
+  }
+  .text {
+    .title {
+      color: $blue;
+    }
+    .description {
+      color: $gray;
+    }
+  }
+}

@@ -11,42 +11,42 @@ const portFolioData = [
     title: 'Weddell',
     description: 'Startup / UIUX',
     image: weddell_logo,
-    url: 'https://noahsjung.com/works/weddell'
+    path: '/weddell'
   },
   {
     id: 2,
     title: 'Food Truck Finder',
     description: 'Design Challenge / UIUX',
     image: food_truck_logo,
-    url: 'https://noahsjung.com/works/food-truck-finder'
+    path: '/food-truck-finder'
   },
   {
     id: 3,
     title: 'Retriever App',
     description: 'Internship / UIUX',
     image: retrieverapp_logo,
-    url: 'https://noahsjung.com/works/retriever-app'
+    path: 'retriever-app'
   },
   {
     id: 4,
     title: 'A-maz-ing Planter',
     description: 'Product Development / MIT',
     image: maze_logo,
-    url: 'https://noahsjung.com/works/amazing-planter'
+    path: 'amazing-planter'
   },
   {
     id: 5,
     title: 'Waymo',
     description: 'Product Design / UIUX',
     image: waymo_logo,
-    url: 'https://noahsjung.com/works/waymo_drive'
+    path: 'waymo'
   },
   {
     id: 6,
-    title: 'Amen (Coming Soon)',
-    description: 'UIUX',
+    title: 'Amen',
+    description: 'Coming Soon',
     image: amen_logo,
-    url: ''
+    path: '/'
   }
 ];
 
