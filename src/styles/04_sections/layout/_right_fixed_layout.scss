@@ -10,7 +10,7 @@
     transform: rotate(90deg);
     transform-origin: top right;
     color: $gray;
-    h4 {
+    p {
       transform-origin: bottom right;
       margin: 0;
     }
@@ -37,7 +37,7 @@
     bottom: 20px;
     transform: rotate(90deg);
     transform-origin: top right;
-    h4 {
+    p {
       align-content: center;
       color: $blue;
       &:hover {

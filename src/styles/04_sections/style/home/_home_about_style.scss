@@ -1,143 +1,87 @@
-// //introduction
-// .about {
-//   margin-left: auto;
-//   margin-right: auto;
-//   max-width: 1200px;
-//   padding-top: 175px;
-//   padding-bottom: 125px;
-//   text-align: start;
-//   display: block;
-//   position: relative;
-//   .container {
-//     padding: 0px 40px 0px 40px;
-//   }
-//   .about-word {
-//     display: inline-block;
-//     margin-bottom: 50px;
-//     border-bottom: 1px $lightGray solid;
-//     color: $lightGray;
-//     text-transform: uppercase;
-//     h2 {
-//       margin: 0;
-//     }
-//   }
-//   .content {
-//     display: flex;
-//     .introduction-container {
-//       flex: 1;
-//       .short-description {
-//         margin-top: 0px;
-//         margin-right: 30px;
-//         color: $black;
-//         .name {
-//           color: $blue;
-//           text-decoration: none;
-//           &:hover {
-//             // text-decoration: underline;
-//             border-bottom-color: transparent;
-//             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-//             background-position: 0 1.2em;
-//             background-size: auto 5px;
-//             background-repeat: repeat-x;
-//             padding-bottom: 10px;
-//             text-decoration: none;
-//           }
-//         }
-//       }
-//     }
-//     .content-right-container {
-//       flex: 2;
-//       .description {
-//         margin-top: 0px;
-//         margin-bottom: 0px;
-//         padding-top: 11px;
-//         a {
-//           color: $blue;
-//           text-decoration: none;
-//           &:hover {
-//             // text-decoration: underline;
-//             // color: $blue;
-//             border-bottom-color: transparent;
-//             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-//             background-position: 0 1.2em;
-//             background-size: auto 5px;
-//             background-repeat: repeat-x;
-//             padding-bottom: 10px;
-//             text-decoration: none;
-//           }
-//         }
-//         .introduction-view-more {
-//           text-decoration: none;
-//           color: $lightGray;
-//         }
-//       }
-//       .links {
-//         .buttons {
-//           display: flex;
-//           margin-top: 30px;
-//           .linkedin {
-//             padding: 10px 18px 3px 18px;
-//             margin: 5px 10px 5px 0px;
-//             border-radius: 999em;
-//             color: $blue;
-//             text-decoration: none;
-//             border: 1px $blue solid;
-//             &:hover {
-//               background: none;
-//               color: $white;
-//               background-color: $blue;
-//               text-decoration: none;
-//             }
-//             i {
-//               margin-right: 10px;
-//             }
-//           }
-//           .resume {
-//             padding: 10px 18px;
-//             margin: 5px;
-//             margin-left: 10px;
-//             border-radius: 999em;
-//             color: $blue;
-//             text-decoration: none;
-//             border: 1px $blue solid;
-//             &:hover {
-//               background: none;
-//               color: $white;
-//               background-color: $blue;
-//               text-decoration: none;
-//             }
-//             i {
-//               margin-right: 10px;
-//             }
-//           }
-//         }
-//         .learn-more {
-//           display: inline-flex;
-//           align-items: center;
-//           color: $blue;
+//Entire About Section
+.about {
+  visibility: hidden;
+  padding-top: 125px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  text-align: start;
+  .container {
+    .about-word {
+      margin-bottom: 50px;
+      color: $lightGray;
+      text-transform: uppercase;
+      border-bottom-color: transparent;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .0s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='lightgray' stroke-width='1.5' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: 0 1.4em;
+      background-size: auto 5px;
+      background-repeat: repeat-x;
+      padding-bottom: 10px;
+      text-decoration: none;
+    }
+  }
+}
 
-//           h3 {
-//             a {
-//               color: $blue;
-//               text-decoration: none;
+//Content
+.about .content {
+  margin-bottom: 100px;
+}
 
-//               &:hover {
-//                 border-bottom-color: transparent;
-//                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-//                 background-position: 0 1.2em;
-//                 background-size: auto 5px;
-//                 background-repeat: repeat-x;
-//                 padding-bottom: 10px;
-//                 text-decoration: none;
-//               }
-//             }
-//           }
+//Short Description (Left)
 
-//           .fa-angle-right {
-//             margin-left: 10px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+//Right Description
+.about .description {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+//Buttons (Right - linkedin, resume)
+.about .buttons {
+  .linkedin {
+    padding: 10px 18px;
+    margin: 5px 10px 5px 0px;
+    border-radius: 999em;
+    color: $blue;
+    text-decoration: none;
+
+    border: 1px $blue solid;
+    &:hover {
+      background: none;
+      color: $white;
+      background-color: $blue;
+      text-decoration: none;
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+  .resume {
+    padding: 10px 18px;
+    margin: 5px 10px;
+    border-radius: 999em;
+    color: $blue;
+    text-decoration: none;
+    border: 1px $blue solid;
+    &:hover {
+      background: none;
+      color: $white;
+      background-color: $blue;
+      text-decoration: none;
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+  margin-bottom: 1rem;
+}
+
+.about .learn-more {
+  align-items: center;
+  color: $blue;
+  h3 a {
+    color: $blue;
+    text-decoration: none;
+  }
+  .fa-angle-right {
+    margin-left: 10px;
+  }
+}

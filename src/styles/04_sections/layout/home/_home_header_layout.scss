@@ -1,12 +1,9 @@
 //Entire Header Section
 .home-header {
   position: fixed;
-  top: 0;
-  height: 60px;
-  width: 100%;
-  z-index: 999;
 
   .container {
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -18,14 +15,13 @@
 .home-header .header-left {
   grid-column: 1/2;
   justify-self: start;
-  margin: auto 2rem;
 }
 
 //center
 .home-header .header-center {
   grid-column: 2/3;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 //right

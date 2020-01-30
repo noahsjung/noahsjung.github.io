@@ -1,14 +1,9 @@
 //Entire Experience Section
 .experience {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 125px;
-  margin: 0 auto;
-  text-align: start;
   .container {
     display: block;
     .experience-word {
-      margin-bottom: 50px;
+      display: inline-block;
     }
   }
 }
@@ -17,7 +12,6 @@
 .experience .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 100px;
 }
 
 //Experience Individual Left (Dates)
@@ -25,8 +19,11 @@
   grid-column: 1/2;
   display: flex;
   position: relative;
-  display: flex;
-  margin-top: 3rem;
+  // align-items: center;
+  p {
+    margin-top: 20px;
+    color: $gray;
+  }
 }
 
 //Experience Individual Right
@@ -36,7 +33,6 @@
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  z-index: 1;
   .logo {
     place-self: center;
     grid-column: 1/2;
@@ -48,19 +44,9 @@
       margin-top: 4px;
     }
   }
-  .description {
-    margin: 0.75rem 3rem 1.25rem 2rem;
-    grid-column: 1/4;
-    ul {
-      margin: 0;
-    }
-    li {
-      margin-bottom: 0.75rem;
-    }
-  }
+}
 
-  &:hover {
-    position: relative;
-    top: -10px;
-  }
+//Description
+.experience .description {
+  grid-column: 1/4;
 }

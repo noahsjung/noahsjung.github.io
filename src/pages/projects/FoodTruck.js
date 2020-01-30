@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectHeader from '../../components/01_sections/header/ProjectHeader';
+import ProjectHeader from '../../components/02_specific/projects/ProjectHeader';
 
 class FoodTruck extends React.Component {
   constructor(props) {

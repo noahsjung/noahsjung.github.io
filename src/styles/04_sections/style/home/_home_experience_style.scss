@@ -1,19 +1,35 @@
 //Entire Experience Section
 .experience {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 125px;
+  margin: 0 auto;
+  text-align: start;
   .container {
     .experience-word {
+      margin-bottom: 50px;
       color: $lightGray;
       border-bottom: 1px $lightGray solid;
-      display: inline-block;
       text-transform: uppercase;
+      border-bottom-color: transparent;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .0s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='lightgray' stroke-width='1.5' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: 0 1.4em;
+      background-size: auto 5px;
+      background-repeat: repeat-x;
+      padding-bottom: 10px;
+      text-decoration: none;
     }
   }
 }
 
 //Experience Content
+.experience .content {
+  margin-bottom: 100px;
+}
 
 //Experience Individual Left (Dates)
 .experience .left {
+  margin-top: 3rem;
   h4 {
     color: $gray;
     margin-top: 5px;
@@ -37,11 +53,25 @@
       color: $blue;
     }
   }
+  .description {
+    ul {
+      margin: 0;
+    }
+    li {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &:hover {
+    position: relative;
+    top: -10px;
+  }
 }
 
 //Description
 .experience .description {
-  margin-right: 1.5rem;
+  margin: 0.5rem 2rem 1rem 2rem;
+  margin-right: 3rem;
   ol {
     color: $gray;
     list-style-type: decimal-leading-zero;

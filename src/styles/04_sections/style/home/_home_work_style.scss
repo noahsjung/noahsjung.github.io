@@ -1,12 +1,23 @@
 //Entire Work Section
 .work {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 125px;
+  margin: 0 auto;
   text-align: start;
   .container {
     .work-word {
-      display: inline-block;
+      margin-bottom: 50px;
       color: $lightGray;
       border-bottom: 1px $lightGray solid;
       text-transform: uppercase;
+      border-bottom-color: transparent;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .0s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='lightgray' stroke-width='1.5' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: 0 1.4em;
+      background-size: auto 5px;
+      background-repeat: repeat-x;
+      padding-bottom: 10px;
+      text-decoration: none;
     }
   }
 }
@@ -14,30 +25,45 @@
 //Work Content
 .work .content {
   border-radius: $border-radius;
+  margin-bottom: 100px;
 }
 
 //Individual Box(not hovered)
 .work .work-box {
+  margin: 0 auto 50px auto;
+  max-width: 350px;
+  min-width: 300px;
+  margin-bottom: 75px;
   // background: $white;
   a {
     background: none;
   }
   .image {
+    height: 250px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     border-radius: $border-radius;
     box-shadow: 1px 2px 5px 3px $shadow-initial;
   }
   .text {
     .title {
+      margin: 1.5rem auto 0.5rem 0.3rem;
       color: $black;
     }
     .description {
       color: $gray;
+      margin-left: 0.3rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
 
 //Individual Box( hovered)
 .work .work-box-hovered {
+  margin: 0 auto 50px auto;
+  max-width: 350px;
+  min-width: 300px;
+  margin-bottom: 50px;
   // background: $white;
   a {
     background: none;
@@ -47,13 +73,20 @@
     border-radius: $border-radius;
     cursor: pointer;
     box-shadow: 1px 2px 7px 5px $shadow-after;
+    top: -10px;
+    height: 250px;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
   .text {
     .title {
       color: $blue;
+      margin: 1.5rem auto 0.5rem 0.3rem;
     }
     .description {
       color: $gray;
+      margin-left: 0.3rem;
+      margin-bottom: 1.75rem;
     }
   }
 }
