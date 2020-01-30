@@ -3,14 +3,14 @@ import React from 'react';
 function Basic(props) {
   return (
     <div>
-      <h6 className="content-heading">{props.heading}</h6>
-      <h1 className="content-subheading">{props.subheading}</h1>
+      <h2 className="content-heading">{props.heading}</h2>
+      <h2 className="content-subheading">{props.subheading}</h2>
       <img
         className="content-image"
         src={props.image}
         alt={props.heading}
       ></img>
-      <h4 className="content-description">{props.content}</h4>
+      <p className="content-description">{props.content}</p>
     </div>
   );
 }

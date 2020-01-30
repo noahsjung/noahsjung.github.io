@@ -11,6 +11,7 @@
 @import './03_basics/icons';
 @import './03_basics/links';
 @import './03_basics/typography';
+@import './03_basics/content_templates';
 
 .container {
   padding: 0 2rem;
@@ -22,8 +23,9 @@
 
 //04_sections-layout********************************************************
 
-@import './04_sections/layout/right_fixed_layout';
-@import './04_sections/layout/footer_layout';
+//gloabl
+@import './04_sections/layout/global/right_fixed_layout';
+@import './04_sections/layout/global/footer_layout';
 
 //home
 @import './04_sections/layout/home/home_header_layout';
@@ -35,8 +37,10 @@
 @import './04_sections/layout/project/project_header_layout';
 
 //04_sections-style********************************************************
-@import './04_sections/style/right_fixed_style';
-@import './04_sections/style/footer_style';
+
+//global
+@import './04_sections/style/global/right_fixed_style';
+@import './04_sections/style/global/footer_style';
 
 //home
 @import './04_sections/style/home/home_header_style';

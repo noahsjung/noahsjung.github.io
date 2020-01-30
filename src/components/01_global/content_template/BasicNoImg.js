@@ -2,11 +2,11 @@ import React from 'react';
 
 function BasicNoImg(props) {
   return (
-    <div>
-      <h6 className="content-heading">{props.heading}</h6>
-      <h1 className="content-subheading">{props.subheading}</h1>
-      <h4 className="content-description">{props.content}</h4>
-    </div>
+    <>
+      {props.heading && <h1 className="heading">{props.heading}</h1>}
+      {props.subheading && <h2 className="sub-heading">{props.subheading}</h2>}
+      {props.description && <p className="description">{props.description}</p>}
+    </>
   );
 }
 

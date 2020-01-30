@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Spinner } from 'react-spinkit';
 
-import ProjectHeader from '../../components/02_specific/projects/ProjectHeader';
+import ProjectHeader from '../../components/03_projects/ProjectHeader';
 
 class Weddell extends React.Component {
   constructor(props) {

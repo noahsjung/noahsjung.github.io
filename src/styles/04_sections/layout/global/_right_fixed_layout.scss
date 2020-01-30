@@ -1,0 +1,73 @@
+.right-container {
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  .design-develop {
+    text-align: end;
+    position: fixed;
+    top: 500px;
+    right: 10px;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    color: $gray;
+    .contribution {
+      transform-origin: bottom right;
+      margin: 0;
+    }
+    a {
+      color: $blue;
+      text-decoration: none;
+      &:hover {
+        // text-decoration: underline;
+        border-bottom-color: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: 0 1.2em;
+        background-size: auto 5px;
+        background-repeat: repeat-x;
+        padding-bottom: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+  .back-to-top {
+    text-align: end;
+    position: fixed;
+    right: 12px;
+    bottom: 20px;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    .to-top {
+      align-content: center;
+      color: $blue;
+      &:hover {
+        i {
+          margin-right: 20px;
+        }
+      }
+      i {
+        margin-right: 10px;
+      }
+      // line-height: 1.4rem;
+      a {
+        cursor: pointer;
+        color: $blue;
+        text-decoration: none;
+        &:hover {
+          // text-decoration: underline;
+          border-bottom-color: transparent;
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+          background-position: 0 1.2em;
+          background-size: auto 5px;
+          background-repeat: repeat-x;
+          padding-bottom: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media only screen and (max-height: 700px) {
+    .design-develop {
+      visibility: hidden;
+    }
+  }
+}

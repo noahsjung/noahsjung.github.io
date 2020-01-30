@@ -5,20 +5,20 @@ function Footer() {
   return (
     <div className="footer">
       <div className="container">
-        <p className="copyright">
+        <h6 className="copyright">
           Copyright © 2020 Noah Jung. <br />
           All rights reserved.
-        </p>
+        </h6>
 
         <div className="links">
           <a href="mailto:noahsjung@gmail.com">
-            <p>Email</p>
+            <h6>Email</h6>
           </a>
           <a href={resume} target="blank">
-            <p>Resume</p>
+            <h6>Resume</h6>
           </a>
           <a href="https://www.linkedin.com/in/noahsjung/" target="blank">
-            <p>LinkedIn</p>
+            <h6>LinkedIn</h6>
           </a>
         </div>
       </div>

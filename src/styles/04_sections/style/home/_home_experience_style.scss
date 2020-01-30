@@ -30,9 +30,9 @@
 //Experience Individual Left (Dates)
 .experience .left {
   margin-top: 3rem;
-  h4 {
+  .months {
     color: $gray;
-    margin-top: 5px;
+    margin-top: 7px;
   }
 }
 
@@ -58,7 +58,7 @@
       margin: 0;
     }
     li {
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
     }
   }
 

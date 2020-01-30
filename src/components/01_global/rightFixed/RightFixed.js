@@ -6,12 +6,12 @@ function RightFixed() {
   return (
     <div className="right-container">
       <div className="design-develop">
-        <p>
+        <h6 className="contribution">
           Designed and developed by <Link to="/about-me">Noah Jung</Link>.
-        </p>
+        </h6>
       </div>
       <div className="back-to-top">
-        <p>
+        <h6 className="to-top">
           <i className="fas fa-arrow-left"></i>
           <LinkScroll
             activeClass="active"
@@ -23,7 +23,7 @@ function RightFixed() {
           >
             Back to top.
           </LinkScroll>
-        </p>
+        </h6>
       </div>
     </div>
   );

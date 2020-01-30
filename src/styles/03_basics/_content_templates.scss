@@ -1,0 +1,27 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: $column-gap;
+  row-gap: $row-gap;
+}
+
+.content {
+  margin: 1rem auto;
+  .heading {
+    grid-column: 2/6;
+    text-align: left;
+    color: $black;
+  }
+  .sub-heading {
+    grid-column: 2/6;
+    text-align: left;
+  }
+  .description {
+    grid-column: 2/6;
+    text-align: left;
+  }
+  .break {
+    grid-column: 1/7;
+    height: $row-gap;
+  }
+}

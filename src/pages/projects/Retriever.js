@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectHeader from '../../components/02_specific/projects/ProjectHeader';
+import ProjectHeader from '../../components/03_projects/ProjectHeader';
 
 class Retriever extends React.Component {
   constructor(props) {

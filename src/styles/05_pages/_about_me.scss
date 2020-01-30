@@ -1,12 +1,11 @@
 .about-me {
   .content {
     padding-top: 125px;
-    display: block;
-    position: relative;
-  }
-  img {
-    // position: relative;
-
-    width: 40%;
+    margin-bottom: 150px;
+    .noah-photo {
+      grid-column: 2/6;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 }
