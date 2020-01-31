@@ -1,15 +1,19 @@
 @mixin grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(8, 1fr);
   column-gap: $column-gap;
   row-gap: $row-gap;
   // @media only screen and (max-width: $tablet) {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  //   column-gap: $column-gap;
-  //   row-gap: $row-gap;
+  //   display: block;
   // }
 }
+
+// @mixin grid-wrapper-inside {
+//   display: grid;
+//   grid-template-columns: repeat(6, 1fr);
+//   column-gap: $column-gap;
+//   row-gap: $row-gap;
+// }
 
 .grid-wrapper {
   @include grid-wrapper;
@@ -26,11 +30,11 @@ img {
 }
 
 @mixin grid-column-111000 {
-  grid-column: 2/5;
+  grid-column: 1/4;
   text-align: left;
 }
 @mixin grid-column-000111 {
-  grid-column: 5/8;
+  grid-column: 4/7;
   text-align: left;
 }
 

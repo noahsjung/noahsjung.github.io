@@ -13,8 +13,9 @@
 //Work Content
 .work .works {
   grid-column: 2/8;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-column-gap: $column-gap;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 //Individual Box not hovered

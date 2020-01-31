@@ -30,15 +30,13 @@
 //Individual Box(not hovered)
 .work .work-box {
   margin: 0 auto 50px auto;
-  max-width: 350px;
-  min-width: 300px;
   margin-bottom: 75px;
-  // background: $white;
   a {
     background: none;
   }
   .image {
     height: 250px;
+    height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
     border-radius: $border-radius;
@@ -60,10 +58,7 @@
 //Individual Box( hovered)
 .work .work-box-hovered {
   margin: 0 auto 50px auto;
-  max-width: 350px;
-  min-width: 300px;
   margin-bottom: 50px;
-  // background: $white;
   a {
     background: none;
   }
@@ -73,7 +68,6 @@
     cursor: pointer;
     box-shadow: 1px 2px 7px 5px $shadow-after;
     top: -10px;
-    height: 250px;
     margin-left: 50%;
     transform: translateX(-50%);
   }
