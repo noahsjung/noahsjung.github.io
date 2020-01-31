@@ -1,22 +1,29 @@
 //Entire Experience Section
 .experience {
-  .container {
-    display: block;
-    .experience-word {
-      display: inline-block;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: $column-gap;
+  row-gap: $row-gap;
+  max-width: 1680px;
+  margin: 0 auto;
+  .experience-word {
+    grid-column: 2/8;
+    display: inline-block;
   }
 }
 
 //Experience Content
-.experience .content {
+.experience .experiences {
+  grid-column: 2/8;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: $column-gap;
+  row-gap: $row-gap;
 }
 
 //Experience Individual Left (Dates)
 .experience .left {
-  grid-column: 1/2;
+  grid-column: 1/3;
   display: flex;
   position: relative;
   // align-items: center;
@@ -28,7 +35,7 @@
 
 //Experience Individual Right
 .experience .right {
-  grid-column: 2/4;
+  grid-column: 3/7;
   grid-column-gap: $column-gap;
   align-items: center;
   display: grid;

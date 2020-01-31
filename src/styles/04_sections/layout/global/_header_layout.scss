@@ -1,32 +1,32 @@
 //Entire Header Section
-.home-header {
-  position: fixed;
 
-  .container {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    grid-column-gap: $column-gap;
-  }
+.home-header {
+  max-width: 1680px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-column-gap: $column-gap;
 }
 
 //left
 .home-header .header-left {
   grid-column: 1/2;
-  justify-self: start;
+  justify-self: end;
 }
 
 //center
 .home-header .header-center {
-  grid-column: 2/3;
+  grid-column: 2/8;
   display: flex;
   // justify-content: space-between;
 }
 
 //right
 .home-header .header-right {
-  grid-column: 3/4;
+  grid-column: 8/9;
   justify-self: end;
 }
 

@@ -15,10 +15,10 @@ function RightFixed() {
           <i className="fas fa-arrow-left"></i>
           <LinkScroll
             activeClass="active"
-            to="about"
+            to="top"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={0}
             duration={500}
           >
             Back to top.

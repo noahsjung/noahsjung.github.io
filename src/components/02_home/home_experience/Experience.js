@@ -26,21 +26,19 @@ class Experience extends React.Component {
 
     return (
       <div className="experience" id="experience">
-        <div className="container">
-          <h4 className="experience-word">
-            <LiquidDistortionText
-              id="experience-word"
-              text="EXPERIENCE"
-              fontFamily="Roboto"
-              fontSize={24}
-              fill="#c4b2b6"
-              speed={0.7}
-              volatility={0.04}
-            />
-            {/* Experience */}
-          </h4>
-          {experiences}
-        </div>
+        <h4 className="experience-word">
+          <LiquidDistortionText
+            id="experience-word"
+            text="EXPERIENCE"
+            fontFamily="Roboto"
+            fontSize={24}
+            fill="#c4b2b6"
+            speed={0.7}
+            volatility={0.04}
+          />
+          {/* Experience */}
+        </h4>
+        {experiences}
       </div>
     );
   }

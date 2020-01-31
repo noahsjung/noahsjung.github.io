@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BulletDescription from './BulletDescription';
+import Break from '../../01_global/content_template/Break';
 
 class ExperienceIndi extends React.Component {
   state = {
@@ -15,7 +16,7 @@ class ExperienceIndi extends React.Component {
 
   render() {
     return (
-      <div className="content">
+      <div className="experiences">
         <div className="left">
           <h3 className="year">{this.props.year}&nbsp;&nbsp;</h3>
           <h6 className="months">{this.props.months}</h6>
@@ -41,6 +42,7 @@ class ExperienceIndi extends React.Component {
           {this.state.expanded && (
             <BulletDescription descriptions={this.props.descriptions} />
           )}
+          <Break />
         </div>
       </div>
     );

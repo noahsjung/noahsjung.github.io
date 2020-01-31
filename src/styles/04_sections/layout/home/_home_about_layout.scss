@@ -1,35 +1,30 @@
 //Entire About Section
 .about {
-  .container {
-    display: block;
-    .about-word {
-      display: inline-block;
-    }
-  }
-}
-
-//Content
-.about .content {
+  max-width: 1680px;
   display: grid;
-  grid-gap: $column-gap;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: $column-gap;
+  row-gap: $row-gap;
+  .about-word {
+    grid-column: 2/9;
+  }
 }
 
 //Short Description (Left)
 .about .short {
-  grid-column: 1/4;
+  grid-column: 2/9;
 }
 
 //description
 .about .description {
-  grid-column: 2/4;
+  grid-column: 4/8;
 }
 
 //Right Description
 
 //Buttons (Right - linkedin, resume)
 .about .buttons {
-  grid-column: 2/3;
+  grid-column: 4/8;
   align-self: end;
   display: inline-flex;
   .linkedin {
@@ -41,6 +36,5 @@
 }
 
 .about .learn-more {
-  grid-column: 2/3;
-  display: inline-block;
+  grid-column: 4/8;
 }

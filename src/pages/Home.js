@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import HomeHeader from '../components/02_home/HomeHeader';
+import Header from '../components/01_global/header/Header';
 import RightFixed from '../components/01_global/rightFixed/RightFixed';
 import About from '../components/02_home/home_about/About';
 import Work from '../components/02_home/home_work/Work';
@@ -14,9 +14,9 @@ function Home() {
   });
 
   return (
-    <div className="App">
-      <HomeHeader />
-      <RightFixed />
+    <div className="home">
+      <Header first="about" second="work" third="experience" />
+      <RightFixed first="about" />
       <About />
       <Work />
       <Experience />

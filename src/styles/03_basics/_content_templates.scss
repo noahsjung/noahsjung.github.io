@@ -1,27 +1,27 @@
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: $column-gap;
   row-gap: $row-gap;
 }
 
+%three-seven {
+  grid-column: 3/7;
+  text-align: left;
+}
+
 .content {
-  margin: 1rem auto;
-  .heading {
-    grid-column: 2/6;
-    text-align: left;
-    color: $black;
+  %heading {
+    @extend %three-seven;
   }
-  .sub-heading {
-    grid-column: 2/6;
-    text-align: left;
+  %sub-heading {
+    @extend %three-seven;
   }
-  .description {
-    grid-column: 2/6;
-    text-align: left;
+  %paragraph {
+    @extend %three-seven;
   }
-  .break {
-    grid-column: 1/7;
+  %break {
+    grid-column: 1/9;
     height: $row-gap;
   }
 }

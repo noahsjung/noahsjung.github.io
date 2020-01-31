@@ -22,21 +22,19 @@ class Work extends React.Component {
 
     return (
       <div className="work" id="work">
-        <div className="container">
-          <h4 className="work-word">
-            <LiquidDistortionText
-              id="work-word"
-              text="WORK"
-              fontFamily="Roboto"
-              fontSize={24}
-              fill="#c4b2b6"
-              speed={0.7}
-              volatility={0.04}
-            />
-            {/* Work */}
-          </h4>
-          <div className="content">{WorkItems}</div>
-        </div>
+        <h4 className="work-word">
+          <LiquidDistortionText
+            id="work-word"
+            text="WORK"
+            fontFamily="Roboto"
+            fontSize={24}
+            fill="#c4b2b6"
+            speed={0.7}
+            volatility={0.04}
+          />
+          {/* Work */}
+        </h4>
+        <div className="works">{WorkItems}</div>
       </div>
     );
   }

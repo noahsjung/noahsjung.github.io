@@ -24,11 +24,11 @@
 //04_sections-layout********************************************************
 
 //gloabl
+@import './04_sections/layout/global/header_layout';
 @import './04_sections/layout/global/right_fixed_layout';
 @import './04_sections/layout/global/footer_layout';
 
 //home
-@import './04_sections/layout/home/home_header_layout';
 @import './04_sections/layout/home/home_about_layout';
 @import './04_sections/layout/home/home_work_layout';
 @import './04_sections/layout/home/home_experience_layout';
@@ -39,11 +39,11 @@
 //04_sections-style********************************************************
 
 //global
+@import './04_sections/style/global/header_style';
 @import './04_sections/style/global/right_fixed_style';
 @import './04_sections/style/global/footer_style';
 
 //home
-@import './04_sections/style/home/home_header_style';
 @import './04_sections/style/home/home_about_style';
 @import './04_sections/style/home/home_work_style';
 @import './04_sections/style/home/home_experience_style';

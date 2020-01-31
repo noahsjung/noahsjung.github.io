@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HeaderLogo from '../01_global/HeaderLogo';
+import HeaderLogo from '../01_global/header/HeaderLogo';
 
 function ProjectHeader(props) {
   return (

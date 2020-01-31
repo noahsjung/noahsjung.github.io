@@ -1,14 +1,18 @@
 //Entire Work Section
 .work {
-  .container {
-    .work-word {
-      display: inline-block;
-    }
+  max-width: 1680px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: $column-gap;
+  .work-word {
+    // display: inline-flex;
+    grid-column: 2/8;
   }
 }
 
 //Work Content
-.work .content {
+.work .works {
+  grid-column: 2/8;
   display: flex;
   flex-wrap: wrap;
 }
