@@ -76,6 +76,9 @@
     span {
       position: relative;
       left: 1rem;
+      p {
+        color: $gray;
+      }
     }
   }
 }
