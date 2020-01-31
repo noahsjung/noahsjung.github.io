@@ -36,7 +36,6 @@ class Experience extends React.Component {
             speed={0.7}
             volatility={0.04}
           />
-          {/* Experience */}
         </h4>
         {experiences}
       </div>

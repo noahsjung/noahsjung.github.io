@@ -1,17 +1,16 @@
-.about-me {
-  .content {
-    padding-top: 125px;
-    margin-bottom: 150px;
-    .noah-photo {
-      @extend %three-seven;
-      width: 100%;
-      margin-bottom: 3rem;
-    }
-  }
-}
-
+//include the divs(ID) that are inside of grid-wrapper
+#top-contents,
 #background,
 #lesson-from-college,
 #my-mission {
-  @extend %three-seven;
+  grid-column: 1/9;
+  @include grid-wrapper;
+
+  .noah-image {
+    margin-bottom: 50px;
+  }
+
+  .grid-011110 {
+    @extend %grid-column-011110;
+  }
 }

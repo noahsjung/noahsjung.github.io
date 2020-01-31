@@ -16,31 +16,34 @@ function AboutMe() {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="about-me" id="top">
-      {/* <AboutHeader /> */}
+    <div className="about-me">
       <Header
         first="background"
         second="lesson-from-college"
         third="my-mission"
       />
       <RightFixed />
-
-      <div className="content">
-        <img className="noah-photo" src={noah_photo} alt="noah" />
-        <h1 className="heading">Who is Noah?</h1>
-        <p className="paragraph">
-          Hi, my name is Noah! I am a UX designer currently based in
-          Philadelphia. I was born in Mountain View CA, was raised in Seoul
-          Korea, and studied Industrial Design in Providence RI. Through this
-          post, I hope to tell you my story of how I got started in design and
-          became a user experience designer so that you know a little more about
-          myself as a person and a designer. If you want to know more about me,
-          you can contact me directly.
-        </p>
+      <section className="grid-wrapper">
+        <Break />
+        <Break />
+        <Break />
+        <div id="top-contents">
+          <img className="grid-011110 noah-image" src={noah_photo} alt="noah" />
+          <h1 className="grid-011110">Who is Noah?</h1>
+          <p className="grid-011110">
+            Hi, my name is Noah! I am a UX designer currently based in
+            Philadelphia. I was born in Mountain View CA, was raised in Seoul
+            Korea, and studied Industrial Design in Providence RI. Through this
+            post, I hope to tell you my story of how I got started in design and
+            became a user experience designer so that you know a little more
+            about myself as a person and a designer. If you want to know more
+            about me, you can contact me directly.
+          </p>
+        </div>
         <Break />
         <div id="background">
-          <h2 className="sub-heading">Background</h2>
-          <p className="paragraph">
+          <h2 className="grid-011110">Background</h2>
+          <p className="grid-011110">
             Growing up, I moved a lot: I lived in a total of 7 different cities.
             So, I naturally learned to spend much time on my own: playing golf,
             trying out different Korean food recipes, taking pictures and
@@ -56,8 +59,8 @@ function AboutMe() {
           <Break />
         </div>
         <div id="lesson-from-college">
-          <h2 className="sub-heading">Things I learned from College</h2>
-          <p className="paragraph">
+          <h2 className="grid-011110">Things I learned from College</h2>
+          <p className="grid-011110">
             To briefly tell you about RISD, it is a private college in
             Providence, Rhode Island and is known to have one of the best art
             and design programs in the world. Coming to RISD, I liked art and
@@ -91,8 +94,8 @@ function AboutMe() {
           <Break />
         </div>
         <div id="my-mission">
-          <h2 className="sub-heading">My Hope and Mission</h2>
-          <p className="paragraph">
+          <h2 className="grid-011110">My Hope and Mission</h2>
+          <p className="grid-011110">
             With the three things that I learned, this is the mission that I set
             for myself: I want to serve the people by sharing the same love I
             received so that more people could have happier lives. This is also
@@ -104,7 +107,7 @@ function AboutMe() {
             why I am always searching and trying to learn new things.
           </p>
         </div>
-      </div>
+      </section>
       <Footer />
     </div>
   );
