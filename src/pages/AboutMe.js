@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 //basic layout
 import Header from '../components/01_global/header/Header';

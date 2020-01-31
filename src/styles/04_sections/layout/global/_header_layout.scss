@@ -1,6 +1,5 @@
 //Entire Header Section
-
-.home-header {
+.header {
   max-width: 1680px;
   left: 50%;
   transform: translateX(-50%);
@@ -12,20 +11,20 @@
 }
 
 //left
-.home-header .header-left {
+.header .header-left {
   grid-column: 1/2;
   justify-self: end;
 }
 
 //center
-.home-header .header-center {
+.header .header-center {
   grid-column: 2/8;
   display: flex;
   // justify-content: space-between;
 }
 
 //right
-.home-header .header-right {
+.header .header-right {
   grid-column: 8/9;
   justify-self: end;
 }

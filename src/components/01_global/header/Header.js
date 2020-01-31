@@ -5,7 +5,7 @@ import HeaderLogo from './HeaderLogo';
 
 function Header(props) {
   return (
-    <header className="home-header" id="top">
+    <header className="header" id="top">
       <div className="header-left">
         <HeaderLogo color={'#888'} />
       </div>
