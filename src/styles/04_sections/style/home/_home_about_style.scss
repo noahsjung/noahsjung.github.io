@@ -75,9 +75,10 @@
 }
 
 .about .learn-more {
-  align-items: center;
+  // align-items: center;
   color: $blue;
   .fa-angle-right {
+    color: $blue;
     margin-left: 10px;
   }
 }
