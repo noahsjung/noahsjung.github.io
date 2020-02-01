@@ -6,7 +6,7 @@ function WorkBox(props) {
   const toggleHover = () => setHovered(!hovered);
 
   return (
-    <div className={hovered ? 'work-box-hovered' : 'work-box'}>
+    <div className={hovered ? 'work-box-hovered work-box' : 'work-box'}>
       <Link to={props.path}>
         <img
           className="image"

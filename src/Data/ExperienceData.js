@@ -14,8 +14,8 @@ const experienceData = [
     descriptions: [
       'Collaborated with product managers and the developers to bring features to life, ensuring deliverables are in-line with users and business needs and detailed enough for implementation.',
       'Led weekly design critiques to bring team back on schedule.',
-      'Planned and conducted multiple user-researches (surveys and interviews).',
-      'Designed app architecture, wireframes, usability test plans, and final screens of the app.'
+      'Designed app architecture, wireframes, usability test plans, and final screens of the app.',
+      'Planned and conducted multiple user-researches (surveys and interviews).'
     ],
     logo: weddell
   },

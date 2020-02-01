@@ -57,29 +57,13 @@
 
 //Individual Box( hovered)
 .work .work-box-hovered {
-  margin: 0 auto 50px auto;
-  margin-bottom: 50px;
-  a {
-    background: none;
-  }
-
   .image {
-    border-radius: $border-radius;
     cursor: pointer;
-    box-shadow: 1px 2px 7px 5px $shadow-after;
     top: -10px;
-    margin-left: 50%;
-    transform: translateX(-50%);
   }
   .text {
     .title {
       color: $blue;
-      margin: 1.5rem auto 0.5rem 0.3rem;
-    }
-    .description {
-      color: $gray;
-      margin-left: 0.3rem;
-      margin-bottom: 1.75rem;
     }
   }
 }
