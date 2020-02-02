@@ -15,7 +15,7 @@ function HeaderLogo(props) {
       {/* <xml version="1.0" encoding="UTF-8" /> */}
       <Link exact to="/">
         <svg
-          onMouseEnter={turnonHover}
+          onMouseOver={turnonHover}
           onMouseLeave={turnoffHover}
           width="28px"
           height="28px"

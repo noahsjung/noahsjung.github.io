@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { LiquidDistortionText } from 'react-text-fun';
 
 import WorkBox from './WorkBox';

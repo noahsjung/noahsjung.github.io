@@ -20,31 +20,31 @@ function About(props) {
       opacity: 0,
       x: -50,
       ease: Power2.easeOut,
-      delay: 0.5
+      delay: 1
     });
     TweenMax.from(description, 1.2, {
       opacity: 0,
       x: 50,
       ease: Power2.easeIOut,
-      delay: 0.8
+      delay: 1.3
     });
     TweenMax.from(aboutWord, 1, {
       opacity: 0,
       y: 20,
       ease: Power2.easeOut,
-      delay: 1.15
+      delay: 1.65
     });
     TweenMax.from(buttons, 1.3, {
       opacity: 0,
       y: 20,
       ease: Power2.easeOut,
-      delay: 1
+      delay: 1.5
     });
     TweenMax.from(learnMore, 1.3, {
       opacity: 0,
       y: 20,
       ease: Power2.easeOut,
-      delay: 1.15
+      delay: 1.65
     });
     console.log(learnMore);
   });

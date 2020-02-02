@@ -24,11 +24,12 @@ import icons from '../../images/weddell/icons.png';
 
 //image-final-design
 import onboarding from '../../images/weddell/onboarding.png';
-import questionCard from '../../images/weddell/question-card.png';
-import connect from '../../images/weddell/connect.png';
+import questionCardConnect from '../../images/weddell/question-card-connect.png';
 import parentingGuide from '../../images/weddell/parenting-guide.png';
 import parentingGuide2 from '../../images/weddell/parenting-guide2.png';
 import product from '../../images/weddell/product.png';
+import productDetail from '../../images/weddell/product-detail.png';
+import otherScreens from '../../images/weddell/other-screens.png';
 
 function Weddell() {
   useEffect(() => {
@@ -179,7 +180,7 @@ function Weddell() {
           <h5 className="gc-004">02. &nbsp; Product Recommendation</h5>
           <p className="gc-004">
             For busy and tired parents, we recommend baby products that are
-            rigorously tested and approved by us, so they do not spend much time
+            rigorously tested and approved, so they do not spend much time
             searching.
           </p>
           <div className="img-container gc-004">
@@ -219,24 +220,24 @@ function Weddell() {
           <div className="gc-000-3 research-finding-lists">
             <ol>
               <li className="research-finding-item">
-                <b>Safety</b> is the most important buying factor when
-                purchasing baby products.
-              </li>
-              <li className="research-finding-item">
                 <b>Simple and easy to use services</b> are most sought after
                 among Korean moms.
+              </li>
+              <li className="research-finding-item">
+                <b>Safety</b> is the most important buying factor when
+                purchasing baby products.
               </li>
               <li className="research-finding-item">
                 <b>Ingredients and user-reviews</b> are checked to confirm the
                 safety of baby products.
               </li>
               <li className="research-finding-item">
-                <b>Difficult scientific terminology</b> of ingredients in baby
-                products makes hard them hard to understand.
+                <b>Difficult scientific terminologies</b> of ingredients in baby
+                products make parents hard to understand about the products.
               </li>
               <li className="research-finding-item">
                 Many parents have <b>lost their trust in mom-cafes</b>, but they
-                still use them because there is <b>no other alternatives</b>.
+                still use them because there is <b>no other alternative</b>.
               </li>
             </ol>
             <br />
@@ -300,10 +301,9 @@ function Weddell() {
           </div>
           <h3 className="gc-004">1.Onboarding</h3>
           <p className="gc-004">
-            In the beginning of the process, users go through a delightful
-            onboarding experience. Based on the information that we gather from
-            the user, we analysis and provide parenting information that are
-            most related to them.
+            Users first go through a delightful onboarding process, and based on
+            the information that users provide, Weddell analyze and provide
+            parenting information that are most related to them.
           </p>
           <div className="gc-06 image-container">
             <img src={onboarding} alt="onboarding" />
@@ -313,28 +313,49 @@ function Weddell() {
             2. Question Cards & Connecting Users with Similar Interests
           </h3>
           <p className="gc-004">
-            To best curate contents and recommend products, Weddell needs a lot
-            of information about the user and their baby. In order to understand
-            what each individual users need and want, Weddell provides short and
-            easy questions that users can quickly answer. Based on the user's
-            answer, Weddell also connects users with others who have similar
-            interests.
+            To deeper understand each individual user's needs and wants, Weddell
+            asks short and easy questions that users can quickly answer. Based
+            on the user's answer, Weddell also connects users with others who
+            have similar interests.
           </p>
-          <h6 className="gc-004 note">
-            note: This feature is scheduled for the next version update due to
-            the development timeline.
-          </h6>
           <div className="gc-06 image-container">
-            <img src={questionCard} alt="questionCard" />
-          </div>
-          <div className="gc-06 image-container">
-            <img src={connect} alt="connect" />
+            <img src={questionCardConnect} alt="questionCardConnect" />
           </div>
           <Break />
-          <h3 className="gc-004">3. Parenting Guide</h3>
+          <h3 className="gc-004">3. Product</h3>
           <p className="gc-004">
-            Weddell provides two types of parenting guides: baby news and
-            original contents written by Weddell.
+            Weddell recommends products based on users' need and profile and
+            provide essential information about the product. This includes
+            summary of the product, ingredients, nutrition facts, sellers,
+            similar products, and FAQs.
+          </p>
+          <div className="gc-06 image-container">
+            <img src={product} alt="product" />
+          </div>
+          <Break />
+          <h3 className="gc-004">4. Product Detail</h3>
+          <p className="gc-004">
+            To solve the problem of difficult terminologies of ingredients and
+            help educate users, Weddell visualizes the ingredient information
+            based on{' '}
+            <a
+              href="https://www.ewg.org/release/ewg-s-food-scores-helps-people-find-out-what-s-really-their-food"
+              target="blank"
+            >
+              EWG score
+            </a>
+            .
+          </p>
+          <div className="gc-06 image-container">
+            <img src={productDetail} alt="productDetail" />
+          </div>
+          <Break />
+          <h3 className="gc-004">5. Parenting Guide</h3>
+          <p className="gc-004">
+            Weddell provides two types of parenting guides - baby news (unbiased
+            and objective contents) and original contents - based on users'
+            profile, interests, and needs. These curated contents will guide
+            parents to feel more ready about parenthood.
           </p>
           <div className="gc-06 image-container">
             <img src={parentingGuide} alt="parentingGuide" />
@@ -343,28 +364,21 @@ function Weddell() {
             <img src={parentingGuide2} alt="parentingGuide2" />
           </div>
           <Break />
-          <h3 className="gc-004">4. Product</h3>
-          <p className="gc-004">
-            Weddell recommends products based on users' need and profile.
-          </p>
-          <div className="gc-06 image-container">
-            <img src={product} alt="product" />
-          </div>
-          <Break />
-          <h3 className="gc-004">5. Product Detail</h3>
-          <p className="gc-004">
-            Weddell provides unbiased and transparent information about every
-            product in a way that is easy to understand.
-          </p>
-          <div className="gc-06 image-container">
-            <img src={onboarding} alt="onboarding" />
-          </div>
-          <Break />
           <h3 className="gc-004">6. Other Screens</h3>
           <div className="gc-06 image-container">
-            <img src={onboarding} alt="onboarding" />
+            <img src={otherScreens} alt="other-screens" />
           </div>
           <Break />
+          <h3 className="gc-004">7. Prototype</h3>
+          <iframe
+            className="gc-000-3"
+            title="prototype"
+            width="442"
+            height="935"
+            src="//invis.io/FSTLCZKEBVN"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
         <Break />
         <Break />
@@ -394,17 +408,17 @@ function Weddell() {
             <br /> Moreover, working with developers for the first time, I not
             only had to clearly explain my design decisions to them, keeping the
             library of design assets (even the names) was important. This
-            allowed me to design systematically and meticulously.{' '}
+            allowed me to design systematically and meticulously.
           </p>
           <Break />
           <h3 className="gc-004">
             2. I need to answer the "why" on my design decisions.
           </h3>
           <p className="gc-004">
-            Collaborating with people, there were many times I had to explain my
-            design decisions and why I made that design in order to convince
-            them. This helped me to practice to design with purpose which I
-            believe is an important part of UX.
+            Collaborating with other people, there were many times I had to
+            explain my design decisions and why I made that design in order to
+            convince them. This helped me to practice designing with
+            intentionality.
           </p>
         </div>
       </section>
