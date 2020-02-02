@@ -18,7 +18,7 @@ class ExperienceIndi extends React.Component {
       <div className="experiences">
         <div className="left">
           <h3 className="year">{this.props.year}&nbsp;&nbsp;</h3>
-          <h6 className="months">{this.props.months}</h6>
+          <p className="months">{this.props.months}</p>
         </div>
 
         <div

@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 function HeaderLogo(props) {
   var { color } = props;
   const [hovered, setHovered] = useState(false);
-  const toggleHover = () => setHovered(!hovered);
+  const turnonHover = () => setHovered(true);
+  const turnoffHover = () => setHovered(false);
+  // const toggleHover = () => setHovered(!hovered);
 
   hovered ? (color = '#0171e3') : (color = '#888');
 
@@ -13,8 +15,8 @@ function HeaderLogo(props) {
       {/* <xml version="1.0" encoding="UTF-8" /> */}
       <Link exact to="/">
         <svg
-          onMouseEnter={toggleHover}
-          onMouseLeave={toggleHover}
+          onMouseEnter={turnonHover}
+          onMouseLeave={turnoffHover}
           width="28px"
           height="28px"
           viewBox="0 0 30 30"

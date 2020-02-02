@@ -28,9 +28,9 @@ function AboutMe() {
         <Break />
         <Break />
         <div id="top-contents">
-          <img className="gc-00400 noah-image" src={noah_photo} alt="noah" />
-          <h1 className="gc-00400">Who is Noah?</h1>
-          <p className="gc-00400">
+          <img className="gc-004 noah-image" src={noah_photo} alt="noah" />
+          <h1 className="gc-004">Who is Noah?</h1>
+          <p className="gc-004">
             Hi, my name is Noah! I am a UX designer currently based in
             Philadelphia. I was born in Mountain View CA, was raised in Seoul
             Korea, and studied Industrial Design in Providence RI. Through this
@@ -42,8 +42,8 @@ function AboutMe() {
         </div>
         <Break />
         <div id="background">
-          <h2 className="gc-00400">Background</h2>
-          <p className="gc-00400">
+          <h2 className="gc-004">Background</h2>
+          <p className="gc-004">
             Growing up, I moved a lot: I lived in a total of 7 different cities.
             So, I naturally learned to spend much time on my own: playing golf,
             trying out different Korean food recipes, taking pictures and
@@ -59,8 +59,8 @@ function AboutMe() {
           <Break />
         </div>
         <div id="lessons-from-college">
-          <h2 className="gc-00400">Things I learned from College</h2>
-          <p className="gc-00400">
+          <h2 className="gc-004">Things I learned from College</h2>
+          <p className="gc-004">
             To briefly tell you about RISD, it is a private college in
             Providence, Rhode Island and is known to have one of the best art
             and design programs in the world. Coming to RISD, I liked art and
@@ -94,8 +94,8 @@ function AboutMe() {
           <Break />
         </div>
         <div id="my-mission">
-          <h2 className="gc-00400">My Hope and Mission</h2>
-          <p className="gc-00400">
+          <h2 className="gc-004">My Hope and Mission</h2>
+          <p className="gc-004">
             With the three things that I learned, this is the mission that I set
             for myself: I want to serve the people by sharing the same love I
             received so that more people could have happier lives. This is also

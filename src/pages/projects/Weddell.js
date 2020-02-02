@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { LiquidDistortionText } from 'react-text-fun';
 // import { Spinner } from 'react-spinkit';
 
 //components
@@ -7,7 +8,27 @@ import RightFixed from '../../components/01_global/rightFixed/RightFixed';
 import Footer from '../../components/01_global/Footer';
 import Break from '../../components/01_global/content_template/Break';
 
-//images
+//images-background
+import contentCuration from '../../images/weddell/content-curation.png';
+import productRecommendation from '../../images/weddell/product-recommendation.png';
+import ingredientAnalysis from '../../images/weddell/ingredient-analysis.png';
+
+//images-research
+import userJourney from '../../images/weddell/user-journey.png';
+
+//image-design-process
+import infoArch from '../../images/weddell/information-architecture.png';
+import wireframes from '../../images/weddell/wireframes.png';
+import branding from '../../images/weddell/branding.png';
+import icons from '../../images/weddell/icons.png';
+
+//image-final-design
+import onboarding from '../../images/weddell/onboarding.png';
+import questionCard from '../../images/weddell/question-card.png';
+import connect from '../../images/weddell/connect.png';
+import parentingGuide from '../../images/weddell/parenting-guide.png';
+import parentingGuide2 from '../../images/weddell/parenting-guide2.png';
+import product from '../../images/weddell/product.png';
 
 function Weddell() {
   useEffect(() => {
@@ -27,7 +48,7 @@ function Weddell() {
 
       <section className="grid-wrapper">
         <div id="introduction">
-          <h1 className="project-name gc-00400">Weddell</h1>
+          <h1 className="project-name gc-004">Weddell</h1>
 
           <div className="project-details gc-01">
             <div className="project-detail-item">
@@ -54,7 +75,7 @@ function Weddell() {
             <div className="project-detail-item">
               <h7 className="title">Links</h7>
               <h6 className="item">
-                <a href="weddell.co" target="blank">
+                <a href="https://www.weddell.co/" target="blank">
                   Website
                 </a>
               </h6>
@@ -73,7 +94,18 @@ function Weddell() {
         </div>
         <div id="background">
           <Break />
-          <h2 className="gc-00400">
+          <div className="gc-004 background-word">
+            <LiquidDistortionText
+              id="background-word"
+              text="BACKGROUND"
+              fontFamily="Roboto"
+              fontSize={24}
+              fill="#c4b2b6"
+              speed={0.7}
+              volatility={0.04}
+            />
+          </div>
+          <h2 className="gc-004">
             Weddell simplifies the access to parenting contents and baby
             products, so parents can focus on being parents they truly aspire to
             be.
@@ -81,7 +113,7 @@ function Weddell() {
           <Break />
           <Break />
           <h3 className="gc-001">My Role / Responsibility</h3>
-          <div className="gc-000-300 responsibilities">
+          <div className="gc-000-3 responsibilities">
             <ol>
               <li className="responsibility-item">
                 Collaborated with product managers and the developers to bring
@@ -104,7 +136,7 @@ function Weddell() {
             <br />
           </div>
           <h3 className="gc-001">Problems</h3>
-          <div className="gc-000-300 problem-lists">
+          <div className="gc-000-3 problem-lists">
             <ol>
               <li className="problem-item">
                 A lot of parents doubt about their readiness for parenthood as
@@ -113,7 +145,15 @@ function Weddell() {
               <li className="problem-item">
                 Korean mom-cafe, the most popular online platform to share
                 parenting information in Korea, has shown a lot of worrisome
-                issues including false advertisment and fake reviews.
+                issues including false advertisment and fake reviews in recent
+                years.
+                <br />
+                <a
+                  href="http://mn.kbs.co.kr/news/view.do?ncd=4146236"
+                  target="blanck"
+                >
+                  More info (in Korean).
+                </a>
               </li>
               <li className="problem-item">
                 Many Korean parents do not trust mom-cafes anymore.
@@ -122,33 +162,251 @@ function Weddell() {
             <br />
             <br />
           </div>
-          <h3 className="gc-001">Solution</h3>
-          <div className="gc-000-300 goal-lists">
-            <h5>01. &nbsp; Curated Contents</h5>
-            <p className="solution-description">
-              We analyze what is most needed for individual users depending on
-              their preferences, sex, ages, etc. and provide curated information
-              according to their needs.
-            </p>
-            <h5>02. &nbsp; Product Recommendation</h5>
-            <p className="solution-description">
-              Among thousands of products in the market, we recommend products
-              with its
-            </p>
-            <h5>03. &nbsp; Ingredient Analysis</h5>
-            <p className="solution-description">
-              We analyze what is most needed for individual users and provided
-              curated contents that{' '}
-            </p>
+          <h3 className="gc-004">Solution Overview</h3>
+          <Break />
+
+          <h5 className="gc-004">01. Curated Contents</h5>
+          <p className="gc-004">
+            Weddell analyze what is most needed for individual users depending
+            on their preferences, sex, ages, etc. and provide curated
+            information according to their needs.
+          </p>
+          <div className="img-container gc-004">
+            <img src={contentCuration} alt="content-curation" />
+          </div>
+          <Break />
+
+          <h5 className="gc-004">02. &nbsp; Product Recommendation</h5>
+          <p className="gc-004">
+            For busy and tired parents, we recommend baby products that are
+            rigorously tested and approved by us, so they do not spend much time
+            searching.
+          </p>
+          <div className="img-container gc-004">
+            <img src={productRecommendation} alt="product-recommendation" />
+          </div>
+          <Break />
+
+          <h5 className="gc-004">03. &nbsp; Ingredient Analysis</h5>
+          <p className="gc-004">
+            Parents are assured about the safety of every product that they buy
+            through easy-to-understand and thorough ingredient analysis.
+          </p>
+          <div className="img-container gc-06">
+            <img src={ingredientAnalysis} alt="ingredientAnalysis" />
           </div>
           <Break />
           <Break />
-          <h2 className="gc-00400">Overview of Weddell</h2>
         </div>
-        <div id="research"></div>
-        <div id="design-process"></div>
-        <div id="final-design"></div>
-        <div id="learnings"></div>
+        <div id="research">
+          <div className="gc-004 research-word">
+            <LiquidDistortionText
+              id="research-word"
+              text="RESEARCH"
+              fontFamily="Roboto"
+              fontSize={24}
+              fill="#c4b2b6"
+              speed={0.7}
+              volatility={0.04}
+            />
+          </div>
+          <h2 className="gc-004">
+            The user research was conducted to validate the problems and help
+            crafting persona and user-journey.
+          </h2>
+          <Break />
+          <h3 className="gc-001">Findings</h3>
+          <div className="gc-000-3 research-finding-lists">
+            <ol>
+              <li className="research-finding-item">
+                <b>Safety</b> is the most important buying factor when
+                purchasing baby products.
+              </li>
+              <li className="research-finding-item">
+                <b>Simple and easy to use services</b> are most sought after
+                among Korean moms.
+              </li>
+              <li className="research-finding-item">
+                <b>Ingredients and user-reviews</b> are checked to confirm the
+                safety of baby products.
+              </li>
+              <li className="research-finding-item">
+                <b>Difficult scientific terminology</b> of ingredients in baby
+                products makes hard them hard to understand.
+              </li>
+              <li className="research-finding-item">
+                Many parents have <b>lost their trust in mom-cafes</b>, but they
+                still use them because there is <b>no other alternatives</b>.
+              </li>
+            </ol>
+            <br />
+            <br />
+          </div>
+          <h3 className="gc-004">User Journey</h3>
+          <p className="gc-004">
+            We envision that with Weddell, parents spend less time searching for
+            information, but rather spend more time with their babies.
+          </p>
+          <div className="gc-004 image-container">
+            <img src={userJourney} alt="user-journey" />
+          </div>
+        </div>
+        <Break />
+        <Break />
+        <div id="design-process">
+          <div className="gc-004 process-word">
+            <LiquidDistortionText
+              id="process-word"
+              text="DESIGN PROCESS"
+              fontFamily="Roboto"
+              fontSize={24}
+              fill="#c4b2b6"
+              speed={0.7}
+              volatility={0.04}
+            />
+          </div>
+          {/* <h2 className="gc-004"></h2> */}
+          <h3 className="gc-004">Information Architecture</h3>
+          <div className="gc-004 image-container">
+            <img src={infoArch} alt="information-architecture" />
+          </div>
+          <Break />
+          <h3 className="gc-004">Wireframes</h3>
+          <div className="gc-004 image-container">
+            <img src={wireframes} alt="wirframes" />
+          </div>
+          <Break />
+          <h3 className="gc-004">Branding & User Interface</h3>
+          <div className="gc-004 image-container">
+            <img src={branding} alt="branding" />
+          </div>
+          <div className="gc-004 image-container">
+            <img src={icons} alt="icons" />
+          </div>
+        </div>
+        <Break />
+        <Break />
+        <div id="final-design">
+          <div className="gc-004 final-word">
+            <LiquidDistortionText
+              id="final-word"
+              text="FINAL DESIGN"
+              fontFamily="Roboto"
+              fontSize={24}
+              fill="#c4b2b6"
+              speed={0.7}
+              volatility={0.04}
+            />
+          </div>
+          <h3 className="gc-004">1.Onboarding</h3>
+          <p className="gc-004">
+            In the beginning of the process, users go through a delightful
+            onboarding experience. Based on the information that we gather from
+            the user, we analysis and provide parenting information that are
+            most related to them.
+          </p>
+          <div className="gc-06 image-container">
+            <img src={onboarding} alt="onboarding" />
+          </div>
+          <Break />
+          <h3 className="gc-004">
+            2. Question Cards & Connecting Users with Similar Interests
+          </h3>
+          <p className="gc-004">
+            To best curate contents and recommend products, Weddell needs a lot
+            of information about the user and their baby. In order to understand
+            what each individual users need and want, Weddell provides short and
+            easy questions that users can quickly answer. Based on the user's
+            answer, Weddell also connects users with others who have similar
+            interests.
+          </p>
+          <h6 className="gc-004 note">
+            note: This feature is scheduled for the next version update due to
+            the development timeline.
+          </h6>
+          <div className="gc-06 image-container">
+            <img src={questionCard} alt="questionCard" />
+          </div>
+          <div className="gc-06 image-container">
+            <img src={connect} alt="connect" />
+          </div>
+          <Break />
+          <h3 className="gc-004">3. Parenting Guide</h3>
+          <p className="gc-004">
+            Weddell provides two types of parenting guides: baby news and
+            original contents written by Weddell.
+          </p>
+          <div className="gc-06 image-container">
+            <img src={parentingGuide} alt="parentingGuide" />
+          </div>
+          <div className="gc-06 image-container">
+            <img src={parentingGuide2} alt="parentingGuide2" />
+          </div>
+          <Break />
+          <h3 className="gc-004">4. Product</h3>
+          <p className="gc-004">
+            Weddell recommends products based on users' need and profile.
+          </p>
+          <div className="gc-06 image-container">
+            <img src={product} alt="product" />
+          </div>
+          <Break />
+          <h3 className="gc-004">5. Product Detail</h3>
+          <p className="gc-004">
+            Weddell provides unbiased and transparent information about every
+            product in a way that is easy to understand.
+          </p>
+          <div className="gc-06 image-container">
+            <img src={onboarding} alt="onboarding" />
+          </div>
+          <Break />
+          <h3 className="gc-004">6. Other Screens</h3>
+          <div className="gc-06 image-container">
+            <img src={onboarding} alt="onboarding" />
+          </div>
+          <Break />
+        </div>
+        <Break />
+        <Break />
+        <div id="learnings">
+          <div className="gc-004 learning-word">
+            <LiquidDistortionText
+              id="learning-word"
+              text="LEARNINGS"
+              fontFamily="Roboto"
+              fontSize={24}
+              fill="#c4b2b6"
+              speed={0.7}
+              volatility={0.04}
+            />
+          </div>
+          <h3 className="gc-004">
+            1. The best design comes from the intersection of business, design,
+            and technology.
+          </h3>
+          <p className="gc-004">
+            Working closely with the CEO, the PM, the Design Director, and
+            Developers, I realized that understanding business goals and
+            technology limitations is a crucial part of UX design. Designing a
+            product that brings no business value or that is too difficult to
+            build is meaningless.
+            <br />
+            <br /> Moreover, working with developers for the first time, I not
+            only had to clearly explain my design decisions to them, keeping the
+            library of design assets (even the names) was important. This
+            allowed me to design systematically and meticulously.{' '}
+          </p>
+          <Break />
+          <h3 className="gc-004">
+            2. I need to answer the "why" on my design decisions.
+          </h3>
+          <p className="gc-004">
+            Collaborating with people, there were many times I had to explain my
+            design decisions and why I made that design in order to convince
+            them. This helped me to practice to design with purpose which I
+            believe is an important part of UX.
+          </p>
+        </div>
       </section>
       <Footer />
     </div>

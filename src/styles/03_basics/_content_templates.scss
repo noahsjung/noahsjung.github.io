@@ -33,25 +33,43 @@ img {
 }
 
 %grid-columns {
-  //full width
-  .gc-00400 {
+  .gc-004 {
     @include grid-column(3, -3, left);
   }
+  .gc-06 {
+    @include grid-column(2, -2, left);
+  }
 
-  //left small
+  //left
   .gc-01 {
     @include grid-column(2, 3, left);
   }
   .gc-001 {
     @include grid-column(3, 4, left);
   }
+  .gc-02 {
+    @include grid-column(2, 4, left);
+  }
+  .gc-002 {
+    @include grid-column(3, 5, left);
+  }
+  .gc-03 {
+    @include grid-column(2, 5, left);
+  }
 
-  //right 1/3
-  .gc-000-300 {
+  //right
+  .gc-000-3 {
     @include grid-column(4, -3, left);
   }
 
-  //right almost full (hero)
+  .gc-000-4 {
+    @include grid-column(4, -2, left);
+  }
+
+  .gc-0000-5 {
+    @include grid-column(4, -1, left);
+  }
+
   .gc-00-6 {
     @include grid-column(3, -1, left);
   }

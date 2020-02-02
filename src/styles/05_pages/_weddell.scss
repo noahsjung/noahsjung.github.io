@@ -61,8 +61,6 @@
   .hero-image {
     grid-column: 3/-1;
     grid-row: 3/-1;
-
-    // content: url(../../images/weddell/hero.png);
     background-image: url(../../images/weddell/hero.png);
     background-size: auto 100%;
     background-position: center center;
@@ -71,12 +69,14 @@
     opacity: 1;
     overflow: hidden;
   }
+
+  .background-word {
+    opacity: 1;
+  }
 }
 
-#background {
-  .solution-description {
-    padding-left: 2.75rem;
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
+#final-design {
+  .note {
+    color: $lightGray;
   }
 }
