@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectHeader from '../../components/03_projects/ProjectHeader';
+// import ProjectHeader from '../../components/03_projects/ProjectHeader';
 
 class Waymo extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Waymo extends React.Component {
   render() {
     return (
       <div className="project">
-        <ProjectHeader title="Waymo" />
+        {/* <ProjectHeader title="Waymo" /> */}
         <div className="iframe-container">
           <iframe
             src="https://noahsjung.com/works/waymo_drive"

@@ -80,3 +80,13 @@
     color: $lightGray;
   }
 }
+
+.other-works-word {
+  @include grid-column(2, -1, left);
+}
+
+#work {
+  margin-top: 150px;
+  margin-bottom: -150px;
+  background-color: $lightestGray;
+}

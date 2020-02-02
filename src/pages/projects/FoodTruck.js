@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectHeader from '../../components/03_projects/ProjectHeader';
+// import ProjectHeader from '../../components/03_projects/ProjectHeader';
 
 class FoodTruck extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class FoodTruck extends React.Component {
   render() {
     return (
       <div className="project">
-        <ProjectHeader title="Food Truck Finder" />
+        {/* <ProjectHeader title="Food Truck Finder" /> */}
         <div className="iframe-container">
           <iframe
             src="https://noahsjung.com/works/food-truck-finder"

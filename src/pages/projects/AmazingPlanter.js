@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectHeader from '../../components/03_projects/ProjectHeader';
+// import ProjectHeader from '../../components/03_projects/ProjectHeader';
 
 class AmazingPlanter extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class AmazingPlanter extends React.Component {
   render() {
     return (
       <div className="project">
-        <ProjectHeader title="A-Mazing Planter" />
+        {/* <ProjectHeader title="A-Mazing Planter" /> */}
         <div className="iframe-container">
           <iframe
             src="https://noahsjung.com/works/amazing-planter"

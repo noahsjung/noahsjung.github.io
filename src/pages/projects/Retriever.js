@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectHeader from '../../components/03_projects/ProjectHeader';
+// import ProjectHeader from '../../components/03_projects/ProjectHeader';
 
 class Retriever extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Retriever extends React.Component {
   render() {
     return (
       <div className="project">
-        <ProjectHeader title="Retriever App" />
+        {/* <ProjectHeader title="Retriever App" /> */}
         <div className="iframe-container">
           <iframe
             src="https://noahsjung.com/works/retriever-app"

@@ -5,8 +5,10 @@ import { LiquidDistortionText } from 'react-text-fun';
 //components
 import Header from '../../components/01_global/header/Header';
 import RightFixed from '../../components/01_global/rightFixed/RightFixed';
+import OtherProjects from '../../components/03_projects/OtherProjects';
 import Footer from '../../components/01_global/Footer';
 import Break from '../../components/01_global/content_template/Break';
+import BreakThree from '../../components/01_global/content_template/BreakThree';
 
 //images-background
 import contentCuration from '../../images/weddell/content-curation.png';
@@ -94,7 +96,7 @@ function Weddell() {
           <div className="hero-image gc-00-6"></div>
         </div>
         <div id="background">
-          <Break />
+          <BreakThree />
           <div className="gc-004 background-word">
             <LiquidDistortionText
               id="background-word"
@@ -111,8 +113,7 @@ function Weddell() {
             products, so parents can focus on being parents they truly aspire to
             be.
           </h2>
-          <Break />
-          <Break />
+          <BreakThree />
           <h3 className="gc-001">My Role / Responsibility</h3>
           <div className="gc-000-3 responsibilities">
             <ol>
@@ -133,8 +134,7 @@ function Weddell() {
                 interviews).
               </li>
             </ol>
-            <br />
-            <br />
+            <BreakThree />
           </div>
           <h3 className="gc-001">Problems</h3>
           <div className="gc-000-3 problem-lists">
@@ -160,12 +160,11 @@ function Weddell() {
                 Many Korean parents do not trust mom-cafes anymore.
               </li>
             </ol>
-            <br />
-            <br />
+            <BreakThree />
           </div>
-          <h3 className="gc-004">Solution Overview</h3>
-          <Break />
-
+          <h3 className="gc-004">Solutions Overview</h3>
+          <br />
+          <br />
           <h5 className="gc-004">01. Curated Contents</h5>
           <p className="gc-004">
             Weddell analyze what is most needed for individual users depending
@@ -175,7 +174,8 @@ function Weddell() {
           <div className="img-container gc-004">
             <img src={contentCuration} alt="content-curation" />
           </div>
-          <Break />
+          <BreakThree />
+          <BreakThree />
 
           <h5 className="gc-004">02. &nbsp; Product Recommendation</h5>
           <p className="gc-004">
@@ -186,7 +186,8 @@ function Weddell() {
           <div className="img-container gc-004">
             <img src={productRecommendation} alt="product-recommendation" />
           </div>
-          <Break />
+          <BreakThree />
+          <BreakThree />
 
           <h5 className="gc-004">03. &nbsp; Ingredient Analysis</h5>
           <p className="gc-004">
@@ -196,8 +197,10 @@ function Weddell() {
           <div className="img-container gc-06">
             <img src={ingredientAnalysis} alt="ingredientAnalysis" />
           </div>
-          <Break />
-          <Break />
+          <BreakThree />
+
+          <hr className="gc-06" />
+          <BreakThree />
         </div>
         <div id="research">
           <div className="gc-004 research-word">
@@ -215,7 +218,7 @@ function Weddell() {
             The user research was conducted to validate the problems and help
             crafting persona and user-journey.
           </h2>
-          <Break />
+          <BreakThree />
           <h3 className="gc-001">Findings</h3>
           <div className="gc-000-3 research-finding-lists">
             <ol>
@@ -240,8 +243,7 @@ function Weddell() {
                 still use them because there is <b>no other alternative</b>.
               </li>
             </ol>
-            <br />
-            <br />
+            <BreakThree />
           </div>
           <h3 className="gc-004">User Journey</h3>
           <p className="gc-004">
@@ -251,9 +253,12 @@ function Weddell() {
           <div className="gc-004 image-container">
             <img src={userJourney} alt="user-journey" />
           </div>
+          <Break />
+          <Break />
+          <hr className="gc-06" />
+          <Break />
+          <Break />
         </div>
-        <Break />
-        <Break />
         <div id="design-process">
           <div className="gc-004 process-word">
             <LiquidDistortionText
@@ -271,12 +276,12 @@ function Weddell() {
           <div className="gc-004 image-container">
             <img src={infoArch} alt="information-architecture" />
           </div>
-          <Break />
+          <BreakThree />
           <h3 className="gc-004">Wireframes</h3>
           <div className="gc-004 image-container">
             <img src={wireframes} alt="wirframes" />
           </div>
-          <Break />
+          <BreakThree />
           <h3 className="gc-004">Branding & User Interface</h3>
           <div className="gc-004 image-container">
             <img src={branding} alt="branding" />
@@ -284,9 +289,13 @@ function Weddell() {
           <div className="gc-004 image-container">
             <img src={icons} alt="icons" />
           </div>
+
+          <BreakThree />
+
+          <hr className="gc-06" />
+
+          <BreakThree />
         </div>
-        <Break />
-        <Break />
         <div id="final-design">
           <div className="gc-004 final-word">
             <LiquidDistortionText
@@ -308,7 +317,7 @@ function Weddell() {
           <div className="gc-06 image-container">
             <img src={onboarding} alt="onboarding" />
           </div>
-          <Break />
+          <BreakThree />
           <h3 className="gc-004">
             2. Question Cards & Connecting Users with Similar Interests
           </h3>
@@ -321,8 +330,22 @@ function Weddell() {
           <div className="gc-06 image-container">
             <img src={questionCardConnect} alt="questionCardConnect" />
           </div>
-          <Break />
-          <h3 className="gc-004">3. Product</h3>
+          <BreakThree />
+          <h3 className="gc-004">3. Parenting Guide</h3>
+          <p className="gc-004">
+            Weddell provides Three types of parenting guides - baby news
+            (unbiased and objective contents) and original contents - based on
+            users' profile, interests, and needs. These curated contents will
+            guide parents to feel more ready about parenthood.
+          </p>
+          <div className="gc-06 image-container">
+            <img src={parentingGuide} alt="parentingGuide" />
+          </div>
+          <div className="gc-06 image-container">
+            <img src={parentingGuide2} alt="parentingGuide2" />
+          </div>
+          <BreakThree />
+          <h3 className="gc-004">4. Product</h3>
           <p className="gc-004">
             Weddell recommends products based on users' need and profile and
             provide essential information about the product. This includes
@@ -332,8 +355,8 @@ function Weddell() {
           <div className="gc-06 image-container">
             <img src={product} alt="product" />
           </div>
-          <Break />
-          <h3 className="gc-004">4. Product Detail</h3>
+          <BreakThree />
+          <h3 className="gc-004">5. Product Detail</h3>
           <p className="gc-004">
             To solve the problem of difficult terminologies of ingredients and
             help educate users, Weddell visualizes the ingredient information
@@ -349,26 +372,12 @@ function Weddell() {
           <div className="gc-06 image-container">
             <img src={productDetail} alt="productDetail" />
           </div>
-          <Break />
-          <h3 className="gc-004">5. Parenting Guide</h3>
-          <p className="gc-004">
-            Weddell provides two types of parenting guides - baby news (unbiased
-            and objective contents) and original contents - based on users'
-            profile, interests, and needs. These curated contents will guide
-            parents to feel more ready about parenthood.
-          </p>
-          <div className="gc-06 image-container">
-            <img src={parentingGuide} alt="parentingGuide" />
-          </div>
-          <div className="gc-06 image-container">
-            <img src={parentingGuide2} alt="parentingGuide2" />
-          </div>
-          <Break />
+          <BreakThree />
           <h3 className="gc-004">6. Other Screens</h3>
           <div className="gc-06 image-container">
             <img src={otherScreens} alt="other-screens" />
           </div>
-          <Break />
+          <BreakThree />
           <h3 className="gc-004">7. Prototype</h3>
           <iframe
             className="gc-000-3"
@@ -379,9 +388,10 @@ function Weddell() {
             frameborder="0"
             allowfullscreen
           ></iframe>
+          <BreakThree />
+          <hr className="gc-06" />
+          <BreakThree />
         </div>
-        <Break />
-        <Break />
         <div id="learnings">
           <div className="gc-004 learning-word">
             <LiquidDistortionText
@@ -422,6 +432,7 @@ function Weddell() {
           </p>
         </div>
       </section>
+      <OtherProjects />
       <Footer />
     </div>
   );
