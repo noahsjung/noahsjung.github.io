@@ -1,0 +1,32 @@
+#introduction {
+  .project-name {
+    grid-row: 2/3;
+  }
+
+  .project-details {
+    grid-row: 3/-1;
+    .project-detail-item {
+      margin-bottom: 20px;
+
+      .title {
+        margin-bottom: 0.25rem;
+      }
+      .item {
+        color: $gray;
+        margin-bottom: 0.1rem;
+      }
+    }
+  }
+
+  .hero-image {
+    grid-column: 3/-1;
+    grid-row: 3/-1;
+    background-image: url(../../../../images/food-truck-finder/hero.png);
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    opacity: 1;
+    overflow: hidden;
+  }
+}

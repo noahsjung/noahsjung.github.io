@@ -20,7 +20,7 @@ class OtherProjects extends React.Component {
     ));
 
     return (
-      <div className="work" id="work">
+      <div className="work" id="other-works">
         <h2 className="other-works-word">Other Works</h2>
         <h4 className="work-word">{/* Work */}</h4>
         <div className="works">{WorkItems}</div>

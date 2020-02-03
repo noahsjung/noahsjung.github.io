@@ -1,0 +1,93 @@
+//with iframe
+// .weddell-project {
+//   .loading {
+//     display: flex;
+//     margin-right: auto;
+//     margin-left: auto;
+//     top: 400px;
+//     width: 50px;
+//     height: 50px;
+//   }
+// }
+
+//include the divs(ID) that are inside of grid-wrapper
+#challenge,
+#context,
+#design-exploration,
+#final-design,
+#reflections {
+  //taking end to end section from the paren grid wrapper
+  grid-column: 1/-1;
+
+  //initializing another child grid (same # of column as the parent, grid-wrapper)
+  @include grid-wrapper;
+
+  @extend %grid-columns;
+}
+
+#challenge {
+  grid-column: 1/-1;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  column-gap: $column-gap;
+  row-gap: $row-gap;
+  height: 100vh;
+  overflow: hidden;
+
+  @extend %grid-columns;
+}
+
+#introduction {
+  .project-name {
+    grid-row: 2/3;
+  }
+
+  .project-details {
+    grid-row: 3/-1;
+    .project-detail-item {
+      margin-bottom: 20px;
+
+      .title {
+        margin-bottom: 0.25rem;
+      }
+      .item {
+        color: $gray;
+        margin-bottom: 0.1rem;
+      }
+    }
+  }
+
+  .hero-image {
+    grid-column: 3/-1;
+    grid-row: 3/-1;
+    background-image: url(../../images/food-truck-finder/hero.png);
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  .background-word {
+    opacity: 1;
+  }
+}
+
+#final-design {
+  .note {
+    color: $lightGray;
+  }
+}
+
+.other-works-word {
+  @include grid-column(2, -1, left);
+}
+
+#other-works {
+  background-color: $lightestGray;
+  margin-top: 150px;
+  margin-bottom: -150px;
+}
