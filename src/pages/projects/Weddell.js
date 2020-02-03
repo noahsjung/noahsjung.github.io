@@ -177,7 +177,7 @@ function Weddell() {
           <BreakThree />
           <BreakThree />
 
-          <h5 className="gc-004">02. &nbsp; Product Recommendation</h5>
+          <h5 className="gc-004">02. Product Recommendation</h5>
           <p className="gc-004">
             For busy and tired parents, we recommend baby products that are
             rigorously tested and approved, so they do not spend much time
@@ -189,7 +189,7 @@ function Weddell() {
           <BreakThree />
           <BreakThree />
 
-          <h5 className="gc-004">03. &nbsp; Ingredient Analysis</h5>
+          <h5 className="gc-004">03. Ingredient Analysis</h5>
           <p className="gc-004">
             Parents are assured about the safety of every product that they buy
             through easy-to-understand and thorough ingredient analysis.
@@ -198,9 +198,10 @@ function Weddell() {
             <img src={ingredientAnalysis} alt="ingredientAnalysis" />
           </div>
           <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
         </div>
         <div id="research">
-          <hr className="gc-06" />
           <BreakThree />
           <div className="gc-004 research-word">
             <LiquidDistortionText
@@ -253,9 +254,10 @@ function Weddell() {
             <img src={userJourney} alt="user-journey" />
           </div>
           <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
         </div>
         <div id="design-process">
-          <hr className="gc-06" />
           <BreakThree />
           <div className="gc-004 process-word">
             <LiquidDistortionText
@@ -290,9 +292,10 @@ function Weddell() {
             <img src={icons} alt="icons" />
           </div>
           <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
         </div>
         <div id="final-design">
-          <hr className="gc-06" />
           <BreakThree />
           <div className="gc-004 final-word">
             <LiquidDistortionText
@@ -392,9 +395,10 @@ function Weddell() {
             allowfullscreen
           ></iframe>
           <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
         </div>
         <div id="learnings">
-          <hr className="gc-06" />
           <BreakThree />
           <div className="gc-004 learning-word">
             <LiquidDistortionText

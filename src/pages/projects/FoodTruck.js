@@ -10,19 +10,19 @@ import Footer from '../../components/01_global/Footer';
 import Break from '../../components/01_global/content_template/Break';
 import BreakThree from '../../components/01_global/content_template/BreakThree';
 
-//images-background
-import contentCuration from '../../images/weddell/content-curation.png';
-import productRecommendation from '../../images/weddell/product-recommendation.png';
-import ingredientAnalysis from '../../images/weddell/ingredient-analysis.png';
+//images-challenge
+import feedOverivew from '../../images/food-truck-finder/feed-overview.png';
+import profileOverview from '../../images/food-truck-finder/profile-overview.png';
+import searchOverview from '../../images/food-truck-finder/search-overview.png';
 
-//images-research
-import userJourney from '../../images/weddell/user-journey.png';
+//images-context
+import users from '../../images/food-truck-finder/users.png';
 
-//images-design-process
-import infoArch from '../../images/weddell/information-architecture.png';
-import wireframes from '../../images/weddell/wireframes.png';
-import branding from '../../images/weddell/branding.png';
-import icons from '../../images/weddell/icons.png';
+//images-design-exploration
+import sketches from '../../images/food-truck-finder/sketches.png';
+import wireframes from '../../images/food-truck-finder/wireframes.png';
+import iterations from '../../images/food-truck-finder/iterations.png';
+import pixelPerfect from '../../images/food-truck-finder/pixel-perfect.png';
 
 //images-final-design
 import onboarding from '../../images/weddell/onboarding.png';
@@ -38,7 +38,7 @@ function FoodTruck() {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="food-trucks">
+    <div className="food-truck">
       <Header
         first="challenge"
         second="context"
@@ -90,103 +90,50 @@ function FoodTruck() {
             />
           </div>
           <h2 className="gc-004">
-            Food Truck Finder (FTF) helps users locate food trucks they love,
-            find new food trucks in their area, see menus of those food trucks,
-            and pay for their meals using the app.
+            Design a Food Truck Finder (FTF) that helps users locate food trucks
+            they love, find new food trucks in their area, see menus of those
+            food trucks, and pay for their meals using the app.
           </h2>
           <BreakThree />
-          <h3 className="gc-001">My Role / Responsibility</h3>
-          <div className="gc-000-3 responsibilities">
-            <ol>
-              <li className="responsibility-item">
-                Collaborated with product managers and the developers to bring
-                features to life, ensuring deliverables are in-line with users
-                and business needs and detailed enough for implementation.
-              </li>
-              <li className="responsibility-item">
-                Led weekly design critiques to bring team back on schedule.
-              </li>
-              <li className="responsibility-item">
-                Designed app architecture, wireframes, usability test plans, and
-                final screens of the app.
-              </li>
-              <li className="responsibility-item">
-                Planned and conducted multiple user-researches (surveys and
-                interviews).
-              </li>
-            </ol>
+          <h3 className="gc-004">Requirements</h3>
+          <div className="gc-004 requirements">
+            <p>
+              Three screens, plus any supporting sketches or wire frames for the
+              food truck feed, a food truck profile, and a search results page.
+            </p>
             <BreakThree />
           </div>
-          <h3 className="gc-001">Problems</h3>
-          <div className="gc-000-3 problem-lists">
-            <ol>
-              <li className="problem-item">
-                A lot of parents doubt about their readiness for parenthood as
-                most of them are first-time parents.
-              </li>
-              <li className="problem-item">
-                Korean mom-cafe, the most popular online platform to share
-                parenting information in Korea, has shown a lot of worrisome
-                issues including false advertisment and fake reviews in recent
-                years.
-                <br />
-                <a
-                  href="http://mn.kbs.co.kr/news/view.do?ncd=4146236"
-                  target="blanck"
-                >
-                  More info (in Korean).
-                </a>
-              </li>
-              <li className="problem-item">
-                Many Korean parents do not trust mom-cafes anymore.
-              </li>
-            </ol>
-            <BreakThree />
-          </div>
-          <h3 className="gc-004">Solutions Overview</h3>
+          <h3 className="gc-004">Project Overview</h3>
           <br />
           <br />
-          <h5 className="gc-004">01. Curated Contents</h5>
-          <p className="gc-004">
-            Weddell analyze what is most needed for individual users depending
-            on their preferences, sex, ages, etc. and provide curated
-            information according to their needs.
-          </p>
-          <div className="img-container gc-004">
-            <img src={contentCuration} alt="content-curation" />
-          </div>
-          <BreakThree />
-          <BreakThree />
-
-          <h5 className="gc-004">02. &nbsp; Product Recommendation</h5>
-          <p className="gc-004">
-            For busy and tired parents, we recommend baby products that are
-            rigorously tested and approved, so they do not spend much time
-            searching.
-          </p>
-          <div className="img-container gc-004">
-            <img src={productRecommendation} alt="product-recommendation" />
-          </div>
-          <BreakThree />
-          <BreakThree />
-
-          <h5 className="gc-004">03. &nbsp; Ingredient Analysis</h5>
-          <p className="gc-004">
-            Parents are assured about the safety of every product that they buy
-            through easy-to-understand and thorough ingredient analysis.
-          </p>
+          <h5 className="gc-004">01. Food Truck Feed</h5>
           <div className="img-container gc-06">
-            <img src={ingredientAnalysis} alt="ingredientAnalysis" />
+            <img src={feedOverivew} alt="feedOverivew" />
           </div>
           <BreakThree />
-        </div>
-        <div id="research">
-          <hr className="gc-06" />
           <BreakThree />
-          <div className="gc-004 research-word">
+
+          <h5 className="gc-004">02. Food Truck Profile</h5>
+          <div className="img-container gc-06">
+            <img src={profileOverview} alt="profileOverview" />
+          </div>
+          <BreakThree />
+          <BreakThree />
+
+          <h5 className="gc-004">03. Search</h5>
+          <div className="img-container gc-06">
+            <img src={searchOverview} alt="searchOverview" />
+          </div>
+          <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
+        </div>
+        <div id="context">
+          <BreakThree />
+          <div className="gc-004 context-word">
             <LiquidDistortionText
-              id="research-word"
-              text="RESEARCH"
+              id="context-word"
+              text="CONTEXT"
               fontFamily="Roboto"
               fontSize={24}
               fill="#c4b2b6"
@@ -195,53 +142,109 @@ function FoodTruck() {
             />
           </div>
           <h2 className="gc-004">
-            The user research was conducted to validate the problems and help
-            crafting persona and user-journey.
+            Finding out "Why, Where, When, Who, and What (Five Ws)" of Food
+            Trucks.
           </h2>
           <BreakThree />
-          <h3 className="gc-001">Findings</h3>
-          <div className="gc-000-3 research-finding-lists">
+          <h3 className="gc-001">Why Food Truck?</h3>
+          <div className="gc-000-3 why-food-truck-lists">
             <ol>
-              <li className="research-finding-item">
-                <b>Simple and easy to use services</b> are most sought after
-                among Korean moms.
+              <li className="why-food-truck-item">
+                <b>Lower Prices:</b> Food trucks typically offer more affordable
+                foods compared to sit-down restaurants.
               </li>
-              <li className="research-finding-item">
-                <b>Safety</b> is the most important buying factor when
-                purchasing baby products.
+              <li className="why-food-truck-item">
+                <b>Convenience:</b> Food Trucks are usually located near popular
+                areas, and they offer quick and easy to-go foods.
               </li>
-              <li className="research-finding-item">
-                <b>Ingredients and user-reviews</b> are checked to confirm the
-                safety of baby products.
-              </li>
-              <li className="research-finding-item">
-                <b>Difficult scientific terminologies</b> of ingredients in baby
-                products make parents hard to understand about the products.
-              </li>
-              <li className="research-finding-item">
-                Many parents have <b>lost their trust in mom-cafes</b>, but they
-                still use them because there is <b>no other alternative</b>.
+              <li className="why-food-truck-item">
+                <b>Sense of Community:</b> Interactions between the owners and
+                customers as well as the atmosphere around the food truck create
+                a great sense of community.
               </li>
             </ol>
             <BreakThree />
           </div>
-          <h3 className="gc-004">User Journey</h3>
-          <p className="gc-004">
-            We envision that with Weddell, parents spend less time searching for
-            information, but rather spend more time with their babies.
-          </p>
+          <h3 className="gc-004">Who are the Users?</h3>
           <div className="gc-004 image-container">
-            <img src={userJourney} alt="user-journey" />
+            <img src={users} alt="users" />
           </div>
           <BreakThree />
-        </div>
-        <div id="design-process">
-          <hr className="gc-06" />
+          <h3 className="gc-001">User Pain Points</h3>
+          <div className="gc-000-3 pain-points-lists">
+            <ol>
+              <li className="pain-points-item">
+                <b>Temporarily Locations:</b> Because food trucks move around,
+                users can have a hard time finding their favorite food trucks.
+              </li>
+              <li className="pain-points-item">
+                <b>Unfixed Operation Times:</b> No one wants to waste their time
+                going to the food truck to find out that it is closed.
+                <br />
+                <h6 className="notes">
+                  *Unfixed operation times usually apply to food trucks that
+                  move around a lot.
+                </h6>
+              </li>
+              <li className="pain-points-item">
+                <b>Waiting Outside:</b> Customers want to spend less time
+                waiting outside especially during bad weather.
+              </li>
+            </ol>
+          </div>
+
           <BreakThree />
-          <div className="gc-004 process-word">
+          <h3 className="gc-001">User Priorities (Project Goals)</h3>
+          <div className="gc-000-3 priorities-lists">
+            <ol>
+              <li className="priorities-item">
+                <b>Locate</b> food truck users love.
+              </li>
+              <li className="priorities-item">
+                <b>Find</b> food trucks in their area.
+              </li>
+              <li className="priorities-item">
+                <b>See</b> menus of those food trucks.
+              </li>
+              <li className="priorities-item">
+                <b>Pay</b> their meals using the app.
+              </li>
+            </ol>
+          </div>
+          <BreakThree />
+
+          <h3 className="gc-001">Assumptions</h3>
+          <div className="gc-000-3 priorities-lists">
+            <ol>
+              <li className="priorities-item">
+                The user is already familiar with the area and has his/her own
+                favorite food trucks.
+              </li>
+              <li className="priorities-item">
+                The user lives in San Francisco.
+                <br />
+                (There are around 185 food trucks are in San Francisco.)
+              </li>
+              <li className="priorities-item">Not all menus have pictures.</li>
+              <li className="priorities-item">
+                The location-sharing is on while using the app.
+              </li>
+              <li className="priorities-item">
+                FTF is only for customers. Food truck owners have separate ways
+                to manage their businesses.
+              </li>
+            </ol>
+          </div>
+          <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
+        </div>
+        <div id="design-exploration">
+          <BreakThree />
+          <div className="gc-004 exploration-word">
             <LiquidDistortionText
-              id="process-word"
-              text="DESIGN PROCESS"
+              id="exploration-word"
+              text="DESIGN EXPLORATION"
               fontFamily="Roboto"
               fontSize={24}
               fill="#c4b2b6"
@@ -249,31 +252,42 @@ function FoodTruck() {
               volatility={0.04}
             />
             <Break />
+            <h2 className="gc-004">
+              Initial design exploration includes sketches, and wireframes, and
+              multiple iterations.
+            </h2>
+            <BreakThree />
           </div>
-          {/* <h2 className="gc-004"></h2> */}
-          <h3 className="gc-004">Information Architecture</h3>
-          <div className="gc-004 image-container">
-            <img src={infoArch} alt="information-architecture" />
+          <h3 className="gc-004">Sketches</h3>
+          <div className="gc-06 image-container">
+            <img src={sketches} alt="sketches" />
           </div>
           <BreakThree />
           <BreakThree />
           <h3 className="gc-004">Wireframes</h3>
-          <div className="gc-004 image-container">
+          <div className="gc-06 image-container">
             <img src={wireframes} alt="wirframes" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">Branding & User Interface</h3>
-          <div className="gc-004 image-container">
-            <img src={branding} alt="branding" />
-          </div>
-          <div className="gc-004 image-container">
-            <img src={icons} alt="icons" />
+          <h3 className="gc-004">Iterations</h3>
+          <div className="gc-06 image-container">
+            <img src={iterations} alt="iterations" />
           </div>
           <BreakThree />
+          <BreakThree />
+          <h3 className="gc-004">
+            Pixel Perfect{' '}
+            <span className="four-point-grid">(4-point grid system)</span>
+          </h3>
+          <div className="gc-06 image-container">
+            <img src={pixelPerfect} alt="pixelPerfect" />
+          </div>
+          <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
         </div>
         <div id="final-design">
-          <hr className="gc-06" />
           <BreakThree />
           <div className="gc-004 final-word">
             <LiquidDistortionText
@@ -373,9 +387,10 @@ function FoodTruck() {
             allowfullscreen
           ></iframe>
           <BreakThree />
+          <BreakThree />
+          <hr className="gc-06" />
         </div>
         <div id="learnings">
-          <hr className="gc-06" />
           <BreakThree />
           <div className="gc-004 learning-word">
             <LiquidDistortionText

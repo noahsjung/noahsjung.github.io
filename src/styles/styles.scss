@@ -21,36 +21,31 @@
   position: relative;
 }
 
-//04_sections-layout********************************************************
-
-//gloabl
-@import './04_sections/layout/global/header_layout';
-@import './04_sections/layout/global/right_fixed_layout';
-@import './04_sections/layout/global/footer_layout';
-
-//home
-@import './04_sections/layout/home/home_about_layout';
-@import './04_sections/layout/home/home_work_layout';
-@import './04_sections/layout/home/home_experience_layout';
-
-//project
-@import './04_sections/layout/project/project_header_layout';
-
-//04_sections-style********************************************************
+//04_sections********************************************************
 
 //global
-@import './04_sections/style/global/header_style';
-@import './04_sections/style/global/right_fixed_style';
-@import './04_sections/style/global/footer_style';
+@import './04_sections/global/header_layout';
+@import './04_sections/global/right_fixed_layout';
+@import './04_sections/global/footer_layout';
+
+@import './04_sections/global/header_style';
+@import './04_sections/global/right_fixed_style';
+@import './04_sections/global/footer_style';
 
 //home
-@import './04_sections/style/home/home_about_style';
-@import './04_sections/style/home/home_work_style';
-@import './04_sections/style/home/home_experience_style';
+@import './04_sections/home/home_about_layout';
+@import './04_sections/home/home_work_layout';
+@import './04_sections/home/home_experience_layout';
+
+@import './04_sections/home/home_about_style';
+@import './04_sections/home/home_work_style';
+@import './04_sections/home/home_experience_style';
 
 //project
-@import './04_sections/style/project/project_header_style';
-@import './04_sections/style/project/project_style';
+@import './04_sections/project/project_header_layout';
+@import './04_sections/project/project_header_style';
+@import './04_sections/project/project_layout';
+@import './04_sections/project/project_style';
 
 //05_pages********************************************************
 @import './05_pages/about_me';

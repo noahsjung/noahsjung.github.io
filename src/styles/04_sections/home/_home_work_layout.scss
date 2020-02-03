@@ -1,0 +1,23 @@
+//Entire Work Section
+.work {
+  // max-width: 1680px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: $column-gap;
+  .work-word {
+    // display: inline-flex;
+    grid-column: 2/8;
+  }
+}
+
+//Work Content
+.work .works {
+  grid-column: 2/8;
+  display: grid;
+  grid-column-gap: $column-gap;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+//Individual Box not hovered
+
+//Individual Box hovered
