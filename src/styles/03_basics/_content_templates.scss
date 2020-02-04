@@ -3,6 +3,8 @@
   grid-template-columns: repeat(8, 1fr);
   column-gap: $column-gap;
   row-gap: $row-gap;
+
+  grid-auto-columns: 1fr;
   // max-width: 1680px;
   // @media only screen and (max-width: $tablet) {
   //   display: block;
@@ -36,9 +38,7 @@ img {
   .gc-004 {
     @include grid-column(3, -3, left);
   }
-  .gc-004c {
-    @include grid-column(3, -3, center);
-  }
+
   .gc-06 {
     @include grid-column(2, -2, left);
   }
@@ -61,6 +61,13 @@ img {
   }
 
   //right
+  .gc-000-2 {
+    @include grid-column(4, 6, left);
+  }
+  .gc-0000-2 {
+    @include grid-column(5, 7, left);
+  }
+
   .gc-000-3 {
     @include grid-column(4, -3, left);
   }
@@ -75,6 +82,35 @@ img {
 
   .gc-00-6 {
     @include grid-column(3, -1, left);
+  }
+
+  .gc-000000-2 {
+    @include grid-column(6, -2, left);
+  }
+
+  //center
+  .gc-004c {
+    @include grid-column(3, -3, center);
+  }
+  .gc-02c {
+    @include grid-column(2, 4, center);
+  }
+  .gc-002c {
+    @include grid-column(3, 5, center);
+  }
+  .gc-000-2c {
+    @include grid-column(4, 6, center);
+  }
+  .gc-0000-4c {
+    @include grid-column(5, 7, center);
+  }
+  .gc-000000-2c {
+    @include grid-column(6, -2, center);
+  }
+
+  //right
+  .gc-02r {
+    @include grid-column(2, 4, right);
   }
 }
 

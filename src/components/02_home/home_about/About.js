@@ -46,7 +46,6 @@ function About(props) {
       ease: Power2.easeOut,
       delay: 1.65
     });
-    console.log(learnMore);
   });
 
   return (

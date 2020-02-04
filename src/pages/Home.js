@@ -8,9 +8,13 @@ import Experience from '../components/02_home/home_experience/Experience';
 // import Contact from '../01_sections/home_contact/Contact';
 import Footer from '../components/01_global/Footer';
 
+//preloading
+// import Weddell from '../pages/projects/Weddell';
+
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    // Weddell.preload();
   });
 
   return (

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { LiquidDistortionText } from 'react-text-fun';
-// import { Spinner } from 'react-spinkit';
 
 //components
 import Header from '../../components/01_global/header/Header';
@@ -167,8 +166,8 @@ function Weddell() {
           <br />
           <h5 className="gc-004">01. Curated Contents</h5>
           <p className="gc-004">
-            Weddell analyze what is most needed for individual users depending
-            on their preferences, sex, ages, etc. and provide curated
+            Weddell analyzes what is most needed for individual users depending
+            on their preferences, sex, ages, etc. and provides curated
             information according to their needs.
           </p>
           <div className="img-container gc-004">
@@ -179,8 +178,8 @@ function Weddell() {
 
           <h5 className="gc-004">02. Product Recommendation</h5>
           <p className="gc-004">
-            For busy and tired parents, we recommend baby products that are
-            rigorously tested and approved, so they do not spend much time
+            For busy and tired parents, Weddell recommends baby products that
+            are rigorously tested and approved, so they do not spend much time
             searching.
           </p>
           <div className="img-container gc-004">
@@ -247,8 +246,8 @@ function Weddell() {
           </div>
           <h3 className="gc-004">User Journey</h3>
           <p className="gc-004">
-            We envision that with Weddell, parents spend less time searching for
-            information, but rather spend more time with their babies.
+            With Weddell, parents spend less time searching for information, but
+            rather spend more time with their babies.
           </p>
           <div className="gc-004 image-container">
             <img src={userJourney} alt="user-journey" />
@@ -311,7 +310,7 @@ function Weddell() {
           <h3 className="gc-004">1.Onboarding</h3>
           <p className="gc-004">
             Users first go through a delightful onboarding process, and based on
-            the information that users provide, Weddell analyze and provide
+            the information that users provide, Weddell analyzes and provides
             parenting information that are most related to them.
           </p>
           <div className="gc-06 image-container">
@@ -391,8 +390,8 @@ function Weddell() {
             width="442"
             height="935"
             src="//invis.io/FSTLCZKEBVN"
-            frameborder="0"
-            allowfullscreen
+            frameBorder="0"
+            allowFullScreen
           ></iframe>
           <BreakThree />
           <BreakThree />
@@ -446,68 +445,3 @@ function Weddell() {
 }
 
 export default Weddell;
-
-/*
-*************************************************************************
-**********************using Iframe***************************************
-*************************************************************************
-class Weddell extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { width: 0, height: 0, loading: true };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-  }
-
-  //loaidng animation while waiting fot the iframe to load
-  hideSpinner = () => {
-    this.setState({
-      loading: false
-    });
-  };
-
-  //resize iframe height and width according to the user's window size
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  }
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-  }
-  updateWindowDimensions() {
-    this.setState({
-      width: window.innerWidth,
-      height: window.innerHeight
-    });
-  }
-
-  render() {
-    var Spinner = require('react-spinkit');
-    console.log(this.state.loading);
-    return (
-      <div className="weddell-project">
-        <Header />
-        <div className="iframe-container">
-          {this.state.loading ? (
-            <Spinner
-              className="loading"
-              name="circle"
-              color="#0171e3"
-              fadeIn="none"
-            />
-          ) : null}
-          <iframe
-            src="https://noahsjung.com/works/weddell"
-            title="weddell"
-            frameBorder="0"
-            onLoad={this.hideSpinner}
-            width={this.state.width}
-            height={this.state.height}
-          ></iframe>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default Weddell;
-*/

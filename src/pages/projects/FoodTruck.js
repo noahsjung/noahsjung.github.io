@@ -24,19 +24,28 @@ import wireframes from '../../images/food-truck-finder/wireframes.png';
 import iterations from '../../images/food-truck-finder/iterations.png';
 import pixelPerfect from '../../images/food-truck-finder/pixel-perfect.png';
 
-//images-final-design
-import onboarding from '../../images/weddell/onboarding.png';
-import questionCardConnect from '../../images/weddell/question-card-connect.png';
-import parentingGuide from '../../images/weddell/parenting-guide.png';
-import parentingGuide2 from '../../images/weddell/parenting-guide2.png';
-import product from '../../images/weddell/product.png';
-import productDetail from '../../images/weddell/product-detail.png';
-import otherScreens from '../../images/weddell/other-screens.png';
+//media-final-design
+import feedDetail from '../../images/food-truck-finder/feed-detail.mov';
+import hideUninterested from '../../images/food-truck-finder/hide-uninterested.mov';
+import toggleListMap from '../../images/food-truck-finder/toggle-list-map.mov';
+import feedExplanation from '../../images/food-truck-finder/feed-explanation.png';
+import mapExplanation from '../../images/food-truck-finder/map-explanation.png';
+
+import feedToProfile from '../../images/food-truck-finder/feed-profile.mov';
+import collapsible from '../../images/food-truck-finder/collapsible.mov';
+import menuOverviewReview from '../../images/food-truck-finder/menu-overview-review.mov';
+import menuExplain from '../../images/food-truck-finder/profile-menu-explanation.png';
+import profileDetailExplain from '../../images/food-truck-finder/profile-detail-explanation.png';
+import orderExperience from '../../images/food-truck-finder/order-experience.png';
+
+import searchExperience from '../../images/food-truck-finder/search-experience.mov';
+import searchToggle from '../../images/food-truck-finder/search-toggle.mov';
 
 function FoodTruck() {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+
   return (
     <div className="food-truck">
       <Header
@@ -76,6 +85,11 @@ function FoodTruck() {
           </div>
           <div className="hero-image gc-00-6"></div>
         </div>
+        {/* ****************************************************
+        ****************************************************
+        CHALLENGE************************************************
+        ********************************************************
+        **************************************************** */}
         <div id="challenge">
           <BreakThree />
           <div className="gc-004 challenge-word">
@@ -128,6 +142,11 @@ function FoodTruck() {
           <BreakThree />
           <hr className="gc-06" />
         </div>
+        {/* ****************************************************
+        ****************************************************
+        CONTEXT************************************************
+        ********************************************************
+        **************************************************** */}
         <div id="context">
           <BreakThree />
           <div className="gc-004 context-word">
@@ -239,6 +258,11 @@ function FoodTruck() {
           <BreakThree />
           <hr className="gc-06" />
         </div>
+        {/* ****************************************************
+        ****************************************************
+        DESIGN-EXPLORATION************************************
+        ********************************************************
+        **************************************************** */}
         <div id="design-exploration">
           <BreakThree />
           <div className="gc-004 exploration-word">
@@ -277,7 +301,7 @@ function FoodTruck() {
           <BreakThree />
           <BreakThree />
           <h3 className="gc-004">
-            Pixel Perfect{' '}
+            Making it Pixel Perfect{' '}
             <span className="four-point-grid">(4-point grid system)</span>
           </h3>
           <div className="gc-06 image-container">
@@ -287,6 +311,11 @@ function FoodTruck() {
           <BreakThree />
           <hr className="gc-06" />
         </div>
+        {/* ****************************************************
+        ****************************************************
+        FINAL DESIGN ***************************************
+        ********************************************************
+        **************************************************** */}
         <div id="final-design">
           <BreakThree />
           <div className="gc-004 final-word">
@@ -300,102 +329,299 @@ function FoodTruck() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">1.Onboarding</h3>
-          <p className="gc-004">
-            Users first go through a delightful onboarding process, and based on
-            the information that users provide, Weddell analyze and provide
-            parenting information that are most related to them.
-          </p>
-          <div className="gc-06 image-container">
-            <img src={onboarding} alt="onboarding" />
+          <Break />
+          <h2 className="gc-004">1.Food Truck Feed</h2>
+          <Break />
+          <h3 className="gc-001">Considerations</h3>
+          <div className="gc-000-3">
+            <h5>1. Objective</h5>
+            <br />
+            <p>
+              To help users find/ explore/ compare the food trucks that they are
+              interested in.
+            </p>
+          </div>
+          <Break />
+          <div className="gc-000-3">
+            <h5 className="gc-000-3">2. Important Facts</h5>
+            <br />
+            <div className="key-things-consider-lists">
+              <ol>
+                <li className="consider-item">
+                  There are only about 185 food trucks in San Francisco, so
+                  specific filtering options could result in very few food
+                  trucks available to the users.
+                </li>
+                <li className="consider-item">
+                  The primary users - college students and business people -
+                  usually want something that they could get quickly that is
+                  close by.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <Break />
+          <div className="gc-000-3">
+            <h5>3. Questions to Ask</h5>
+            <br />
+            <div className="question-lists">
+              <ol>
+                <li className="question-item">
+                  How easy it is to sort/filter the food trucks so that users
+                  can only see the ones that they like to see and compare?
+                </li>
+                <li className="question-item">
+                  How quickly can users understand the general impression of the
+                  food trucks?
+                </li>
+                <li className="question-item">
+                  What are the most essential elements that users want to know
+                  before visiting the food truck profile?
+                </li>
+              </ol>
+            </div>
+          </div>
+          <BreakThree />
+          <h3 className="gc-004">Animations</h3>
+          <Break />
+          <div className="gc-02c video-container">
+            <div className="video-wrapper">
+              <video
+                src={feedDetail}
+                alt="feedDetail"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Feed Detail</p>
+          </div>
+          <div className="gc-000-2c video-container">
+            <div className="video-wrapper">
+              <video
+                src={hideUninterested}
+                alt="hideUninterested"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Hide Uninterested Food Truck</p>
+          </div>
+          <div className="gc-000000-2c video-container">
+            <div className="video-wrapper">
+              <video
+                src={toggleListMap}
+                alt="toggleListMap"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Toggle Between List and Map</p>
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">
-            2. Question Cards & Connecting Users with Similar Interests
-          </h3>
-          <p className="gc-004">
-            To deeper understand each individual user's needs and wants, Weddell
-            asks short and easy questions that users can quickly answer. Based
-            on the user's answer, Weddell also connects users with others who
-            have similar interests.
-          </p>
+          <h3 className="gc-004">Explanation of the design decisions</h3>
           <div className="gc-06 image-container">
-            <img src={questionCardConnect} alt="questionCardConnect" />
+            <img src={feedExplanation} alt="feedExplanation" />
+          </div>
+          <div className="gc-06 image-container">
+            <img src={mapExplanation} alt="mapExplanation" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">3. Parenting Guide</h3>
-          <p className="gc-004">
-            Weddell provides Three types of parenting guides - baby news
-            (unbiased and objective contents) and original contents - based on
-            users' profile, interests, and needs. These curated contents will
-            guide parents to feel more ready about parenthood.
-          </p>
+          <h2 className="gc-004">2.Food Truck Profile</h2>
+          <Break />
+          <h3 className="gc-001">Considerations</h3>
+          <div className="gc-000-3">
+            <h5>1. Objective</h5>
+            <br />
+            <p>
+              To help users know better about the food trucks and order foods
+              them.
+            </p>
+          </div>
+          <Break />
+          <div className="gc-000-3">
+            <h5 className="gc-000-3">2. Important Facts</h5>
+            <br />
+            <div className="key-things-consider-lists">
+              <ol>
+                <li className="consider-item">
+                  There is a lot of information to show in the food truck
+                  profile, so deciding what to show first above the fold is
+                  important.
+                </li>
+                <li className="consider-item">
+                  Many food trucks already have many social media accounts and
+                  websites where they advertise themselves and connect with
+                  customers
+                </li>
+              </ol>
+            </div>
+          </div>
+          <Break />
+          <div className="gc-000-3">
+            <h5>3. Questions to Ask</h5>
+            <br />
+            <div className="question-lists">
+              <ol>
+                <li className="question-item">
+                  Can users fully understand the food truck and see its
+                  availability?
+                </li>
+                <li className="question-item">
+                  What are the things that users want to know before deciding to
+                  order food?
+                </li>
+                <li className="question-item">
+                  What is the best and most effective way to organize the
+                  information?
+                </li>
+              </ol>
+            </div>
+          </div>
+          <BreakThree />
+          <h3 className="gc-004">Animations</h3>
+          <Break />
+          <div className="gc-02c video-container">
+            <div className="video-wrapper">
+              <video
+                src={feedToProfile}
+                alt="feedToProfile"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Feed to Profile</p>
+          </div>
+          <div className="gc-000-2c video-container">
+            <div className="video-wrapper">
+              <video
+                src={collapsible}
+                alt="collapsible"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Collapsable Header</p>
+          </div>
+          <div className="gc-000000-2c video-container">
+            <div className="video-wrapper">
+              <video
+                src={menuOverviewReview}
+                alt="menuOverviewReview"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Menu, Overview, & Review</p>
+          </div>
+          <BreakThree />
+          <BreakThree />
+          <h3 className="gc-004">Explanation of the design decisions</h3>
           <div className="gc-06 image-container">
-            <img src={parentingGuide} alt="parentingGuide" />
+            <img src={menuExplain} alt="menuExplain" />
           </div>
           <div className="gc-06 image-container">
-            <img src={parentingGuide2} alt="parentingGuide2" />
+            <img src={profileDetailExplain} alt="profileDetailExplain" />
           </div>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">4. Product</h3>
-          <p className="gc-004">
-            Weddell recommends products based on users' need and profile and
-            provide essential information about the product. This includes
-            summary of the product, ingredients, nutrition facts, sellers,
-            similar products, and FAQs.
-          </p>
+          <Break />
+          <h5 className="gc-004">Ordering Experience</h5>
           <div className="gc-06 image-container">
-            <img src={product} alt="product" />
+            <img src={orderExperience} alt="orderExperience" />
           </div>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">5. Product Detail</h3>
-          <p className="gc-004">
-            To solve the problem of difficult terminologies of ingredients and
-            help educate users, Weddell visualizes the ingredient information
-            based on{' '}
-            <a
-              href="https://www.ewg.org/release/ewg-s-food-scores-helps-people-find-out-what-s-really-their-food"
-              target="blank"
-            >
-              EWG score
-            </a>
-            .
-          </p>
-          <div className="gc-06 image-container">
-            <img src={productDetail} alt="productDetail" />
+
+          <h2 className="gc-004">3.Search</h2>
+          <Break />
+          <h3 className="gc-001">Considerations</h3>
+          <div className="gc-000-3">
+            <h5>1. Objective</h5>
+            <br />
+            <p>
+              To help users find the specific things that they are looking for.
+            </p>
           </div>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">6. Other Screens</h3>
-          <div className="gc-06 image-container">
-            <img src={otherScreens} alt="other-screens" />
+          <Break />
+          <div className="gc-000-3">
+            <h5 className="gc-000-3">2. Important Fact</h5>
+            <br />
+            <p>
+              There is a lot of information to show in the food truck profile,
+              so deciding what to show first above the fold is important.
+            </p>
           </div>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">7. Prototype</h3>
-          <iframe
-            className="gc-000-3"
-            title="prototype"
-            width="442"
-            height="935"
-            src="//invis.io/FSTLCZKEBVN"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <Break />
+          <div className="gc-000-3">
+            <h5>3. Questions to Ask</h5>
+            <br />
+            <div className="question-lists">
+              <ol>
+                <li className="question-item">
+                  What do users most search for?
+                </li>
+                <li className="question-item">
+                  Does it have similar or same design language as the one in the
+                  feed section?
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <h3 className="gc-004">Animations</h3>
+          <Break />
+          <div className="gc-002c video-container">
+            <div className="video-wrapper">
+              <video
+                src={searchExperience}
+                alt="searchExperience"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Searching Experience</p>
+          </div>
+          <div className="gc-0000-4c video-container">
+            <div className="video-wrapper">
+              <video
+                src={searchToggle}
+                alt="searchToggle"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+            <Break />
+            <p className="video-name">Toggle Between List & Map View</p>
+          </div>
+
           <BreakThree />
           <BreakThree />
           <hr className="gc-06" />
         </div>
-        <div id="learnings">
+        {/* ****************************************************
+        ****************************************************
+        REFLECTIONS************************************************
+        ********************************************************
+        **************************************************** */}
+        <div id="reflections">
           <BreakThree />
-          <div className="gc-004 learning-word">
+          <div className="gc-004 reflections-word">
             <LiquidDistortionText
-              id="learning-word"
-              text="LEARNINGS"
+              id="reflections-word"
+              text="RELECTIONS"
               fontFamily="Roboto"
               fontSize={24}
               fill="#c4b2b6"
@@ -403,31 +629,30 @@ function FoodTruck() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">
-            1. The best design comes from the intersection of business, design,
-            and technology.
-          </h3>
+          <h3 className="gc-004">1. User Research/Testing</h3>
           <p className="gc-004">
-            Working closely with the CEO, the PM, the Design Director, and
-            Developers, I realized that understanding business goals and
-            technology limitations is a crucial part of UX design. Designing a
-            product that brings no business value or that is too difficult to
-            build is meaningless.
+            Because of the short time frame to work on the project, I could only
+            do minimal user research. If more time and resources were given to
+            conduct extensive user research, my design choices based on my
+            assumptions will be more valid and more convincing.
             <br />
-            <br /> Moreover, working with developers for the first time, I not
-            only had to clearly explain my design decisions to them, keeping the
-            library of design assets (even the names) was important. This
-            allowed me to design systematically and meticulously.
+            <br /> If I were to pursue this project further, I will test my
+            assumptions. To do so, I will define the success metrics for each
+            screen based on the questions I formed while designing and
+            conducting user-testings to confirm my decisions and find potential
+            improvements.
           </p>
           <Break />
-          <h3 className="gc-004">
-            2. I need to answer the "why" on my design decisions.
-          </h3>
+          <h3 className="gc-004">2. Product Benchmarking</h3>
           <p className="gc-004">
-            Collaborating with other people, there were many times I had to
-            explain my design decisions and why I made that design in order to
-            convince them. This helped me to practice designing with
-            intentionality.
+            There are many existing products that are in a similar market place;
+            apps that help people to search restaurants and order delivery
+            foods. Looking at these products, I got inspiration for some
+            features that could be modified to be useful in FTF, so that I do
+            not have to reinvent the wheel. I also found features that may not
+            work well with the FTF because FTF is only focused on mobile food
+            trucks. Looking at these products helped me to work very efficiently
+            and productively.
           </p>
         </div>
       </section>

@@ -33,6 +33,11 @@
   color: $gray;
 }
 
+.food-truck #final-design .video-container video {
+  width: 80%;
+  //   width: 200px;
+}
+
 .other-works-word {
   @include grid-column(2, -1, left);
 }
