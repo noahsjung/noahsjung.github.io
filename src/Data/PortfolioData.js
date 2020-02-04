@@ -19,35 +19,35 @@ const portFolioData = [
     description: 'Design Challenge / UIUX',
     image: food_truck_logo,
     path: '/food-truck-finder'
-  },
-  {
-    id: 3,
-    title: 'Retriever App',
-    description: 'Internship / UIUX',
-    image: retrieverapp_logo,
-    path: 'retriever-app'
-  },
-  {
-    id: 4,
-    title: 'A-maz-ing Planter',
-    description: 'Product Development / MIT',
-    image: maze_logo,
-    path: 'amazing-planter'
-  },
-  {
-    id: 5,
-    title: 'Waymo',
-    description: 'Product Design / UIUX',
-    image: waymo_logo,
-    path: 'waymo'
-  },
-  {
-    id: 6,
-    title: 'Amen',
-    description: 'Coming Soon',
-    image: amen_logo,
-    path: '/'
   }
+  // {
+  //   id: 3,
+  //   title: 'Retriever App',
+  //   description: 'Internship / UIUX',
+  //   image: retrieverapp_logo,
+  //   path: 'retriever-app'
+  // },
+  // {
+  //   id: 4,
+  //   title: 'A-maz-ing Planter',
+  //   description: 'Product Development / MIT',
+  //   image: maze_logo,
+  //   path: 'amazing-planter'
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Waymo',
+  //   description: 'Product Design / UIUX',
+  //   image: waymo_logo,
+  //   path: 'waymo'
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Amen',
+  //   description: 'Coming Soon',
+  //   image: amen_logo,
+  //   path: '/'
+  // }
 ];
 
 export default portFolioData;

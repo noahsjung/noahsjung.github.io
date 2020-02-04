@@ -307,7 +307,7 @@ function Weddell() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">1.Onboarding</h3>
+          <h3 className="gc-004">01.Onboarding</h3>
           <p className="gc-004">
             Users first go through a delightful onboarding process, and based on
             the information that users provide, Weddell analyzes and provides
@@ -319,7 +319,7 @@ function Weddell() {
           <BreakThree />
           <BreakThree />
           <h3 className="gc-004">
-            2. Question Cards & Connecting Users with Similar Interests
+            02. Question Cards & Connecting Users with Similar Interests
           </h3>
           <p className="gc-004">
             To deeper understand each individual user's needs and wants, Weddell
@@ -332,7 +332,7 @@ function Weddell() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">3. Parenting Guide</h3>
+          <h3 className="gc-004">03. Parenting Guide</h3>
           <p className="gc-004">
             Weddell provides Three types of parenting guides - baby news
             (unbiased and objective contents) and original contents - based on
@@ -347,7 +347,7 @@ function Weddell() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">4. Product</h3>
+          <h3 className="gc-004">04. Product</h3>
           <p className="gc-004">
             Weddell recommends products based on users' need and profile and
             provide essential information about the product. This includes
@@ -359,7 +359,7 @@ function Weddell() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">5. Product Detail</h3>
+          <h3 className="gc-004">05. Product Detail</h3>
           <p className="gc-004">
             To solve the problem of difficult terminologies of ingredients and
             help educate users, Weddell visualizes the ingredient information
@@ -377,13 +377,13 @@ function Weddell() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">6. Other Screens</h3>
+          <h3 className="gc-004">06. Other Screens</h3>
           <div className="gc-06 image-container">
             <img src={otherScreens} alt="other-screens" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">7. Prototype</h3>
+          <h3 className="gc-004">07. Prototype</h3>
           <iframe
             className="gc-000-3"
             title="prototype"
@@ -411,7 +411,7 @@ function Weddell() {
             />
           </div>
           <h3 className="gc-004">
-            1. The best design comes from the intersection of business, design,
+            01. The best design comes from the intersection of business, design,
             and technology.
           </h3>
           <p className="gc-004">
@@ -428,7 +428,7 @@ function Weddell() {
           </p>
           <Break />
           <h3 className="gc-004">
-            2. I need to answer the "why" on my design decisions.
+            02. I need to answer the "why" on my design decisions.
           </h3>
           <p className="gc-004">
             Collaborating with other people, there were many times I had to

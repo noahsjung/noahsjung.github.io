@@ -330,11 +330,11 @@ function FoodTruck() {
             />
           </div>
           <Break />
-          <h2 className="gc-004">1.Food Truck Feed</h2>
+          <h2 className="gc-004">01.Food Truck Feed</h2>
           <Break />
           <h3 className="gc-001">Considerations</h3>
           <div className="gc-000-3">
-            <h5>1. Objective</h5>
+            <h5>Objective</h5>
             <br />
             <p>
               To help users find/ explore/ compare the food trucks that they are
@@ -343,7 +343,7 @@ function FoodTruck() {
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5 className="gc-000-3">2. Important Facts</h5>
+            <h5 className="gc-000-3">Important Facts</h5>
             <br />
             <div className="key-things-consider-lists">
               <ol>
@@ -362,7 +362,7 @@ function FoodTruck() {
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5>3. Questions to Ask</h5>
+            <h5>Questions to Ask</h5>
             <br />
             <div className="question-lists">
               <ol>
@@ -434,11 +434,11 @@ function FoodTruck() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h2 className="gc-004">2.Food Truck Profile</h2>
+          <h2 className="gc-004">02.Food Truck Profile</h2>
           <Break />
           <h3 className="gc-001">Considerations</h3>
           <div className="gc-000-3">
-            <h5>1. Objective</h5>
+            <h5>Objective</h5>
             <br />
             <p>
               To help users know better about the food trucks and order foods
@@ -447,7 +447,7 @@ function FoodTruck() {
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5 className="gc-000-3">2. Important Facts</h5>
+            <h5 className="gc-000-3">Important Facts</h5>
             <br />
             <div className="key-things-consider-lists">
               <ol>
@@ -466,7 +466,7 @@ function FoodTruck() {
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5>3. Questions to Ask</h5>
+            <h5>Questions to Ask</h5>
             <br />
             <div className="question-lists">
               <ol>
@@ -542,11 +542,11 @@ function FoodTruck() {
             <img src={orderExperience} alt="orderExperience" />
           </div>
 
-          <h2 className="gc-004">3.Search</h2>
+          <h2 className="gc-004">03.Search</h2>
           <Break />
           <h3 className="gc-001">Considerations</h3>
           <div className="gc-000-3">
-            <h5>1. Objective</h5>
+            <h5>Objective</h5>
             <br />
             <p>
               To help users find the specific things that they are looking for.
@@ -554,7 +554,7 @@ function FoodTruck() {
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5 className="gc-000-3">2. Important Fact</h5>
+            <h5 className="gc-000-3">Important Fact</h5>
             <br />
             <p>
               There is a lot of information to show in the food truck profile,
@@ -563,7 +563,7 @@ function FoodTruck() {
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5>3. Questions to Ask</h5>
+            <h5>Questions to Ask</h5>
             <br />
             <div className="question-lists">
               <ol>
@@ -629,7 +629,7 @@ function FoodTruck() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">1. User Research/Testing</h3>
+          <h3 className="gc-004">01. User Research/Testing</h3>
           <p className="gc-004">
             Because of the short time frame to work on the project, I could only
             do minimal user research. If more time and resources were given to
@@ -643,7 +643,7 @@ function FoodTruck() {
             improvements.
           </p>
           <Break />
-          <h3 className="gc-004">2. Product Benchmarking</h3>
+          <h3 className="gc-004">02. Product Benchmarking</h3>
           <p className="gc-004">
             There are many existing products that are in a similar market place;
             apps that help people to search restaurants and order delivery

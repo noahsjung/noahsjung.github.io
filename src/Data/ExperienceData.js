@@ -27,7 +27,7 @@ const experienceData = [
     location: 'Providence, RI',
     role: 'Design Intern',
     descriptions: [
-      'Crafted user persona, user journey map, user-flows, wireframes, and final screens for voice recording business productivity app, “Retriever App.”',
+      'Crafted user persona, user journey map, user-flows, wireframes, and final prototype for voice recording business productivity app, “Retriever App.”',
       'Collaborated with senior designers, pm, and developers during weekly critique sessions',
       'Conducted extensive market researches in voice recording, note-taking, and transcription services',
       'Designed data visualizations, animations, mockups, and presentation slides for clients and business partners.'

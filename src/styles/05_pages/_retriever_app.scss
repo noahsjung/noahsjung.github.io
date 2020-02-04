@@ -1,0 +1,22 @@
+#background,
+#process,
+#iterations,
+#final-design {
+  grid-column: 1/-1;
+  @include grid-wrapper;
+  @extend %grid-columns;
+}
+
+/////////////////////////////////////////////////////////////////
+
+.retriever #introduction {
+  .hero-image {
+    background-image: url(../../images/retriever/hero.png);
+  }
+}
+
+.retriever {
+  video {
+    width: 100%;
+  }
+}

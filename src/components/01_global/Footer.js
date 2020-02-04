@@ -7,7 +7,8 @@ function Footer() {
       <div className="footer">
         <h6 className="copyright">
           Copyright © 2020 Noah Jung. <br />
-          All rights reserved.
+          All rights reserved. <br />
+          Developed using React.
         </h6>
         <div className="links">
           <a href="mailto:noahsjung@gmail.com">
