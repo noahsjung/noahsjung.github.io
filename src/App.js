@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import '../src/styles/styles.scss';
 
@@ -13,7 +14,13 @@ import AmazingPlanter from './pages/projects/AmazingPlanter';
 import Waymo from './pages/projects/Waymo';
 import PageNotFound from './pages/PageNotFound';
 
+function initializeAnalytics() {
+  ReactGA.initialize('UA-157872672-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
 function App() {
+  initializeAnalytics();
   return (
     <div className="App">
       <Switch>
