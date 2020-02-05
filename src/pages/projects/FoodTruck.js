@@ -330,7 +330,7 @@ function FoodTruck() {
             />
           </div>
           <Break />
-          <h2 className="gc-004">01.Food Truck Feed</h2>
+          <h2 className="gc-004">01. Food Truck Feed</h2>
           <Break />
           <h3 className="gc-001">Considerations</h3>
           <div className="gc-000-3">
@@ -410,7 +410,7 @@ function FoodTruck() {
             <Break />
             <p className="video-name">Hide Uninterested Food Truck</p>
           </div>
-          <div className="gc-000000-2c video-container">
+          <div className="gc-00000-2c video-container">
             <div className="video-wrapper">
               <video
                 src={toggleListMap}
@@ -434,7 +434,7 @@ function FoodTruck() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h2 className="gc-004">02.Food Truck Profile</h2>
+          <h2 className="gc-004">02. Food Truck Profile</h2>
           <Break />
           <h3 className="gc-001">Considerations</h3>
           <div className="gc-000-3">
@@ -514,7 +514,7 @@ function FoodTruck() {
             <Break />
             <p className="video-name">Collapsable Header</p>
           </div>
-          <div className="gc-000000-2c video-container">
+          <div className="gc-00000-2c video-container">
             <div className="video-wrapper">
               <video
                 src={menuOverviewReview}
@@ -542,7 +542,7 @@ function FoodTruck() {
             <img src={orderExperience} alt="orderExperience" />
           </div>
 
-          <h2 className="gc-004">03.Search</h2>
+          <h2 className="gc-004">03. Search</h2>
           <Break />
           <h3 className="gc-001">Considerations</h3>
           <div className="gc-000-3">

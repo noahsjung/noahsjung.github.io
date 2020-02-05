@@ -1,7 +1,8 @@
-#background,
+#overview,
 #process,
-#iterations,
-#final-design {
+#wireframes,
+#design,
+#learnings {
   grid-column: 1/-1;
   @include grid-wrapper;
   @extend %grid-columns;
@@ -17,6 +18,24 @@
 
 .retriever {
   video {
-    width: 100%;
+    width: 80%;
   }
+}
+
+.retriever .user-journey-note {
+  color: $gray;
+}
+
+.retriever #design .versus {
+  text-align: center;
+}
+
+.retriever #design .versus-sub {
+  text-align: center;
+  color: $gray;
+  min-height: 60px;
+}
+
+.retriever #design .user-flow-video {
+  width: 100%;
 }

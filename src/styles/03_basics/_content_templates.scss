@@ -84,7 +84,7 @@ img {
     @include grid-column(3, -1, left);
   }
 
-  .gc-000000-2 {
+  .gc-00000-2 {
     @include grid-column(6, -2, left);
   }
 
@@ -104,7 +104,7 @@ img {
   .gc-0000-4c {
     @include grid-column(5, 7, center);
   }
-  .gc-000000-2c {
+  .gc-00000-2c {
     @include grid-column(6, -2, center);
   }
 

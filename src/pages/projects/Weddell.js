@@ -307,7 +307,7 @@ function Weddell() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">01.Onboarding</h3>
+          <h3 className="gc-004">01. Onboarding</h3>
           <p className="gc-004">
             Users first go through a delightful onboarding process, and based on
             the information that users provide, Weddell analyzes and provides
