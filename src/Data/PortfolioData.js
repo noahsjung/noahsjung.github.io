@@ -8,24 +8,24 @@ import weddell_logo from '../images/weddell_logo.jpg';
 const portFolioData = [
   {
     id: 1,
+    title: 'Retriever App',
+    description: 'Internship / UIUX',
+    image: retrieverapp_logo,
+    path: 'retriever-app'
+  },
+  {
+    id: 2,
     title: 'Weddell',
     description: 'Startup / UIUX',
     image: weddell_logo,
     path: '/weddell'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Food Truck Finder',
     description: 'Design Challenge / UIUX',
     image: food_truck_logo,
     path: '/food-truck-finder'
-  },
-  {
-    id: 3,
-    title: 'Retriever App',
-    description: 'Internship / UIUX',
-    image: retrieverapp_logo,
-    path: 'retriever-app'
   }
   // {
   //   id: 4,
