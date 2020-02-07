@@ -223,7 +223,7 @@ function RetrieverApp() {
           <Break />
           <h6 className="gc-004 user-journey-note">
             *note: texts with blue square border is where out team is trying to
-            target.
+            focused on.
           </h6>
           <div className="gc-06 image-container">
             <img src={journeyMap} alt="journeyMap" />
@@ -293,56 +293,6 @@ function RetrieverApp() {
           <BreakThree />
           <hr className="gc-06" />
         </div>
-        {/* <div id="wireframes">
-          <BreakThree />
-          <div className="gc-004 wireframes-word">
-            <LiquidDistortionText
-              id="wireframes-word"
-              text="WIREFRAMES"
-              fontFamily="Roboto"
-              fontSize={24}
-              fill="#c4b2b6"
-              speed={0.7}
-              volatility={0.04}
-            />
-            <Break />
-          </div>
-          <h3 className="gc-004">Recording Screens </h3>
-          <p className="gc-004">
-            Our team focued on the bookmarking and For the recording screen, our
-            team mainly focused on two different aspects. First is bookmarking:
-            how to easily tell users that they bookmarked a specific time mark
-            so that it is easy for them to go back later. Second is indicating
-            the state of the recording: whether they are recording the meeting
-            or they paused the app. The main focus of both bookmarking and
-            indicating the state of recording was to allow users to really
-            engage in their meetings.
-          </p>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">Information Architecture</h3>
-          <div className="gc-004 image-container">
-            <img src={infoArch} alt="information-architecture" />
-          </div>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">Wireframes</h3>
-          <div className="gc-004 image-container">
-            <img src={wireframes} alt="wirframes" />
-          </div>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">Branding & User Interface</h3>
-          <div className="gc-004 image-container">
-            <img src={branding} alt="branding" />
-          </div>
-          <div className="gc-004 image-container">
-            <img src={icons} alt="icons" />
-          </div>
-          <BreakThree />
-          <BreakThree />
-          <hr className="gc-06" />
-        </div> */}
         <div id="design">
           <BreakThree />
           <div className="gc-004 design-word">
@@ -453,7 +403,7 @@ function RetrieverApp() {
           <BreakThree />
           <h3 className="gc-004">07. Why Retriever App?</h3>
           <Break />
-          <div className="gc-02">
+          <div className="gc-02 vs-recording">
             <h5 className="versus">Retriever vs Recording Apps:</h5>
             <Break />
             <h5 className="versus-sub">
@@ -473,7 +423,7 @@ function RetrieverApp() {
               </ol>
             </div>
           </div>
-          <div className="gc-000-2">
+          <div className="gc-000-2 vs-notebook">
             <h5 className="versus">Retriever vs Notebook:</h5>
             <Break />
             <h5 className="versus-sub">Let Retriever take notes for you.</h5>
@@ -491,7 +441,7 @@ function RetrieverApp() {
               </ol>
             </div>
           </div>
-          <div className="gc-00000-2">
+          <div className="gc-00000-2 vs-transcription">
             <h5 className="versus">Retriever vs Transcriptions:</h5>
             <Break />
             <h5 className="versus-sub">Let Retriever provide the context.</h5>

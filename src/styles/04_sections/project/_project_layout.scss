@@ -9,4 +9,88 @@
   overflow: hidden;
 
   @extend %grid-columns;
+
+  .hero-image {
+    grid-column: 3/-1;
+    grid-row: 3/-1;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  .project-name {
+    grid-row: 2/3;
+  }
+
+  .project-details {
+    grid-row: 3/-1;
+    .project-detail-item {
+      margin-bottom: 20px;
+
+      .title {
+        margin-bottom: 7px;
+      }
+      .item {
+        color: $gray;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100%;
+    .hero-image {
+      grid-column: 1/-1;
+      grid-row: 1/4;
+    }
+    .project-name {
+      grid-column: 1/-1;
+      grid-row: 4/5;
+    }
+    .project-details {
+      grid-column: 1/-2;
+      grid-row: 5/-1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+      .project-detail-item {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $large-phone) {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: inherit;
+
+    position: relative;
+    .hero-image {
+      display: block;
+      order: 1;
+      overflow: hidden;
+      height: 400px;
+      margin-bottom: 25px;
+    }
+    .project-name {
+      order: 2;
+      margin-bottom: 25px;
+    }
+    .project-details {
+      order: 3;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      .project-detail-item {
+        margin-right: 15px;
+      }
+    }
+  }
 }

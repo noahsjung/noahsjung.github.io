@@ -9,6 +9,9 @@
 }
 
 /////////////////////////////////////////////////////////////////
+.retriever {
+  overflow-x: hidden;
+}
 
 .retriever #introduction {
   .hero-image {
@@ -38,4 +41,15 @@
 
 .retriever #design .user-flow-video {
   width: 100%;
+}
+
+.vs-recording,
+.vs-notebook,
+.vs-transciption {
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 70px;
+    > br {
+      display: none;
+    }
+  }
 }

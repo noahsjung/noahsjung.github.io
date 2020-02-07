@@ -8,16 +8,16 @@ function AboutDescription() {
       lives happier and more efficient.
       <br />
       <br />I have worked at agile startups such as{' '}
-      <a href="https://modi.luxrobo.com/" target="blank">
-        Luxrobo
+      <a href="https://www.weddell.co/" target="blank">
+        Weddell Co.
       </a>
       ,{' '}
       <a href="https://www.giantshoulders.co/" target="blank">
         Giant Shoulders
       </a>
       , and &nbsp;
-      <a href="https://www.weddell.co/" target="blank">
-        Weddell Co.
+      <a href="https://modi.luxrobo.com/" target="blank">
+        Luxrobo
       </a>{' '}
       as a designer to build products from scratch. I am currently looking for
       new opportunities after studying Industrial Design at{' '}

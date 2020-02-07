@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 import HeaderLogo from './HeaderLogo';
+import DarkMode from '../dark_mode/DarkMode';
 
 function Header(props) {
   return (
@@ -123,7 +124,9 @@ function Header(props) {
           </h6>
         )}
       </nav>
-      <div className="header-right">{/* <h6>dark mode</h6> */}</div>
+      <div className="header-right">
+        <DarkMode />
+      </div>
     </header>
   );
 }

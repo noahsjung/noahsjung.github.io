@@ -8,25 +8,52 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-column-gap: $column-gap;
+  @media only screen and (max-width: $tablet) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 //left
 .header .header-left {
   grid-column: 1/2;
   justify-self: end;
+  @media only screen and (max-width: $tablet) {
+    grid-column: 1/2;
+  }
+  @media only screen and (max-width: $large-phone) {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-items: center;
+    // .logo {
+    // }
+  }
 }
 
 //center
 .header .header-center {
   grid-column: 2/8;
   display: flex;
+  @media only screen and (max-width: $tablet) {
+    grid-column: 2/-1;
+  }
+  @media only screen and (max-width: $large-phone) {
+    display: none;
+  }
   // justify-content: space-between;
 }
 
 //right
 .header .header-right {
   grid-column: 8/9;
-  justify-self: end;
+  justify-self: start;
+  align-self: center;
+  cursor: pointer;
+  .fas {
+    font-size: 28px;
+  }
+  @media only screen and (max-width: $tablet) {
+    visibility: hidden;
+  }
 }
 
 //active
