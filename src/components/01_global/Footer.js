@@ -1,6 +1,8 @@
 import React from 'react';
 import resume from '../../files/resume_01.29.20.pdf';
 
+// import lightTheme from '../../styles/02_tools/styled_component/lightTheme';
+
 function Footer() {
   return (
     <div className="footer-container">

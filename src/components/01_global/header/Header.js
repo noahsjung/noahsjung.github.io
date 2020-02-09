@@ -124,9 +124,7 @@ function Header(props) {
           </h6>
         )}
       </nav>
-      <div className="header-right">
-        <DarkMode />
-      </div>
+      <div className="header-right">{/* <DarkMode /> */}</div>
     </header>
   );
 }

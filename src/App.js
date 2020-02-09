@@ -1,8 +1,11 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import ReactGA from 'react-ga';
 
 import '../src/styles/styles.scss';
+
+import lightTheme from './styles/02_tools/styled_component/lightTheme';
 
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
@@ -10,8 +13,8 @@ import AboutMe from './pages/AboutMe';
 import Weddell from './pages/projects/Weddell';
 import FoodTruck from './pages/projects/FoodTruck.js';
 import Retriever from './pages/projects/Retriever';
-import AmazingPlanter from './pages/projects/AmazingPlanter';
-import Waymo from './pages/projects/Waymo';
+// import AmazingPlanter from './pages/projects/AmazingPlanter';
+// import Waymo from './pages/projects/Waymo';
 import PageNotFound from './pages/PageNotFound';
 
 function initializeAnalytics() {
@@ -22,6 +25,7 @@ function initializeAnalytics() {
 function App() {
   initializeAnalytics();
   return (
+    // <ThemeProvider theme={lightTheme}>
     <div className="App">
       <Switch>
         <Route exact path="/" render={() => <Home />} />
@@ -31,12 +35,12 @@ function App() {
         <Route path="/weddell" render={() => <Weddell />} />
         <Route path="/food-truck-finder" render={() => <FoodTruck />} />
         <Route path="/retriever-app" render={() => <Retriever />} />
-        <Route path="/amazing-planter" render={() => <AmazingPlanter />} />
-        <Route path="/waymo" render={() => <Waymo />} />
+        {/* <Route path="/amazing-planter" render={() => <AmazingPlanter />} />
+          <Route path="/waymo" render={() => <Waymo />} /> */}
         <Route path="/" render={() => <PageNotFound />} />
-        {/* <Route path="/amen" render={() => <Amen />} /> */}
       </Switch>
     </div>
+    // {/* </ThemeProvider> */}
   );
 }
 

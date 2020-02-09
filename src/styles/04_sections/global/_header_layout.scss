@@ -34,7 +34,7 @@
   grid-column: 2/8;
   display: flex;
   @media only screen and (max-width: $tablet) {
-    grid-column: 2/-1;
+    grid-column: 2/-2;
   }
   @media only screen and (max-width: $large-phone) {
     display: none;
@@ -52,7 +52,10 @@
     font-size: 28px;
   }
   @media only screen and (max-width: $tablet) {
-    visibility: hidden;
+    grid-column: -2/-1;
+  }
+  @media only screen and (max-width: $large-phone) {
+    display: none;
   }
 }
 

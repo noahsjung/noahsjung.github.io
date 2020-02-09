@@ -15,6 +15,7 @@ function DarkMode() {
       <i
         className={darkMode ? 'fas fa-moon' : 'fas fa-sun'}
         onClick={toggleDarkMode}
+        style={{ color: '#888' }}
       ></i>
     </div>
   );
