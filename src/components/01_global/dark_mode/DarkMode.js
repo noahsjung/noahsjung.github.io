@@ -4,17 +4,22 @@ function DarkMode() {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
-  if (darkMode) {
-    console.log('darkMode: ', darkMode);
-  } else {
-    console.log('darkMode: ', darkMode);
-  }
+  const [theme, setTheme] = useState('light');
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+      console.log('dark');
+    } else {
+      setTheme('light');
+      console.log('light');
+    }
+  };
 
   return (
     <div>
       <i
         className={darkMode ? 'fas fa-moon' : 'fas fa-sun'}
-        onClick={toggleDarkMode}
+        onClick={toggleTheme}
         style={{ color: '#888' }}
       ></i>
     </div>

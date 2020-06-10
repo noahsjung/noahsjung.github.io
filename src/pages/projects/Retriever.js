@@ -1,6 +1,21 @@
 import React, { useEffect } from 'react';
 import { LiquidDistortionText } from 'react-text-fun';
 
+//styles
+import {
+  BigHeader,
+  MedHeader,
+  SmallHeader,
+  SmallTitle,
+  Title,
+  Note,
+  SmallParagraph,
+  Paragraph,
+  StyledLink,
+  OrderedList,
+  List
+} from '../../styles/02_tools/styled_component/components/Fonts';
+
 //components
 import Header from '../../components/01_global/header/Header';
 import RightFixed from '../../components/01_global/rightFixed/RightFixed';
@@ -47,39 +62,39 @@ function RetrieverApp() {
 
       <section className="grid-wrapper">
         <div id="introduction">
-          <h1 className="project-name gc-004">Retriver App</h1>
+          <BigHeader className="project-name gc-004">Retriver App</BigHeader>
 
           <div className="project-details gc-01">
             <div className="project-detail-item">
-              <h7 className="title">Duration</h7>
-              <h6 className="item">3 months</h6>
+              <SmallParagraph className="title">Duration</SmallParagraph>
+              <Note className="item">3 months</Note>
             </div>
             <div className="project-detail-item">
-              <h7 className="title">Role</h7>
-              <h6 className="item">Product Designer</h6>
-              <h6 className="item">Design Intern</h6>
+              <SmallParagraph className="title">Role</SmallParagraph>
+              <Note className="item">Product Designer</Note>
+              <Note className="item">Design Intern</Note>
             </div>
             <div className="project-detail-item">
-              <h7 className="title">Tools</h7>
-              <h6 className="item">Sketch</h6>
-              <h6 className="item">Principle</h6>
-              <h6 className="item">InVision</h6>
+              <SmallParagraph className="title">Tools</SmallParagraph>
+              <Note className="item">Sketch</Note>
+              <Note className="item">Principle</Note>
+              <Note className="item">InVision</Note>
             </div>
             <div className="project-detail-item">
-              <h7 className="title">Type</h7>
-              <h6 className="item">Experience Design</h6>
-              <h6 className="item">Interface Design</h6>
+              <SmallParagraph className="title">Type</SmallParagraph>
+              <Note className="item">Experience Design</Note>
+              <Note className="item">Interface Design</Note>
             </div>
             <div className="project-detail-item">
-              <h7 className="title">Links</h7>
-              <h6 className="item">
-                <a
+              <SmallParagraph className="title">Links</SmallParagraph>
+              <Note className="item">
+                <StyledLink
                   href="https://www.giantshoulders.co/blog/building-a-better-app-for-meetings?fbclid=IwAR3-jIKwTpZDNT8i6C1ZR0GmkbbDpNPk30REHi2527ZM5X3onb-eZddA9tI"
                   target="blank"
                 >
                   Website
-                </a>
-              </h6>
+                </StyledLink>
+              </Note>
             </div>
           </div>
 
@@ -98,56 +113,56 @@ function RetrieverApp() {
               volatility={0.04}
             />
           </div>
-          <h2 className="gc-004">
+          <MedHeader className="gc-004">
             Imagine an app that combines the peace of mind of having a recording
             with the ability to search and quickly find details from those
             meetings.
-          </h2>
+          </MedHeader>
           <BreakThree />
-          <h3 className="gc-001">My Role / Responsibility</h3>
+          <SmallHeader className="gc-001">My Role / Responsibility</SmallHeader>
           <div className="gc-000-3 responsibilities">
-            <ol>
-              <li className="responsibility-item">
+            <OrderedList>
+              <List className="responsibility-item">
                 Collaborated with senior designers, pm, and developers during
                 weekly/monthly critique sessions.
-              </li>
-              <li className="responsibility-item">
+              </List>
+              <List className="responsibility-item">
                 Crafted user persona, user journey map, user-flows, wireframes,
                 and final prototype.
-              </li>
-              <li className="responsibility-item">
+              </List>
+              <List className="responsibility-item">
                 Conducted extensive market researches in voice recording,
                 note-taking, and transcription services.
-              </li>
-            </ol>
+              </List>
+            </OrderedList>
             <BreakThree />
           </div>
-          <h3 className="gc-001">Problems</h3>
+          <SmallHeader className="gc-001">Problems</SmallHeader>
           <div className="gc-000-3 problem-lists">
-            <ol>
-              <li className="problem-item">
+            <OrderedList>
+              <List className="problem-item">
                 It is hard to keep track of all of the meetings for many
                 business people.
-              </li>
-              <li className="problem-item">
+              </List>
+              <List className="problem-item">
                 During meetings, people need to do a lot of multitasking -
                 listening, remembering, speaking, and taking notes - which make
                 them hard to be fully engaged.
-              </li>
-              <li className="problem-item">
+              </List>
+              <List className="problem-item">
                 Remembering little details - dates, names, numbers, etc. - is
                 very difficult.
-              </li>
-            </ol>
+              </List>
+            </OrderedList>
             <BreakThree />
           </div>
-          <h3 className="gc-001">Main Challenge</h3>
-          <p className="gc-000-3">
+          <SmallHeader className="gc-001">Main Challenge</SmallHeader>
+          <Paragraph className="gc-000-3">
             How might we encourage business people to be more engaged in their
             meetings?
-          </p>
+          </Paragraph>
           <BreakThree />
-          <h3 className="gc-004">Solution Overview</h3>
+          <SmallHeader className="gc-004">Solution Overview</SmallHeader>
           <br />
           <br />
           <div className="image-container gc-004">
@@ -155,36 +170,100 @@ function RetrieverApp() {
           </div>
           <Break />
           <div className="gc-002">
-            <h5>01. Bookmark the important moment during the meeting.</h5>
+            <Title>01. Bookmark the important moment during the meeting.</Title>
             <br />
-            <p>
+            <Paragraph>
               Spend less time writing down notes to remember the detail.
               Instead, just tap a button and bookmark the moment to come back
               later.
-            </p>
+            </Paragraph>
           </div>
           <div className="gc-0000-2">
-            <h5>
+            <Title>
               02. Search for a word or phrase to listen again what you/others
               exactly said.
-            </h5>
+            </Title>
             <br />
-            <p>
+            <Paragraph>
               Simply type in a word/phrase or click a keyword to fast-forwarded
               to the exact point when it was said.
-            </p>
+            </Paragraph>
           </div>
           <BreakThree />
-          <h3 className="gc-004">How It Works</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">How It Works</SmallHeader>
+          <Paragraph className="gc-004">
             Retriever app records meetings and transcribes in the back-end, and
             it uses the transcription as a guide to bring users to the exact
             moment when the certain word/phrase was said so they do not have to
             scrub through the entire recording. Retriever App, however, does not
-            display the raw transciption upfront because reading spoken words
-            that are full of run-on sentences and grammar errors is a horrible
-            experience based on our research.
-          </p>
+            display the raw transciption upfront because our research have shown
+            that users have bad experience of reading spoken words that are full
+            of run-on sentences and grammar erros.
+          </Paragraph>
+          <BreakThree />
+          <BreakThree />
+          <SmallHeader className="gc-004">Why Retriever App?</SmallHeader>
+          <Break />
+          <div className="gc-02 vs-recording">
+            <Title className="versus">Retriever vs Recording Apps:</Title>
+            <Break />
+            <Title className="versus-sub">
+              Let Retriever find key info on your behalf.
+            </Title>
+            <br />
+            <div className="vs">
+              <OrderedList>
+                <List className="vs-item">
+                  Stop scrubbing the audio recordings to find what was said,
+                  just search for what was said on Retriever.
+                </List>
+                <List className="vs-item">
+                  Bookmark important moments during your meeting so that you can
+                  easily come back to them.
+                </List>
+              </OrderedList>
+            </div>
+          </div>
+          <div className="gc-000-2 vs-notebook">
+            <Title className="versus">Retriever vs Notebook:</Title>
+            <Break />
+            <Title className="versus-sub">
+              Let Retriever take notes for you.
+            </Title>
+            <br />
+            <div className="vs">
+              <OrderedList>
+                <List className="vs-item">
+                  Free yourself to talk with your hands, write on the
+                  whiteboard, and engage with your team or client.
+                </List>
+                <List className="vs-item">
+                  Share your Retriever audio and let each meeting participants
+                  search, listen, and remember what was said.
+                </List>
+              </OrderedList>
+            </div>
+          </div>
+          <div className="gc-00000-2 vs-transcription">
+            <Title className="versus">Retriever vs Transcriptions:</Title>
+            <Break />
+            <Title className="versus-sub">
+              Let Retriever provide the context.
+            </Title>
+            <br />
+            <div className="vs">
+              <OrderedList>
+                <List className="vs-item">
+                  Search and listen to how an important was delivered to get the
+                  correct understanding.
+                </List>
+                <List className="vs-item">
+                  Don't worry about inaccurate transcription, just listen back
+                  to the audio.
+                </List>
+              </OrderedList>
+            </div>
+          </div>
           <BreakThree />
           <BreakThree />
           <hr className="gc-06" />
@@ -202,29 +281,29 @@ function RetrieverApp() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-001">Defining the Users</h3>
+          <SmallHeader className="gc-001">Defining the Users</SmallHeader>
           <div className="gc-000-3 users-lists">
-            <ol>
-              <li className="user-item">Client-facing people</li>
-              <li className="user-item">People in group meetings</li>
-              <li className="user-item">Interviewers and interviewees</li>
-            </ol>
+            <OrderedList>
+              <List className="user-item">Client-facing people</List>
+              <List className="user-item">People in group meetings</List>
+              <List className="user-item">Interviewers and interviewees</List>
+            </OrderedList>
           </div>
           <BreakThree />
-          <h3 className="gc-001">User Journey</h3>
-          <p className="gc-000-3">
+          <SmallHeader className="gc-001">User Journey</SmallHeader>
+          <Paragraph className="gc-000-3">
             We drew out the user journey map of before, during and after the
             meeting to find the pain points which lead our team to define our
             main challenge: helping people be more engaged during meeting.
             Furthermore, the user journey map was used as a tool to help
             developers understand better about the problems that we were trying
             to solve.
-          </p>
+          </Paragraph>
           <Break />
-          <h6 className="gc-004 user-journey-note">
+          <Note className="gc-004 user-journey-note">
             *note: texts with blue square border is where out team is trying to
             focused on.
-          </h6>
+          </Note>
           <div className="gc-06 image-container">
             <img src={journeyMap} alt="journeyMap" />
           </div>
@@ -233,8 +312,8 @@ function RetrieverApp() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">Market Positioning</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">Market Positioning</SmallHeader>
+          <Paragraph className="gc-004">
             Knowing what problems to solve, our team researched existing
             products that try to solve the same problem as us. These products
             include voice recording, note-taking, and audio transcription
@@ -249,16 +328,16 @@ function RetrieverApp() {
               that are simple yet smart
             </b>
             .
-          </p>
+          </Paragraph>
           <Break />
           <div className="gc-004 image-container">
             <img src={marketPositioning} alt="marketPositioning" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">Wireframes</h3>
-          <h5 className="gc-001">Recording Screen</h5>
-          <p className="gc-000-3">
+          <SmallHeader className="gc-004">Wireframes</SmallHeader>
+          <Title className="gc-001">Recording Screen</Title>
+          <Paragraph className="gc-000-3">
             For the recording screen, our team mainly focused on two different
             aspects. First is bookmarking: how to easily tell users that they
             bookmarked a specific time mark so that it is easy for them to go
@@ -266,15 +345,15 @@ function RetrieverApp() {
             they are recording the meeting or they paused the app. The main
             focus of both bookmarking and indicating the state of recording was
             to encourage users to fully engage in their meetings.
-          </p>
+          </Paragraph>
           <Break />
           <div className="gc-06 image-container">
             <img src={wireframeRecording} alt="wireframeRecording" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h5 className="gc-001">Playback Screen</h5>
-          <p className="gc-000-3">
+          <Title className="gc-001">Playback Screen</Title>
+          <Paragraph className="gc-000-3">
             For the playback screen, there were many different types of formats
             that our team and I experimented. We considered the design of the
             timeline and play/pause button (vertical or horizontal) and the
@@ -284,7 +363,7 @@ function RetrieverApp() {
             appear first. We assumed that secondary features such as showing all
             the bookmarks, entire transcript, and photos could be burdensome to
             users, and we put them in the different sections in the app.
-          </p>
+          </Paragraph>
           <Break />
           <div className="gc-06 image-container">
             <img src={wireframePlayback} alt="wireframePlayback" />
@@ -306,11 +385,13 @@ function RetrieverApp() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">01. Easily Find That Thing You Said</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">
+            01. Easily Find That Thing You Said
+          </SmallHeader>
+          <Paragraph className="gc-004">
             Forgot the exact details of what was said? Search for the word or
             phrase in your conversation and the app will bring you there.
-          </p>
+          </Paragraph>
           <Break />
           <div className="gc-02c video-container">
             <div className="video-wrapper">
@@ -323,29 +404,31 @@ function RetrieverApp() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Micro-Scrolling</p>
+            <Paragraph className="video-name">Micro-Scrolling</Paragraph>
           </div>
           <div className="gc-000-2c video-container">
             <div className="video-wrapper">
               <video src={search} alt="search" loop autoPlay muted></video>
             </div>
             <Break />
-            <p className="video-name">Search</p>
+            <Paragraph className="video-name">Search</Paragraph>
           </div>
           <div className="gc-00000-2c video-container">
             <div className="video-wrapper">
               <video src={keywords} alt="keywords" loop autoPlay muted></video>
             </div>
             <Break />
-            <p className="video-name">Keywords</p>
+            <Paragraph className="video-name">Keywords</Paragraph>
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">02. Bookmark Key Moments as They Happen</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">
+            02. Bookmark Key Moments as They Happen
+          </SmallHeader>
+          <Paragraph className="gc-004">
             Hear something important during your meeting? Bookmark it and come
             back to it later.
-          </p>
+          </Paragraph>
           <Break />
           <div className="gc-000-2c video-container">
             <div className="video-wrapper">
@@ -354,11 +437,13 @@ function RetrieverApp() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">03. Organize & Search All Your Meeting</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">
+            03. Organize & Search All Your Meeting
+          </SmallHeader>
+          <Paragraph className="gc-004">
             Looking for something and don't know where to start? Sort your
             meetings or simply type in the word you’re looking for.
-          </p>
+          </Paragraph>
           <Break />
           <div className="gc-000-2c video-container">
             <div className="video-wrapper">
@@ -367,11 +452,13 @@ function RetrieverApp() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">04. Share Meetings With Your Team</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">
+            04. Share Meetings With Your Team
+          </SmallHeader>
+          <Paragraph className="gc-004">
             Share your recordings with coworkers, colleagues, and clients to
             simplify post-meeting communication.
-          </p>
+          </Paragraph>
           <Break />
           <div className="gc-000-2c video-container">
             <div className="video-wrapper">
@@ -380,13 +467,13 @@ function RetrieverApp() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">05. Other Screens</h3>
+          <SmallHeader className="gc-004">05. Other Screens</SmallHeader>
           <div className="gc-06 image-container">
             <img src={otherScreens} alt="other-screens" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">06. User Flow</h3>
+          <SmallHeader className="gc-004">06. User Flow</SmallHeader>
           <div className="gc-06 video-container">
             <div className="video-wrapper">
               <video
@@ -397,66 +484,6 @@ function RetrieverApp() {
                 controls
                 muted
               ></video>
-            </div>
-          </div>
-          <BreakThree />
-          <BreakThree />
-          <h3 className="gc-004">07. Why Retriever App?</h3>
-          <Break />
-          <div className="gc-02 vs-recording">
-            <h5 className="versus">Retriever vs Recording Apps:</h5>
-            <Break />
-            <h5 className="versus-sub">
-              Let Retriever find key info on your behalf.
-            </h5>
-            <br />
-            <div className="vs">
-              <ol>
-                <li className="vs-item">
-                  Stop scrubbing the audio recordings to find what was said,
-                  just search for what was said on Retriever.
-                </li>
-                <li className="vs-item">
-                  Bookmark important moments during your meeting so that you can
-                  easily come back to them.
-                </li>
-              </ol>
-            </div>
-          </div>
-          <div className="gc-000-2 vs-notebook">
-            <h5 className="versus">Retriever vs Notebook:</h5>
-            <Break />
-            <h5 className="versus-sub">Let Retriever take notes for you.</h5>
-            <br />
-            <div className="vs">
-              <ol>
-                <li className="vs-item">
-                  Free yourself to talk with your hands, write on the
-                  whiteboard, and engage with your team or client.
-                </li>
-                <li className="vs-item">
-                  Share your Retriever audio and let each meeting participants
-                  search, listen, and remember what was said.
-                </li>
-              </ol>
-            </div>
-          </div>
-          <div className="gc-00000-2 vs-transcription">
-            <h5 className="versus">Retriever vs Transcriptions:</h5>
-            <Break />
-            <h5 className="versus-sub">Let Retriever provide the context.</h5>
-            <br />
-            <div className="vs">
-              <ol>
-                <li className="vs-item">
-                  Search and listen to how an important was delivered to get the
-                  correct understanding.
-                </li>
-                <li className="vs-item">
-                  Don't worry about inaccurate transcription, just listen back
-                  to the audio.
-                </li>
-              </ol>
             </div>
           </div>
 
@@ -477,8 +504,10 @@ function RetrieverApp() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">01. Iterate quickly and fail quickly.</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">
+            01. Iterate quickly and fail quickly.
+          </SmallHeader>
+          <Paragraph className="gc-004">
             One important lesson that I learned from this project was to iterate
             as much as possible to explore many different options and fail
             quickly to find what works and what does not.
@@ -487,12 +516,12 @@ function RetrieverApp() {
             especially in the digital industry, can save a lot of time in
             finding the right solution. Also, failure is not always a failure;
             it is always an opportunity to guide me to a better solution.
-          </p>
+          </Paragraph>
           <Break />
-          <h3 className="gc-004">
+          <SmallHeader className="gc-004">
             02. User research is the key to product success.
-          </h3>
-          <p className="gc-004">
+          </SmallHeader>
+          <Paragraph className="gc-004">
             Our team did not conduct much user research initially because we
             thought that our assumption of people having bad experiences in
             business meetings is certain from looking at our CEO's and his
@@ -504,7 +533,7 @@ function RetrieverApp() {
             Although we learned the importance of user research the hard way, I
             now fully understand and acknowledge the importance of initial
             user-research in coming up with the right problem to solve.
-          </p>
+          </Paragraph>
         </div>
       </section>
       <OtherProjects />

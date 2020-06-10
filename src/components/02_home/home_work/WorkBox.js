@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+//styles
+import {
+  SmallHeader,
+  Note
+} from '../../../styles/02_tools/styled_component/components/Fonts';
+import WorkBoxContainer from '../../../styles/02_tools/styled_component/components/WorkBox';
+
 function WorkBox(props) {
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
 
   return (
-    <div className={hovered ? 'work-box-hovered work-box' : 'work-box'}>
+    // <div className={hovered ? 'work-box-hovered work-box' : 'work-box'}>
+    <WorkBoxContainer>
       <Link to={props.path}>
         <img
           className="image"
@@ -16,23 +24,25 @@ function WorkBox(props) {
           onMouseLeave={toggleHover}
         />
         <div className="text">
-          <h3
+          <SmallHeader
+            grayhem
             className="title"
             onMouseOver={toggleHover}
             onMouseLeave={toggleHover}
           >
             {props.title}
-          </h3>
-          <h6
+          </SmallHeader>
+          <Note
+            graysem
             className="description"
             onMouseOver={toggleHover}
             onMouseLeave={toggleHover}
           >
             {props.description}
-          </h6>
+          </Note>
         </div>
       </Link>
-    </div>
+    </WorkBoxContainer>
   );
 }
 

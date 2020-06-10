@@ -1,18 +1,22 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
+//styles
+import HeaderContainer from '../../../styles/02_tools/styled_component/components/HeaderContainerStyle';
+import { Note } from '../../../styles/02_tools/styled_component/components/Fonts';
+
 import HeaderLogo from './HeaderLogo';
 import DarkMode from '../dark_mode/DarkMode';
 
 function Header(props) {
   return (
-    <header className="header" id="top">
+    <HeaderContainer className="header" id="top">
       <div className="header-left">
         <HeaderLogo color={'#888'} />
       </div>
       <nav className="header-center">
         {props.first && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.first}
@@ -23,10 +27,10 @@ function Header(props) {
             >
               {props.first}
             </Link>
-          </h6>
+          </Note>
         )}
         {props.second && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.second}
@@ -37,10 +41,10 @@ function Header(props) {
             >
               {props.second}
             </Link>
-          </h6>
+          </Note>
         )}
         {props.third && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.third}
@@ -51,10 +55,10 @@ function Header(props) {
             >
               {props.third}
             </Link>
-          </h6>
+          </Note>
         )}
         {props.fourth && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.fourth}
@@ -65,10 +69,10 @@ function Header(props) {
             >
               {props.fourth}
             </Link>
-          </h6>
+          </Note>
         )}
         {props.fifth && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.fifth}
@@ -79,10 +83,10 @@ function Header(props) {
             >
               {props.fifth}
             </Link>
-          </h6>
+          </Note>
         )}
         {props.sixth && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.sixth}
@@ -93,10 +97,10 @@ function Header(props) {
             >
               {props.sixth}
             </Link>
-          </h6>
+          </Note>
         )}
         {props.seventh && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.seventh}
@@ -107,10 +111,10 @@ function Header(props) {
             >
               {props.seventh}
             </Link>
-          </h6>
+          </Note>
         )}
         {props.eighth && (
-          <h6 className="section">
+          <Note className="section">
             <Link
               activeClass="active"
               to={props.eighth}
@@ -121,11 +125,11 @@ function Header(props) {
             >
               {props.eighth}
             </Link>
-          </h6>
+          </Note>
         )}
       </nav>
       <div className="header-right">{/* <DarkMode /> */}</div>
-    </header>
+    </HeaderContainer>
   );
 }
 

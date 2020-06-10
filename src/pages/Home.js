@@ -1,32 +1,35 @@
 import React, { useEffect } from 'react';
 
+//styles
+import HomeContainer from '../styles/02_tools/styled_component/components/HomeContainerStyle';
+
+//components
 import Header from '../components/01_global/header/Header';
 import RightFixed from '../components/01_global/rightFixed/RightFixed';
 import About from '../components/02_home/home_about/About';
 import Work from '../components/02_home/home_work/Work';
 import Experience from '../components/02_home/home_experience/Experience';
-// import Contact from '../01_sections/home_contact/Contact';
 import Footer from '../components/01_global/Footer';
 
-//preloading
-// import Weddell from '../pages/projects/Weddell';
-
-function Home() {
+function Home(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
-    // Weddell.preload();
   });
 
   return (
-    <div className="home">
-      <Header first="about" second="work" third="experience" />
-      <RightFixed first="about" />
-      <About />
-      <Work />
-      <Experience />
-      {/* <Contact /> */}
-      <Footer />
-    </div>
+    <>
+      <h1>Site under construction</h1>
+
+      {/* feb.12.2020 */}
+      {/* <HomeContainer className="home">
+        <Header first="about" second="work" third="experience" />
+        <RightFixed />
+        <About />
+        <Work />
+        <Experience />
+        <Footer />
+      </HomeContainer> */}
+    </>
   );
 }
 

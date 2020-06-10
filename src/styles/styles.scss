@@ -7,19 +7,10 @@
 
 //03_basics********************************************************
 @import './03_basics/base';
-@import './03_basics/buttons';
+@import './03_basics/content_templates';
 @import './03_basics/icons';
 @import './03_basics/links';
 @import './03_basics/typography';
-@import './03_basics/content_templates';
-
-.container {
-  padding: 0 2rem;
-  margin-right: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
 
 //04_sections********************************************************
 
@@ -45,7 +36,6 @@
 @import './04_sections/project/project_header_layout';
 @import './04_sections/project/project_header_style';
 @import './04_sections/project/project_layout';
-@import './04_sections/project/project_style';
 
 //05_pages********************************************************
 @import './05_pages/about_me';

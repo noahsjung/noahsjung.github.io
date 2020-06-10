@@ -1,19 +1,5 @@
 import React from 'react';
 
-// function Contact() {
-//   return (
-//     <div className="contact" id="contact">
-//       <div className="container">
-//         <div className="contact-word">
-//           <h2>contact</h2>
-//         </div>
-//         <div className="contact-form">
-//           <div>email:</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 class Contact extends React.Component {
   constructor() {
     super();

@@ -6,6 +6,15 @@
   box-sizing: inherit;
 }
 
+html,
+body {
+  background-color: $off-white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 //Tittle,Big Heading
 h1 {
   font-family: 'Playfair Display', serif;
@@ -14,7 +23,7 @@ h1 {
   line-height: 1.6;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
+  // color: $black;
 }
 
 //Subtitle, Medium Heading
@@ -25,7 +34,7 @@ h2 {
   line-height: 1.6;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
+  // color: $black;
 }
 
 //Subtitle2, Small Heading
@@ -36,7 +45,7 @@ h3 {
   line-height: 1.3;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
+  // color: $black;
 }
 
 //Standout Description Font
@@ -46,7 +55,7 @@ h4 {
   line-height: 1.45;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
+  // color: $black;
 }
 
 //Standout Description Font Bold
@@ -56,7 +65,7 @@ h5 {
   line-height: 1.45;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
+  // color: $black;
 }
 
 //Add-on Detail Information
@@ -67,7 +76,7 @@ h6 {
   line-height: 1.4;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
+  // color: $black;
 }
 
 h7 {
@@ -76,7 +85,7 @@ h7 {
   line-height: 1.5;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
+  // color: $black;
 }
 
 //Paragraph Font
@@ -86,15 +95,5 @@ p {
   line-height: 1.6;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: $black;
-}
-
-html,
-body {
-  background-color: $off-white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  text-align: center;
-
-  box-sizing: border-box;
+  // color: $black;
 }

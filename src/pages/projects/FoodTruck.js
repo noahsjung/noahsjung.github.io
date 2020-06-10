@@ -2,6 +2,21 @@ import React, { useEffect } from 'react';
 import { LiquidDistortionText } from 'react-text-fun';
 // import { Spinner } from 'react-spinkit';
 
+//styles
+import {
+  BigHeader,
+  MedHeader,
+  SmallHeader,
+  SmallTitle,
+  Title,
+  Note,
+  SmallParagraph,
+  Paragraph,
+  StyledLink,
+  OrderedList,
+  List
+} from '../../styles/02_tools/styled_component/components/Fonts';
+
 //components
 import Header from '../../components/01_global/header/Header';
 import RightFixed from '../../components/01_global/rightFixed/RightFixed';
@@ -60,27 +75,29 @@ function FoodTruck() {
 
       <section className="grid-wrapper">
         <div id="introduction">
-          <h1 className="project-name gc-004">Food Truck Finder</h1>
+          <BigHeader className="project-name gc-004">
+            Food Truck Finder
+          </BigHeader>
 
           <div className="project-details gc-01">
             <div className="project-detail-item">
-              <h7 className="title">Duration</h7>
-              <h6 className="item">10 days</h6>
+              <SmallParagraph className="title">Duration</SmallParagraph>
+              <Note className="item">10 days</Note>
             </div>
             <div className="project-detail-item">
-              <h7 className="title">Tools</h7>
-              <h6 className="item">Sketch</h6>
-              <h6 className="item">Flinto</h6>
+              <SmallParagraph className="title">Tools</SmallParagraph>
+              <Note className="item">Sketch</Note>
+              <Note className="item">Flinto</Note>
             </div>
             <div className="project-detail-item">
-              <h7 className="title">Type</h7>
-              <h6 className="item">Experience Design</h6>
-              <h6 className="item">UI Animation</h6>
-              <h6 className="item">
+              <SmallParagraph className="title">Type</SmallParagraph>
+              <Note className="item">Experience Design</Note>
+              <Note className="item">UI Animation</Note>
+              <Note className="item">
                 Design Challenge
                 <br />
                 (Verizon Media)
-              </h6>
+              </Note>
             </div>
           </div>
           <div className="hero-image gc-00-6"></div>
@@ -103,38 +120,38 @@ function FoodTruck() {
               volatility={0.04}
             />
           </div>
-          <h2 className="gc-004">
+          <MedHeader className="gc-004">
             Design a Food Truck Finder (FTF) that helps users locate food trucks
             they love, find new food trucks in their area, see menus of those
             food trucks, and pay for their meals using the app.
-          </h2>
+          </MedHeader>
           <BreakThree />
-          <h3 className="gc-004">Requirements</h3>
+          <SmallHeader className="gc-004">Requirements</SmallHeader>
           <div className="gc-004 requirements">
-            <p>
+            <Paragraph>
               Three screens, plus any supporting sketches or wire frames for the
               food truck feed, a food truck profile, and a search results page.
-            </p>
+            </Paragraph>
             <BreakThree />
           </div>
-          <h3 className="gc-004">Project Overview</h3>
+          <SmallHeader className="gc-004">Project Overview</SmallHeader>
           <br />
           <br />
-          <h5 className="gc-004">01. Food Truck Feed</h5>
+          <Title className="gc-004">01. Food Truck Feed</Title>
           <div className="img-container gc-06">
             <img src={feedOverivew} alt="feedOverivew" />
           </div>
           <BreakThree />
           <BreakThree />
 
-          <h5 className="gc-004">02. Food Truck Profile</h5>
+          <Title className="gc-004">02. Food Truck Profile</Title>
           <div className="img-container gc-06">
             <img src={profileOverview} alt="profileOverview" />
           </div>
           <BreakThree />
           <BreakThree />
 
-          <h5 className="gc-004">03. Search</h5>
+          <Title className="gc-004">03. Search</Title>
           <div className="img-container gc-06">
             <img src={searchOverview} alt="searchOverview" />
           </div>
@@ -160,99 +177,103 @@ function FoodTruck() {
               volatility={0.04}
             />
           </div>
-          <h2 className="gc-004">
+          <MedHeader className="gc-004">
             Finding out "Why, Where, When, Who, and What (Five Ws)" of Food
             Trucks.
-          </h2>
+          </MedHeader>
           <BreakThree />
-          <h3 className="gc-001">Why Food Truck?</h3>
+          <SmallHeader className="gc-001">Why Food Truck?</SmallHeader>
           <div className="gc-000-3 why-food-truck-lists">
-            <ol>
-              <li className="why-food-truck-item">
+            <OrderedList>
+              <List className="why-food-truck-item">
                 <b>Lower Prices:</b> Food trucks typically offer more affordable
                 foods compared to sit-down restaurants.
-              </li>
-              <li className="why-food-truck-item">
+              </List>
+              <List className="why-food-truck-item">
                 <b>Convenience:</b> Food Trucks are usually located near popular
                 areas, and they offer quick and easy to-go foods.
-              </li>
-              <li className="why-food-truck-item">
+              </List>
+              <List className="why-food-truck-item">
                 <b>Sense of Community:</b> Interactions between the owners and
                 customers as well as the atmosphere around the food truck create
                 a great sense of community.
-              </li>
-            </ol>
+              </List>
+            </OrderedList>
             <BreakThree />
           </div>
-          <h3 className="gc-004">Who are the Users?</h3>
+          <SmallHeader className="gc-004">Who are the Users?</SmallHeader>
           <div className="gc-004 image-container">
             <img src={users} alt="users" />
           </div>
           <BreakThree />
-          <h3 className="gc-001">User Pain Points</h3>
+          <SmallHeader className="gc-001">User Pain Points</SmallHeader>
           <div className="gc-000-3 pain-points-lists">
-            <ol>
-              <li className="pain-points-item">
+            <OrderedList>
+              <List className="pain-points-item">
                 <b>Temporarily Locations:</b> Because food trucks move around,
                 users can have a hard time finding their favorite food trucks.
-              </li>
-              <li className="pain-points-item">
+              </List>
+              <List className="pain-points-item">
                 <b>Unfixed Operation Times:</b> No one wants to waste their time
                 going to the food truck to find out that it is closed.
                 <br />
-                <h6 className="notes">
+                <Note className="notes">
                   *Unfixed operation times usually apply to food trucks that
                   move around a lot.
-                </h6>
-              </li>
-              <li className="pain-points-item">
+                </Note>
+              </List>
+              <List className="pain-points-item">
                 <b>Waiting Outside:</b> Customers want to spend less time
                 waiting outside especially during bad weather.
-              </li>
-            </ol>
+              </List>
+            </OrderedList>
           </div>
 
           <BreakThree />
-          <h3 className="gc-001">User Priorities (Project Goals)</h3>
+          <SmallHeader className="gc-001">
+            User Priorities (Project Goals)
+          </SmallHeader>
           <div className="gc-000-3 priorities-lists">
-            <ol>
-              <li className="priorities-item">
+            <OrderedList>
+              <List className="priorities-item">
                 <b>Locate</b> food truck users love.
-              </li>
-              <li className="priorities-item">
+              </List>
+              <List className="priorities-item">
                 <b>Find</b> food trucks in their area.
-              </li>
-              <li className="priorities-item">
+              </List>
+              <List className="priorities-item">
                 <b>See</b> menus of those food trucks.
-              </li>
-              <li className="priorities-item">
+              </List>
+              <List className="priorities-item">
                 <b>Pay</b> their meals using the app.
-              </li>
-            </ol>
+              </List>
+            </OrderedList>
           </div>
           <BreakThree />
 
-          <h3 className="gc-001">Assumptions</h3>
+          <SmallHeader className="gc-001">Assumptions</SmallHeader>
           <div className="gc-000-3 priorities-lists">
-            <ol>
-              <li className="priorities-item">
+            <OrderedList>
+              <List className="priorities-item">
                 The user is already familiar with the area and has his/her own
                 favorite food trucks.
-              </li>
-              <li className="priorities-item">
+              </List>
+              <List className="priorities-item">
                 The user lives in San Francisco.
                 <br />
                 (There are around 185 food trucks are in San Francisco.)
-              </li>
-              <li className="priorities-item">Not all menus have pictures.</li>
-              <li className="priorities-item">
+              </List>
+              <List className="priorities-item">
+                Not all menus have pictures.
+              </List>
+              <List className="priorities-item">
                 The location-sharing is on while using the app.
-              </li>
-              <li className="priorities-item">
+              </List>
+              <List className="priorities-item">
                 FTF is only for customers. Food truck owners have separate ways
                 to manage their businesses.
-              </li>
-            </ol>
+              </List>
+            </OrderedList>
           </div>
           <BreakThree />
           <BreakThree />
@@ -276,34 +297,34 @@ function FoodTruck() {
               volatility={0.04}
             />
             <Break />
-            <h2 className="gc-004">
+            <MedHeader className="gc-004">
               Initial design exploration includes sketches, and wireframes, and
               multiple iterations.
-            </h2>
+            </MedHeader>
             <BreakThree />
           </div>
-          <h3 className="gc-004">Sketches</h3>
+          <SmallHeader className="gc-004">Sketches</SmallHeader>
           <div className="gc-06 image-container">
             <img src={sketches} alt="sketches" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">Wireframes</h3>
+          <SmallHeader className="gc-004">Wireframes</SmallHeader>
           <div className="gc-06 image-container">
             <img src={wireframes} alt="wirframes" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">Iterations</h3>
+          <SmallHeader className="gc-004">Iterations</SmallHeader>
           <div className="gc-06 image-container">
             <img src={iterations} alt="iterations" />
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">
+          <SmallHeader className="gc-004">
             Making it Pixel Perfect{' '}
             <span className="four-point-grid">(4-point grid system)</span>
-          </h3>
+          </SmallHeader>
           <div className="gc-06 image-container">
             <img src={pixelPerfect} alt="pixelPerfect" />
           </div>
@@ -330,59 +351,59 @@ function FoodTruck() {
             />
           </div>
           <Break />
-          <h2 className="gc-004">01. Food Truck Feed</h2>
+          <MedHeader className="gc-004">01. Food Truck Feed</MedHeader>
           <Break />
-          <h3 className="gc-001">Considerations</h3>
+          <SmallHeader className="gc-001">Considerations</SmallHeader>
           <div className="gc-000-3">
-            <h5>Objective</h5>
+            <Title>Objective</Title>
             <br />
-            <p>
+            <Paragraph>
               To help users find/ explore/ compare the food trucks that they are
               interested in.
-            </p>
+            </Paragraph>
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5 className="gc-000-3">Important Facts</h5>
+            <Title className="gc-000-3">Important Facts</Title>
             <br />
             <div className="key-things-consider-lists">
-              <ol>
-                <li className="consider-item">
+              <OrderedList>
+                <List className="consider-item">
                   There are only about 185 food trucks in San Francisco, so
                   specific filtering options could result in very few food
                   trucks available to the users.
-                </li>
-                <li className="consider-item">
+                </List>
+                <List className="consider-item">
                   The primary users - college students and business people -
                   usually want something that they could get quickly that is
                   close by.
-                </li>
-              </ol>
+                </List>
+              </OrderedList>
             </div>
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5>Questions to Ask</h5>
+            <Title>Questions to Ask</Title>
             <br />
             <div className="question-lists">
-              <ol>
-                <li className="question-item">
+              <OrderedList>
+                <List className="question-item">
                   How easy it is to sort/filter the food trucks so that users
                   can only see the ones that they like to see and compare?
-                </li>
-                <li className="question-item">
+                </List>
+                <List className="question-item">
                   How quickly can users understand the general impression of the
                   food trucks?
-                </li>
-                <li className="question-item">
+                </List>
+                <List className="question-item">
                   What are the most essential elements that users want to know
                   before visiting the food truck profile?
-                </li>
-              </ol>
+                </List>
+              </OrderedList>
             </div>
           </div>
           <BreakThree />
-          <h3 className="gc-004">Animations</h3>
+          <SmallHeader className="gc-004">Animations</SmallHeader>
           <Break />
           <div className="gc-02c video-container">
             <div className="video-wrapper">
@@ -395,7 +416,7 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Feed Detail</p>
+            <Paragraph className="video-name">Feed Detail</Paragraph>
           </div>
           <div className="gc-000-2c video-container">
             <div className="video-wrapper">
@@ -408,7 +429,9 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Hide Uninterested Food Truck</p>
+            <Paragraph className="video-name">
+              Hide Uninterested Food Truck
+            </Paragraph>
           </div>
           <div className="gc-00000-2c video-container">
             <div className="video-wrapper">
@@ -421,11 +444,15 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Toggle Between List and Map</p>
+            <Paragraph className="video-name">
+              Toggle Between List and Map
+            </Paragraph>
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">Explanation of the design decisions</h3>
+          <SmallHeader className="gc-004">
+            Explanation of the design decisions
+          </SmallHeader>
           <div className="gc-06 image-container">
             <img src={feedExplanation} alt="feedExplanation" />
           </div>
@@ -434,59 +461,59 @@ function FoodTruck() {
           </div>
           <BreakThree />
           <BreakThree />
-          <h2 className="gc-004">02. Food Truck Profile</h2>
+          <MedHeader className="gc-004">02. Food Truck Profile</MedHeader>
           <Break />
-          <h3 className="gc-001">Considerations</h3>
+          <SmallHeader className="gc-001">Considerations</SmallHeader>
           <div className="gc-000-3">
-            <h5>Objective</h5>
+            <Title>Objective</Title>
             <br />
-            <p>
+            <Paragraph>
               To help users know better about the food trucks and order foods
-              them.
-            </p>
+              from them.
+            </Paragraph>
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5 className="gc-000-3">Important Facts</h5>
+            <Title className="gc-000-3">Important Facts</Title>
             <br />
             <div className="key-things-consider-lists">
-              <ol>
-                <li className="consider-item">
+              <OrderedList>
+                <List className="consider-item">
                   There is a lot of information to show in the food truck
                   profile, so deciding what to show first above the fold is
                   important.
-                </li>
-                <li className="consider-item">
+                </List>
+                <List className="consider-item">
                   Many food trucks already have many social media accounts and
                   websites where they advertise themselves and connect with
                   customers
-                </li>
-              </ol>
+                </List>
+              </OrderedList>
             </div>
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5>Questions to Ask</h5>
+            <Title>Questions to Ask</Title>
             <br />
             <div className="question-lists">
-              <ol>
-                <li className="question-item">
+              <OrderedList>
+                <List className="question-item">
                   Can users fully understand the food truck and see its
                   availability?
-                </li>
-                <li className="question-item">
+                </List>
+                <List className="question-item">
                   What are the things that users want to know before deciding to
                   order food?
-                </li>
-                <li className="question-item">
+                </List>
+                <List className="question-item">
                   What is the best and most effective way to organize the
                   information?
-                </li>
-              </ol>
+                </List>
+              </OrderedList>
             </div>
           </div>
           <BreakThree />
-          <h3 className="gc-004">Animations</h3>
+          <SmallHeader className="gc-004">Animations</SmallHeader>
           <Break />
           <div className="gc-02c video-container">
             <div className="video-wrapper">
@@ -499,7 +526,7 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Feed to Profile</p>
+            <Paragraph className="video-name">Feed to Profile</Paragraph>
           </div>
           <div className="gc-000-2c video-container">
             <div className="video-wrapper">
@@ -512,7 +539,7 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Collapsable Header</p>
+            <Paragraph className="video-name">Collapsable Header</Paragraph>
           </div>
           <div className="gc-00000-2c video-container">
             <div className="video-wrapper">
@@ -525,11 +552,15 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Menu, Overview, & Review</p>
+            <Paragraph className="video-name">
+              Menu, Overview, & Review
+            </Paragraph>
           </div>
           <BreakThree />
           <BreakThree />
-          <h3 className="gc-004">Explanation of the design decisions</h3>
+          <SmallHeader className="gc-004">
+            Explanation of the design decisions
+          </SmallHeader>
           <div className="gc-06 image-container">
             <img src={menuExplain} alt="menuExplain" />
           </div>
@@ -537,48 +568,48 @@ function FoodTruck() {
             <img src={profileDetailExplain} alt="profileDetailExplain" />
           </div>
           <Break />
-          <h5 className="gc-004">Ordering Experience</h5>
+          <Title className="gc-004">Ordering Experience</Title>
           <div className="gc-06 image-container">
             <img src={orderExperience} alt="orderExperience" />
           </div>
 
-          <h2 className="gc-004">03. Search</h2>
+          <MedHeader className="gc-004">03. Search</MedHeader>
           <Break />
-          <h3 className="gc-001">Considerations</h3>
+          <SmallHeader className="gc-001">Considerations</SmallHeader>
           <div className="gc-000-3">
-            <h5>Objective</h5>
+            <Title>Objective</Title>
             <br />
-            <p>
+            <Paragraph>
               To help users find the specific things that they are looking for.
-            </p>
+            </Paragraph>
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5 className="gc-000-3">Important Fact</h5>
+            <Title className="gc-000-3">Important Fact</Title>
             <br />
-            <p>
-              There is a lot of information to show in the food truck profile,
-              so deciding what to show first above the fold is important.
-            </p>
+            <Paragraph>
+              Search is under the explore section with the feed, so the
+              experience of using search and feed should be consistent.
+            </Paragraph>
           </div>
           <Break />
           <div className="gc-000-3">
-            <h5>Questions to Ask</h5>
+            <Title>Questions to Ask</Title>
             <br />
             <div className="question-lists">
-              <ol>
-                <li className="question-item">
+              <OrderedList>
+                <List className="question-item">
                   What do users most search for?
-                </li>
-                <li className="question-item">
+                </List>
+                <List className="question-item">
                   Does it have similar or same design language as the one in the
                   feed section?
-                </li>
-              </ol>
+                </List>
+              </OrderedList>
             </div>
           </div>
 
-          <h3 className="gc-004">Animations</h3>
+          <SmallHeader className="gc-004">Animations</SmallHeader>
           <Break />
           <div className="gc-002c video-container">
             <div className="video-wrapper">
@@ -591,7 +622,7 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Searching Experience</p>
+            <Paragraph className="video-name">Searching Experience</Paragraph>
           </div>
           <div className="gc-0000-4c video-container">
             <div className="video-wrapper">
@@ -604,7 +635,9 @@ function FoodTruck() {
               ></video>
             </div>
             <Break />
-            <p className="video-name">Toggle Between List & Map View</p>
+            <Paragraph className="video-name">
+              Toggle Between List & Map View
+            </Paragraph>
           </div>
 
           <BreakThree />
@@ -629,8 +662,10 @@ function FoodTruck() {
               volatility={0.04}
             />
           </div>
-          <h3 className="gc-004">01. User Research/Testing</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">
+            01. User Research/Testing
+          </SmallHeader>
+          <Paragraph className="gc-004">
             Because of the short time frame to work on the project, I could only
             do minimal user research. If more time and resources were given to
             conduct extensive user research, my design choices based on my
@@ -641,10 +676,10 @@ function FoodTruck() {
             screen based on the questions I formed while designing and
             conducting user-testings to confirm my decisions and find potential
             improvements.
-          </p>
+          </Paragraph>
           <Break />
-          <h3 className="gc-004">02. Product Benchmarking</h3>
-          <p className="gc-004">
+          <SmallHeader className="gc-004">02. Product Benchmarking</SmallHeader>
+          <Paragraph className="gc-004">
             There are many existing products that are in a similar market place;
             apps that help people to search restaurants and order delivery
             foods. Looking at these products, I got inspiration for some
@@ -653,7 +688,7 @@ function FoodTruck() {
             work well with the FTF because FTF is only focused on mobile food
             trucks. Looking at these products helped me to work very efficiently
             and productively.
-          </p>
+          </Paragraph>
         </div>
       </section>
       <OtherProjects />

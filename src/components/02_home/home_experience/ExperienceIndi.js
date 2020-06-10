@@ -1,5 +1,13 @@
 import React from 'react';
 
+//style
+import {
+  SmallHeader,
+  SmallTitle,
+  Paragraph
+} from '../../../styles/02_tools/styled_component/components/Fonts';
+import RightContainer from '../../../styles/02_tools/styled_component/components/ExperienceRightContainer';
+
 import BulletDescription from './BulletDescription';
 
 class ExperienceIndi extends React.Component {
@@ -17,13 +25,14 @@ class ExperienceIndi extends React.Component {
     return (
       <div className="experiences">
         <div className="left">
-          <h3 className="year">{this.props.year}&nbsp;&nbsp;</h3>
-          <p className="months">{this.props.months}</p>
+          <SmallHeader className="year">
+            {this.props.year}&nbsp;&nbsp;
+          </SmallHeader>
+          <Paragraph className="months">{this.props.months}</Paragraph>
         </div>
 
-        <div
+        <RightContainer
           className="right"
-          width="100px"
           id={this.props.id}
           onClick={clickEvent => this.handleClicked(clickEvent, this)}
         >
@@ -35,13 +44,15 @@ class ExperienceIndi extends React.Component {
             height="150px"
           />
           <div className="text">
-            <h3 className="title">{this.props.role}</h3>
-            <h4 className="company"> &nbsp;@ {this.props.company}</h4>
+            <SmallHeader className="title">{this.props.role}</SmallHeader>
+            <SmallTitle className="company">
+              &nbsp;@ {this.props.company}
+            </SmallTitle>
           </div>
           {this.state.expanded && (
             <BulletDescription descriptions={this.props.descriptions} />
           )}
-        </div>
+        </RightContainer>
       </div>
     );
   }

@@ -1,29 +1,14 @@
-//Google Fonts
+// //roboto
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+// //roboto mono
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap');
 
-//roboto
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
-//roboto mono
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap');
-
-//Playfair Display
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600&display=swap');
-
-// ol {
-//   list-style: decimal-leading-zero;
-//   span {
-//     position: relative;
-//     left: 1rem;
-//   }
-// }
+// //Playfair Display
+// @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600&display=swap');
 
 ol {
   list-style: none;
   display: block;
-  //   padding-inline-start: 40px;
-  //   margin-block-start: 1em;
-  //   margin-block-end: 1em;
-  //   margin-inline-start: 0px;
-  //   margin-inline-end: 0px;
   counter-reset: list-numbering 0;
 }
 

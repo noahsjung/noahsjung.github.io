@@ -8,16 +8,6 @@
   text-align: start;
   .experience-word {
     margin-bottom: 50px;
-    // color: $lightGray;
-    // border-bottom: 1px $lightGray solid;
-    // text-transform: uppercase;
-    // border-bottom-color: transparent;
-    // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .0s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='lightgray' stroke-width='1.5' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    // background-position: 0 1.4em;
-    // background-size: auto 5px;
-    // background-repeat: repeat-x;
-    // padding-bottom: 10px;
-    // text-decoration: none;
   }
 }
 
@@ -37,11 +27,6 @@
 
 //Experience Individual Right
 .experience .right {
-  background-color: $white;
-  overflow: hidden;
-  border-radius: $border-radius;
-  box-shadow: 1px 2px 5px 3px $shadow-initial;
-  z-index: 1;
   .logo {
     height: 150px;
     width: 150px;
@@ -50,8 +35,6 @@
     color: $gray;
   }
   &:hover {
-    cursor: pointer;
-    box-shadow: 1px 2px 7px 5px $shadow-after;
     .text {
       color: $blue;
     }
@@ -74,12 +57,4 @@
 //Description
 .experience .description {
   margin: 0.5rem 3rem 1rem 3.5rem;
-  ol {
-    color: $gray;
-    // span {
-    .description-point {
-      color: $gray;
-      // }
-    }
-  }
 }

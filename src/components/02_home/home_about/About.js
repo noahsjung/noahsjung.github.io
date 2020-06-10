@@ -1,10 +1,24 @@
 import React, { useRef, useEffect } from 'react';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { TweenMax, Power2 } from 'gsap';
 import { LiquidDistortionText } from 'react-text-fun';
 
+//styles
+import {
+  BigHeader,
+  SmallTitle
+} from '../../../styles/02_tools/styled_component/components/Fonts';
+import Button from '../../../styles/02_tools/styled_component/components/ButtonStyle';
+
 import resume from '../../../files/resume_01.29.20.pdf';
 import AboutDescription from './AboutDescription';
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${props => props.theme.color.primary};
+  cursor: pointer;
+`;
 
 function About(props) {
   let { about, short, description, aboutWord, buttons, learnMore } = useRef(
@@ -56,7 +70,7 @@ function About(props) {
         about = el;
       }}
     >
-      <h4
+      <SmallTitle
         className="about-word"
         ref={el => {
           aboutWord = el;
@@ -71,47 +85,51 @@ function About(props) {
           speed={0.7}
           volatility={0.04}
         />
-        {/* About */}
-      </h4>
+      </SmallTitle>
 
-      <h1
+      <BigHeader
+        grayhem
         className="short"
         ref={el => {
           short = el;
         }}
       >
         Hi! I am{' '}
-        <Link to="about-me" className="name">
-          Noah Jung{' '}
-        </Link>
-        — <br /> a Product Designer based in Philadelphia.
-      </h1>
-      <h4
+        <StyledLink to="about-me" className="name">
+          Noah Jung
+        </StyledLink>
+        — <br /> UX Designer @{' '}
+        <StyledLink href="https://https://www.ximedica.com/" target="blank">
+          Ximedica
+        </StyledLink>
+        .
+      </BigHeader>
+      <SmallTitle
         className="description"
         ref={el => {
           description = el;
         }}
       >
         <AboutDescription />
-      </h4>
+      </SmallTitle>
       <div
         className="buttons"
         ref={el => {
           buttons = el;
         }}
       >
-        <a
+        <Button
           className="linkedin"
           href="https://www.linkedin.com/in/noahsjung/"
           target="blank"
         >
           <i className="fab fa-linkedin"></i>
           LinkedIn
-        </a>
-        <a className="resume" href={resume} target="blank">
+        </Button>
+        <Button className="resume" href={resume} target="blank">
           <i className="far fa-file"></i>
           Resume
-        </a>
+        </Button>
       </div>
       <div
         className="learn-more"
@@ -119,10 +137,10 @@ function About(props) {
           learnMore = el;
         }}
       >
-        <h4>
-          <Link to="/about-me">Learn more</Link>
+        <SmallTitle>
+          <StyledLink to="/about-me">Learn more</StyledLink>
           <i className="fas fa-angle-right"></i>
-        </h4>
+        </SmallTitle>
       </div>
     </div>
   );

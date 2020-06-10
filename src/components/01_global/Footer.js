@@ -1,30 +1,36 @@
 import React from 'react';
-import resume from '../../files/resume_01.29.20.pdf';
 
-// import lightTheme from '../../styles/02_tools/styled_component/lightTheme';
+//style
+import FooterContainer from '../../styles/02_tools/styled_component/components/FooterContainerStyle';
+import {
+  Note,
+  StyledLink
+} from '../../styles/02_tools/styled_component/components/Fonts';
+
+//files
+import resume from '../../files/resume_01.29.20.pdf';
 
 function Footer() {
   return (
-    <div className="footer-container">
-      <div className="footer">
-        <h6 className="copyright">
-          Copyright © 2020 Noah Jung. <br />
-          All rights reserved. <br />
-          Developed using React.
-        </h6>
-        <div className="links">
-          <a href="mailto:noahsjung@gmail.com">
-            <h6 className="email">Email</h6>
-          </a>
-          <a href={resume} target="blank">
-            <h6 className="resume">Resume</h6>
-          </a>
-          <a href="https://www.linkedin.com/in/noahsjung/" target="blank">
-            <h6 className="linkedin">LinkedIn</h6>
-          </a>
-        </div>
+    <FooterContainer className="footer">
+      <Note className="copyright">
+        Copyright © 2020 Noah Jung. <br />
+        All rights reserved. <br />
+        Developed using React.
+      </Note>
+      <div className="links">
+        <StyledLink href="mailto:noahsjung@gmail.com">Email</StyledLink>
+        <StyledLink href={resume} target="blank">
+          Resume
+        </StyledLink>
+        <StyledLink
+          href="https://www.linkedin.com/in/noahsjung/"
+          target="blank"
+        >
+          LinkedIn
+        </StyledLink>
       </div>
-    </div>
+    </FooterContainer>
   );
 }
 

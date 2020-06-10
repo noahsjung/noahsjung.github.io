@@ -1,6 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
+
+//styles
+import {
+  Note,
+  StyledLink
+} from '../../../styles/02_tools/styled_component/components/Fonts';
 
 class RightFixed extends React.Component {
   scrollToTop = () => {
@@ -11,17 +16,18 @@ class RightFixed extends React.Component {
     return (
       <div className="right-container">
         <div className="design-develop">
-          <h6 className="contribution">
-            Designed and developed by <Link to="/about-me">Noah Jung</Link>.
-          </h6>
+          <Note className="contribution">
+            Designed and developed by{' '}
+            <StyledLink to="/about-me">Noah Jung</StyledLink>.
+          </Note>
         </div>
         <div className="back-to-top">
-          <h6 className="to-top">
+          <Note className="to-top">
             <i className="fas fa-arrow-left"></i>
-            <a href onClick={this.scrollToTop}>
+            <StyledLink href onClick={this.scrollToTop}>
               Back to top.
-            </a>
-          </h6>
+            </StyledLink>
+          </Note>
         </div>
       </div>
     );
