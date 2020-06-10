@@ -37,21 +37,22 @@ function App() {
   console.log('APP');
   console.log(toggleTheme);
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <div className="App">
-        <Switch>
-          <Route exact path="/" render={() => <Home />} />
-          <Route path="/about-me" render={() => <AboutMe />} />
+    <h1>Site under construction</h1>
+    // <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    //   <div className="App">
+    //     <Switch>
+    //       <Route exact path="/" render={() => <Home />} />
+    //       <Route path="/about-me" render={() => <AboutMe />} />
 
-          <Route path="/weddell" render={() => <Weddell />} />
-          <Route path="/food-truck-finder" render={() => <FoodTruck />} />
-          <Route path="/retriever-app" render={() => <Retriever />} />
+    //       <Route path="/weddell" render={() => <Weddell />} />
+    //       <Route path="/food-truck-finder" render={() => <FoodTruck />} />
+    //       <Route path="/retriever-app" render={() => <Retriever />} />
 
-          <Route path="/" render={() => <PageNotFound />} />
-        </Switch>
-      </div>
-      <GlobalStyle />
-    </ThemeProvider>
+    //       <Route path="/" render={() => <PageNotFound />} />
+    //     </Switch>
+    //   </div>
+    //   <GlobalStyle />
+    // </ThemeProvider>
   );
 }
 

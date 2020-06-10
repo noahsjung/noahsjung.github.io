@@ -18,17 +18,14 @@ function Home(props) {
 
   return (
     <>
-      <h1>Site under construction</h1>
-
-      {/* feb.12.2020 */}
-      {/* <HomeContainer className="home">
+      <HomeContainer className="home">
         <Header first="about" second="work" third="experience" />
         <RightFixed />
         <About />
         <Work />
         <Experience />
         <Footer />
-      </HomeContainer> */}
+      </HomeContainer>
     </>
   );
 }
