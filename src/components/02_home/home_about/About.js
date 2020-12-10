@@ -11,7 +11,7 @@ import {
 } from '../../../styles/02_tools/styled_component/components/Fonts';
 import Button from '../../../styles/02_tools/styled_component/components/ButtonStyle';
 
-import resume from '../../../files/resume_01.29.20.pdf';
+// import resume from '../../../files/resume_01.29.20.pdf';
 import AboutDescription from './AboutDescription';
 
 const StyledLink = styled(Link)`
@@ -126,10 +126,10 @@ function About(props) {
           <i className="fab fa-linkedin"></i>
           LinkedIn
         </Button>
-        <Button className="resume" href={resume} target="blank">
+        {/* <Button className="resume" href={resume} target="blank">
           <i className="far fa-file"></i>
           Resume
-        </Button>
+        </Button> */}
       </div>
       <div
         className="learn-more"

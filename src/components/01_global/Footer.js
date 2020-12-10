@@ -8,7 +8,7 @@ import {
 } from '../../styles/02_tools/styled_component/components/Fonts';
 
 //files
-import resume from '../../files/resume_01.29.20.pdf';
+// import resume from '../../files/resume_01.29.20.pdf';
 
 function Footer() {
   return (
@@ -20,9 +20,9 @@ function Footer() {
       </Note>
       <div className="links">
         <StyledLink href="mailto:noahsjung@gmail.com">Email</StyledLink>
-        <StyledLink href={resume} target="blank">
-          Resume
-        </StyledLink>
+        {/* <StyledLink href={resume} target="blank"> */}
+          {/* Resume */}
+        {/* </StyledLink> */}
         <StyledLink
           href="https://www.linkedin.com/in/noahsjung/"
           target="blank"
