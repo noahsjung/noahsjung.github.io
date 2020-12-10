@@ -1,8 +1,8 @@
-import amen_logo from '../images/amen_logo.jpg';
+// import amen_logo from '../images/amen_logo.jpg';
 import food_truck_logo from '../images/food_truck_logo.jpg';
-import maze_logo from '../images/maze_logo.jpg';
+// import maze_logo from '../images/maze_logo.jpg';
 import retrieverapp_logo from '../images/retrieverapp_logo.jpg';
-import waymo_logo from '../images/waymo_logo.jpg';
+// import waymo_logo from '../images/waymo_logo.jpg';
 import weddell_logo from '../images/weddell_logo.jpg';
 
 const portFolioData = [
@@ -11,22 +11,22 @@ const portFolioData = [
     title: 'Retriever App',
     description: 'Internship / UIUX',
     image: retrieverapp_logo,
-    path: 'retriever-app'
+    path: 'retriever-app',
   },
   {
     id: 2,
     title: 'Weddell',
     description: 'Startup / UIUX',
     image: weddell_logo,
-    path: '/weddell'
+    path: '/weddell',
   },
   {
     id: 3,
     title: 'Food Truck Finder',
     description: 'Design Challenge / UIUX',
     image: food_truck_logo,
-    path: '/food-truck-finder'
-  }
+    path: '/food-truck-finder',
+  },
   // {
   //   id: 4,
   //   title: 'A-maz-ing Planter',

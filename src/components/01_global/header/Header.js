@@ -6,7 +6,7 @@ import HeaderContainer from '../../../styles/02_tools/styled_component/component
 import { Note } from '../../../styles/02_tools/styled_component/components/Fonts';
 
 import HeaderLogo from './HeaderLogo';
-import DarkMode from '../dark_mode/DarkMode';
+// import DarkMode from '../dark_mode/DarkMode';
 
 function Header(props) {
   return (
