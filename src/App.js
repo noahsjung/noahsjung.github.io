@@ -37,7 +37,10 @@ function App() {
   console.log('APP');
   console.log(toggleTheme);
   return (
+<<<<<<< HEAD
     // <h1>Site under construction</h1>
+=======
+>>>>>>> parent of 571dc86a... site under construction 2
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <div className="App">
         <Switch>
